@@ -1,0 +1,26 @@
+footer {
+    @include flex(column, center, flex-start);
+   /****** Colors
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+     ***********/
+    padding: 15px;
+    margin-top: 50px;
+
+    .footer {
+        @include flex(column, flex-start, initial, 16px);
+        width: 100%;
+        padding: 22px 25px;
+        max-width: 1440px;
+        color: $footer-font-color;
+    
+        
+        &__logo {
+            @include flex;
+            width: 7em;
+            height: auto;
+        }
+}
+}
