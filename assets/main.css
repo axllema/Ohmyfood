@@ -7,4 +7,46 @@
 /****** Loader colors ***********/
 body {
   font-family: "Roboto", sans-serif;
+}
+
+footer {
+  width: 100%;
+  background-color: #353535;
+  color: white;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: initial;
+  /****** Colors
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+    ***********/
+  padding: 15px;
+  margin-top: 50px;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: initial;
+  gap: 16px;
+  width: 100%;
+  padding: 22px 25px;
+  max-width: 1440px;
+  color: white;
+}
+footer .footer__logo {
+  display: flex;
+  flex-direction: initial;
+  justify-content: initial;
+  align-items: initial;
+  gap: initial;
+  width: 7em;
+  height: auto;
 }/*# sourceMappingURL=main.css.map */
