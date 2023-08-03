@@ -67,7 +67,6 @@ footer {
   justify-content: initial;
   align-items: center;
   gap: initial;
-  list-style-type: none;
   width: 100%;
 }
 .button-2__link {
@@ -82,7 +81,6 @@ footer {
   background-color: #F7F7F7;
   height: 70px;
   border: 1px solid transparent;
-  box-shadow: rgba(0, 0, 0, 0.25);
 }
 
 .card {
@@ -171,10 +169,9 @@ footer .footer__list {
   background-color: #EAEAEA;
   height: 50px;
   padding: 10px;
-  /****** marche pas
-      &__location{
-          background-color: $third-background-color;
-  } ***********/
+}
+.place-container__location .localisation {
+  background-color: #EAEAEA;
 }
 
 .reservation {
@@ -197,6 +194,7 @@ footer .footer__list {
   justify-content: center;
   align-items: initial;
   gap: initial;
+  font-size: 15px;
 }
 
 .restaurants {
