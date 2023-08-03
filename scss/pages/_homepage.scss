@@ -3,12 +3,11 @@
     background-color: $third-background-color;
     height: 50px;
     padding: 10px;
-/****** marche pas
-    &__location{
-        background-color: $third-background-color;
-} ***********/
-}
 
+    &__location .localisation{
+        background-color: $third-background-color;
+}
+}
 
 .reservation {
     @include flex(column, center, $align:center);
@@ -23,6 +22,7 @@
 
     &__content {
         @include flex(row, center);
+        font-size: 15px;
     }  
 }
 
