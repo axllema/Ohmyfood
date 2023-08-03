@@ -142,6 +142,9 @@ footer .footer__logo {
   width: 7em;
   height: auto;
 }
+footer .footer__list {
+  list-style: none;
+}
 
 .header__logo-container {
   background-color: white;
