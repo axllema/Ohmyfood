@@ -1,0 +1,45 @@
+.place-container {
+    @include flex(row, center, $align:center);
+    background-color: $third-background-color;
+    height: 50px;
+    padding: 10px;
+/****** marche pas
+    &__location{
+        background-color: $third-background-color;
+} ***********/
+}
+
+
+.reservation {
+    @include flex(column, center, $align:center);
+    background-color:$first-background-color;
+    text-align: center;
+    
+    &__title {
+        margin-bottom: 12px;
+        font-weight: bold;
+        font-size: 23px;
+    }
+
+    &__content {
+        @include flex(row, center);
+    }  
+}
+
+.restaurants {
+    @include flex(column, center, $align:center);
+    background-color: $first-background-color;
+    padding-top: 50px;
+
+    &__title {
+      padding-left: 3px;
+      width: 100%;
+      max-width: 1080px;
+    }
+  
+    &__cards-container {
+    @include flex(column, center, $align:center);
+    width: 100%;
+    max-width: 1080px;
+    }
+}

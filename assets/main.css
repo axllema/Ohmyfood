@@ -141,4 +141,81 @@ footer .footer__logo {
   gap: initial;
   width: 7em;
   height: auto;
+}
+
+.header__logo-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+}
+.header__logo-container__logo {
+  display: flex;
+  justify-content: center;
+  width: 7em;
+  height: auto;
+}
+
+.place-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: initial;
+  background-color: #EAEAEA;
+  height: 50px;
+  padding: 10px;
+  /****** marche pas
+      &__location{
+          background-color: $third-background-color;
+  } ***********/
+}
+
+.reservation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: initial;
+  background-color: #F3F3F3;
+  text-align: center;
+}
+.reservation__title {
+  margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 23px;
+}
+.reservation__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: initial;
+  gap: initial;
+}
+
+.restaurants {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: initial;
+  background-color: #F3F3F3;
+  padding-top: 50px;
+}
+.restaurants__title {
+  padding-left: 3px;
+  width: 100%;
+  max-width: 1080px;
+}
+.restaurants__cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: initial;
+  width: 100%;
+  max-width: 1080px;
 }/*# sourceMappingURL=main.css.map */
