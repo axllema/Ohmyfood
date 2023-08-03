@@ -1,0 +1,13 @@
+@mixin typography($family: $main-font, $size: 16px, $weight: $regular) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+}
+
+  @mixin flex ($direction: initial, $justify: initial, $align: initial, $gap: initial) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+    gap: $gap;
+ }
