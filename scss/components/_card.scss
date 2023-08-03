@@ -1,0 +1,21 @@
+.card {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    transition: box-shadow, transform, 0.5s;
+    margin: 10px;
+
+    &__picture {
+        object-fit: cover;
+        height: calc(250px - 75px);
+        width: 100%;
+        border-radius: 15px 15px 0 0;
+    }
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        padding: 0 25px 0 13px;
+        }
+}
