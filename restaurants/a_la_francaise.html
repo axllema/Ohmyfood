@@ -1,4 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
 
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OhMyFood - À la française</title>
+    <link href="assets/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo-container">
+            <a class="header__back-arrow" href="../index.html">
+                <i class=" fa-solid fa-arrow-left"></i>
+            </a>
+            <a href="../index.html"> <img class="header__logo" src="../assets/logo/ohmyfood@2x.svg" alt="Logo de Ohmyfood"></a>
+        </div>
+    </header>
+
+
+<main>
+    <article class="restaurant-onlycard">
+        <img class="restaurant-onlycard__picture"
+            src="../assets/images/a_la_francaise.jpg"
+            alt="">
+        <div class="restaurant-onlycard__headline">
+            <h2 class="restaurant-onlycard__title">À la française</h2>
+            <div class="restaurant-onlycard__like-icon-container">
+                <i class="fa-heart fas restaurant-page__like-icon "></i>
+                <i class="fa-heart far restaurant-page__like-icon"></i>
+            </div>
+        </div>
+
+        <form class=" restaurant-onylcard__form form" method="get" action="#">
+        <!-- 1 -->
+            <h2 class="form__title">Entrées</h2>
+            <input id="starter_choice-1" type="radio" name="starter_choice" value="1">
+            <label for="starter_choice-1">
+                <span class="form__subtitle">Tartare de poulpe acidulé</span>
+                <span class="form__description-container">
+                    <span class="form__description">Aux zestes d'orange</span>
+                    <span class="form__price">25€</span>
+                </span>
+            </label>
+            <input id="starter_choice-2" type="radio" name="starter_choice" value="2">
+            <label for="starter_choice-2">
+                <span class="form__subtitle">Velouté de légumes d'antan</span>
+                <span class="form__description-container">
+                    <span class="form__description">Carotte, panais, topinambour</span>
+                    <span class="form__price">35€</span>
+                </span>
+            </label>
+            <input id="starter_choice-3" type="radio" name="starter_choice" value="3">
+            <label for="starter_choice-3">
+                <span class="form__subtitle">Soupe à l'oignon</span>
+                <span class="form__description-container">
+                    <span class="form__description">Revisitée</span>
+                    <span class="form__price">20€</span>
+                </span>
+            </label>
+
+        <!-- 2 -->
+
+            <h2 class="form__title">Plats</h2>
+            <input id="dish_choice-1" type="radio" name="dish_choice" value="1">
+            <label for="dish_choice-1">
+                <span class="form__subtitle">Coquilles Saint-Jacques</span>
+                <span class="form__description-container">
+                    <span class="form__description">Accompagnées d'une purée de panais</span>
+                    <span class="form__price">40€</span>
+                </span>
+            </label>
+            <input id="dish_choice-2" type="radio" name="dish_choice" value="2">
+            <label for="dish_choice-2">
+                <span class="form__subtitle">Magret de canard</span>
+                <span class="form__description-container">
+                    <span class="form__description">Et parmentier de pommes de terre</span>
+                    <span class="form__price">35€</span>
+                </span>
+            </label>
+            <input id="dish_choice-3" type="radio" name="dish_choice" value="3">
+            <label for="dish_choice-3">
+                <span class="form__subtitle">Pigeonneau d'Ille-et-Vilaine</span>
+                <span class="form__description-container">
+                    <span class="form__description">Sur son lit de gnocchis aux légumes</span>
+                    <span class="form__price">44€</span>
+                </span>
+            </label>
+
+        <!-- 3 -->
+
+            <h2 class="form__title">Desserts</h2>
+            <input id="dessert_choice-1" type="radio" name="dessert_choice" value="1">
+            <label for="dessert_choice-1">
+                <span class="form__subtitle">Pétales de violettes glacés</span>
+                <span class="form__description-container">
+                    <span class="form__description">Et purée de noisettes</span>
+                    <span class="form__price">18€</span>
+                </span>
+            </label>
+            <input id="dessert_choice-2" type="radio" name="dessert_choice" value="2">
+            <label for="dessert_choice-2">
+                <span class="form__subtitle">Fondant au chocolat</span>
+                <span class="form__description-container">
+                    <span class="form__description">Revisité</span>
+                    <span class="form__price">22€</span>
+                </span>
+            </label>
+            <input id="dessert_choice-3" type="radio" name="dessert_choice" value="3">
+            <label for="dessert_choice-3">
+                <span class="form__subtitle">Millefeuille croustillant</span>
+                <span class="form__description-container">
+                    <span class="form__description">Myrtilles et pâte d’amande</span>
+                    <span class="form__price">23€</span>
+                </span>
+            </label>
+            <button class="button-1 button-1--alt-size" type="submit">Commander</button>
+        </form>
+    </article>
+</main>
+
+</body>
 </html>
