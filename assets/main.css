@@ -52,6 +52,9 @@ footer {
   justify-content: center;
   align-items: center;
   gap: initial;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
   width: 230px;
   height: 50px;
   border-radius: 30px;
@@ -68,6 +71,9 @@ footer {
   justify-content: initial;
   align-items: center;
   gap: initial;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
   width: 100%;
 }
 .button-2__link {
@@ -85,7 +91,16 @@ footer {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 .button-2__link__number {
-  background-color: purple;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  align-items: center;
+  gap: initial;
+  color: white;
+  background-color: #9356dc;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
 }
 .button-2__link__icon {
   color: #7a7a7a;
