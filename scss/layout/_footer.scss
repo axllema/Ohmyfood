@@ -25,6 +25,9 @@ footer {
         }
 
         &__list {
+            font-family: $main-font;
+            font-size: 16px;
+            gap: 10px;
             list-style: none;
         }
 }

@@ -171,6 +171,9 @@ footer .footer__logo {
   filter: invert(1);
 }
 footer .footer__list {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  gap: 10px;
   list-style: none;
 }
 
