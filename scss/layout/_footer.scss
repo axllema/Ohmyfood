@@ -21,6 +21,7 @@ footer {
             @include flex;
             width: 7em;
             height: auto;
+            filter: invert(1);
         }
 
         &__list {

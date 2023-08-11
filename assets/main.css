@@ -82,9 +82,13 @@ footer {
   background-color: #F7F7F7;
   height: 70px;
   border: 1px solid transparent;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 .button-2__link__number {
   background-color: purple;
+}
+.button-2__link__icon {
+  color: #7a7a7a;
 }
 
 .card {
@@ -143,6 +147,7 @@ footer .footer__logo {
   gap: initial;
   width: 7em;
   height: auto;
+  filter: invert(1);
 }
 footer .footer__list {
   list-style: none;

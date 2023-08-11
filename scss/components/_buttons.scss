@@ -23,9 +23,15 @@
             background-color: #F7F7F7;
             height: 70px;
             border: 1px solid transparent;
+            box-shadow: 0px 4px 15px $shadow-color;
 
                 &__number {
                     background-color: purple;
                 }
+                
+                &__icon {
+                    color: $icons-color;
+                }
+                
         }
 }
