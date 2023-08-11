@@ -8,6 +8,9 @@
     &__location .localisation{
         background-color: $third-background-color;
         font-size: 16px;
+        font-family: $main-font;
+        font-weight: 500;
+
 }
 }
 
@@ -16,17 +19,19 @@
     @include flex(column, center, $align:center);
     background-color:$first-background-color;
     text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
     
-    &__title {
-        margin-bottom: 12px;
-        font-weight: bold;
-        font-size: 23px;
-    }
+        &__title {
+            margin-bottom: 12px;
+            font-weight: bold;
+            font-size: 23px;
+        }
 
-    &__content {
-        @include flex(row, center);
-        font-size: 15px;
-    }  
+        &__content {
+            @include flex(row, center);
+            font-size: 15px;
+        }  
 }
 
 /****** Fonctionnement ***********/
