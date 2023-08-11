@@ -82,6 +82,9 @@ footer {
   height: 70px;
   border: 1px solid transparent;
 }
+.button-2__link__number {
+  background-color: purple;
+}
 
 .card {
   width: 100%;
@@ -172,6 +175,7 @@ footer .footer__list {
 }
 .place-container__location .localisation {
   background-color: #EAEAEA;
+  font-size: 16px;
 }
 
 .reservation {
@@ -205,6 +209,9 @@ footer .footer__list {
   gap: initial;
   background-color: #F3F3F3;
   padding-top: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-bottom: 50px;
 }
 .restaurants__title {
   padding-left: 3px;
@@ -219,4 +226,8 @@ footer .footer__list {
   gap: initial;
   width: 100%;
   max-width: 1080px;
+}
+.restaurants__card-link {
+  width: 100%;
+  position: inherit;
 }/*# sourceMappingURL=main.css.map */
