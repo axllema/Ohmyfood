@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /****** Colors ***********/
 /****** Fonts ***********/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
@@ -163,6 +164,7 @@ footer .footer__list {
   height: auto;
 }
 
+/****** Place ***********/
 .place-container {
   display: flex;
   flex-direction: row;
@@ -178,6 +180,7 @@ footer .footer__list {
   font-size: 16px;
 }
 
+/****** Réservez ***********/
 .reservation {
   display: flex;
   flex-direction: column;
@@ -201,6 +204,29 @@ footer .footer__list {
   font-size: 15px;
 }
 
+/****** Fonctionnement ***********/
+.fonction {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  gap: initial;
+  gap: 20px;
+  padding-top: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+}
+.fonction__buttons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  gap: initial;
+  gap: 25px;
+}
+
+/****** Restaurants ***********/
 .restaurants {
   display: flex;
   flex-direction: column;
