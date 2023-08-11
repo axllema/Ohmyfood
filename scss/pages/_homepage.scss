@@ -1,3 +1,4 @@
+/****** Place ***********/
 .place-container {
     @include flex(row, center, $align:center);
     background-color: $third-background-color;
@@ -10,6 +11,7 @@
 }
 }
 
+/****** Réservez ***********/
 .reservation {
     @include flex(column, center, $align:center);
     background-color:$first-background-color;
@@ -27,6 +29,22 @@
     }  
 }
 
+/****** Fonctionnement ***********/
+.fonction {
+    @include flex(column, initial, $align:initial);
+    gap: 20px;
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 60px;
+
+        &__buttons-container {
+            @include flex(column, initial, $align:initial);
+            gap: 25px;
+            }
+}
+
+/****** Restaurants ***********/
 .restaurants {
     @include flex(column, center, $align:center);
     background-color: $first-background-color;
