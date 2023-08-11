@@ -4,7 +4,7 @@
     border-radius: 15px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
     transition: box-shadow, transform, 0.5s;
-    margin: 10px;
+    position: relative;
 
     &__picture {
         object-fit: cover;
@@ -21,9 +21,8 @@
 
         &__like-icon {
             position: absolute;
-            left: 345px;
-            bottom: -300px;
-            width: 26px;
+            left: 320px;
+            bottom: 30px;
         }
 }
 

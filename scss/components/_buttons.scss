@@ -32,6 +32,8 @@
 
                 &__number {
                     @include flex ($direction:initial, $justify:center, $align:center, $gap:initial);
+                    position: absolute;
+                    left: 10px;
                     color: white;
                     background-color: $purple-color;
                     width: 24px;
@@ -41,6 +43,9 @@
                 
                 &__icon {
                     color: $icons-color;
+                    &:hover{
+                        color:$purple-color;
+                    }
                 }
                 
         }

@@ -53,10 +53,7 @@
 .restaurants {
     @include flex(column, center, $align:center);
     background-color: $first-background-color;
-    padding-top: 50px;
-    padding-right: 15px;
-    padding-left: 15px;
-    padding-bottom: 50px;
+    padding: 1em;
 
         &__title {
         padding-left: 3px;
@@ -68,6 +65,7 @@
         @include flex(column, center, $align:center);
         width: 100%;
         max-width: 1080px;
+        gap: 1em;
         }
 
         &__card-link{

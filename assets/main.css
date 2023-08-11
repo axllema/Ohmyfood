@@ -96,6 +96,8 @@ footer {
   justify-content: center;
   align-items: center;
   gap: initial;
+  position: absolute;
+  left: 10px;
   color: white;
   background-color: #9356dc;
   width: 24px;
@@ -105,6 +107,9 @@ footer {
 .button-2__link__icon {
   color: #7a7a7a;
 }
+.button-2__link__icon:hover {
+  color: #9356dc;
+}
 
 .card {
   width: 100%;
@@ -112,7 +117,7 @@ footer {
   border-radius: 15px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   transition: box-shadow, transform, 0.5s;
-  margin: 10px;
+  position: relative;
 }
 .card__picture {
   -o-object-fit: cover;
@@ -129,9 +134,8 @@ footer {
 }
 .card__like-icon {
   position: absolute;
-  left: 345px;
-  bottom: -300px;
-  width: 26px;
+  left: 320px;
+  bottom: 30px;
 }
 
 footer {
@@ -147,7 +151,6 @@ footer {
    align-items: flex-start;
     ***********/
   padding: 15px;
-  margin-top: 50px;
 }
 footer .footer {
   display: flex;
@@ -267,10 +270,7 @@ footer .footer__list {
   align-items: center;
   gap: initial;
   background-color: #F3F3F3;
-  padding-top: 50px;
-  padding-right: 15px;
-  padding-left: 15px;
-  padding-bottom: 50px;
+  padding: 1em;
 }
 .restaurants__title {
   padding-left: 3px;
@@ -285,6 +285,7 @@ footer .footer__list {
   gap: initial;
   width: 100%;
   max-width: 1080px;
+  gap: 1em;
 }
 .restaurants__card-link {
   width: 100%;
