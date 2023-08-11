@@ -127,6 +127,12 @@ footer {
   gap: 5px;
   padding: 0 25px 0 13px;
 }
+.card__like-icon {
+  position: absolute;
+  left: 345px;
+  bottom: -300px;
+  width: 26px;
+}
 
 footer {
   display: flex;
