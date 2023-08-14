@@ -131,11 +131,21 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  padding: 0 25px 0 13px;
+  padding: 10px 25px 15px 13px;
+}
+.card__title {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+}
+.card__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
 }
 .card__like-icon {
   position: absolute;
-  left: 290px;
+  left: 340px;
   bottom: 30px;
 }
 
@@ -275,6 +285,7 @@ footer .footer__list {
 }
 .restaurants__title {
   padding-left: 3px;
+  padding-bottom: 20px;
   width: 100%;
   max-width: 1080px;
 }
