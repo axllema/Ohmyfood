@@ -48,6 +48,70 @@ footer {
   color: white;
 }
 
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: initial;
+  /****** Colors
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+    ***********/
+  padding: 15px;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: initial;
+  gap: 16px;
+  width: 100%;
+  padding: 22px 25px;
+  max-width: 1440px;
+  color: white;
+}
+footer .footer__logo {
+  display: flex;
+  flex-direction: initial;
+  justify-content: initial;
+  align-items: initial;
+  gap: initial;
+  width: 5em;
+  height: auto;
+  filter: invert(1);
+  padding-top: 10px;
+}
+footer .footer__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  gap: 7px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  gap: 7px;
+  padding-top: 16px;
+  list-style: none;
+}
+
+.header__logo-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.header__logo-container__logo {
+  display: flex;
+  justify-content: center;
+  width: 7em;
+  height: auto;
+}
+
 .button-1 {
   display: flex;
   flex-direction: row;
@@ -176,69 +240,6 @@ footer {
   bottom: 30px;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: initial;
-  /****** Colors
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: flex-start;
-    ***********/
-  padding: 15px;
-}
-footer .footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: initial;
-  gap: 16px;
-  width: 100%;
-  padding: 22px 25px;
-  max-width: 1440px;
-  color: white;
-}
-footer .footer__logo {
-  display: flex;
-  flex-direction: initial;
-  justify-content: initial;
-  align-items: initial;
-  gap: initial;
-  width: 5em;
-  height: auto;
-  filter: invert(1);
-}
-footer .footer__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: initial;
-  align-items: initial;
-  gap: 7px;
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  gap: 7px;
-  padding-top: 16px;
-  list-style: none;
-}
-
-.header__logo-container {
-  background-color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-}
-.header__logo-container__logo {
-  display: flex;
-  justify-content: center;
-  width: 7em;
-  height: auto;
-}
-
 /****** Place ***********/
 .place-container {
   display: flex;
@@ -335,4 +336,14 @@ footer .footer__list {
 .restaurants__card-link {
   width: 100%;
   position: inherit;
+}
+
+.restaurant-page {
+  background-color: white;
+}
+.restaurant-page__picture {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 275px;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
