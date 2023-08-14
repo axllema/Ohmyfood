@@ -9,8 +9,14 @@
     font-size: 15px;
     color: white;
     background: linear-gradient(to top,$gradient-first-color, $gradient-second-color);
+    box-shadow: 0px 4px 10px $shadow-color;
     margin-top: 20px;
     margin-bottom: 40px;
+
+        &:hover{
+            filter: brightness(120%);
+            box-shadow: 0px 4px 10px $shadow-color;
+        }
 }
 
 .button-2 {
