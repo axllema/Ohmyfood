@@ -5,15 +5,14 @@
 @import "../scss/base/elements";
 @import "../scss/base/general";
 
+@import "../scss/layout/footer";
+@import "../scss/layout/header";
+
 @import "../scss/components/buttons";
 @import "../scss/components/card";
 @import "../scss/components/form";
 @import "../scss/components/heart";
 @import "../scss/components/loader";
-
-@import "../scss/layout/footer";
-@import "../scss/layout/header";
-
 
 @import "../scss/pages/homepage";
 @import "../scss/pages/restaurants";

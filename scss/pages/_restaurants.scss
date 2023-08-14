@@ -1,0 +1,7 @@
+.restaurant-page {
+    background-color: white;
+    &__picture {
+      object-fit: cover;
+      height: 275px;
+      width: 100%;
+    } }
