@@ -18,15 +18,17 @@ footer {
         
         &__logo {
             @include flex;
-            width: 7em;
+            width: 5em;
             height: auto;
             filter: invert(1);
         }
 
         &__list {
+            @include flex(column, initial, initial, 7px);
             font-family: $main-font;
             font-size: 16px;
-            gap: 10px;
+            gap: 7px;
+            padding-top: 16px;
             list-style: none;
         }
 }
