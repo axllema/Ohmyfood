@@ -338,10 +338,10 @@ footer .footer__list {
   position: inherit;
 }
 
-.restaurant-page {
+.restaurant-onlycard {
   background-color: white;
 }
-.restaurant-page__picture {
+.restaurant-onlycard__picture {
   -o-object-fit: cover;
      object-fit: cover;
   height: 275px;
