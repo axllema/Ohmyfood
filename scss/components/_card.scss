@@ -2,9 +2,31 @@
     width: 100%;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    transition: box-shadow, transform, 0.5s;
     position: relative;
+    &:hover {
+        transition: box-shadow, transform, 0.5s;
+        box-shadow: 0px 4px 15px $shadow-color;
+    }
+
+    &--new {
+        position: absolute;
+        right: 4%;
+        top: 6%;
+        width: 80px;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        font-size: 17px;
+        background-color: #99E2D0;
+        color: $green-color;
+        border-radius: 2px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+            &:hover {
+            transition: box-shadow, transform, 0.5s;
+            box-shadow: 1px 4px 20px rgba($green-color, 0.3);
+            background-color: $mint-color;
+      }  
+    }  
 
     &__picture {
         object-fit: cover;
