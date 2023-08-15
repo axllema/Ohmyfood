@@ -25,7 +25,7 @@
 
       &__like-icon{
         position: absolute;
-        right: 20px;
+        right: 28px;
         top: 30px;
       }
 }
@@ -58,19 +58,24 @@
 
    &__subtitle{
       font-family: $main-font;
-      font-size: 23px;
+      font-size: 20px;
       font-weight: $semi-bold;
+      /* top | right | bottom | left */
+      padding: 20px 0px 0px 0px;
     }
 
     &__description{
       font-family: $main-font;
-      font-size: 20px;
+      font-size: 17px;
       font-weight: $thin;
     }
 
     &__price{
+      position: absolute;
+      left: 349px;
+      bottom: 13px;
       font-family: $main-font;
-      font-size: 20px;
       font-weight: $semi-bold;
+      font-size: 17px;
 }
 }
