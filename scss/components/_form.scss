@@ -1,0 +1,28 @@
+/* # - Form ---------------------------------- # */
+.restaurant-onlycard {
+    //<-- insert here form parents containers
+    .form {
+      background: $second-background-color;
+      margin: 0 auto;
+      @include flex($direction: column, $gap: 12px);
+      input[type="radio"] {
+        display: none;
+      }
+
+      label {
+        @include flex(column, space-between, initial, 0);
+        position: relative;
+        height: 69px;
+        margin: 0 3.47vw;
+        padding: 0 15px;
+        border-radius: 15px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        background-color: white;
+        transition: box-shadow 0.5s;
+
+      button {
+        margin: 28px auto 40px auto;
+      }
+    }
+  }
+}
