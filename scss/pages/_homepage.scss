@@ -24,14 +24,11 @@
     
         &__title {
             margin-bottom: 12px;
-            font-weight: $bold;
-            font-size: 23px;
         }
 
         &__content {
             @include flex(row, center);
-            font-weight: $regular;
-            font-size: 15px;
+            font-weight: $thin;
             margin-bottom: 12px;
         }
     }  
