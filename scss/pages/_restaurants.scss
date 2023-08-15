@@ -49,10 +49,28 @@
   }
     &--line{
       position: absolute;
-      right: 365px;
+      right: 348px;
       top: 445px;
       width: 52px;
       height: 3px;
       background-color: $mint-color;
     }
+
+   &__subtitle{
+      font-family: $main-font;
+      font-size: 23px;
+      font-weight: $semi-bold;
+    }
+
+    &__description{
+      font-family: $main-font;
+      font-size: 20px;
+      font-weight: $thin;
+    }
+
+    &__price{
+      font-family: $main-font;
+      font-size: 20px;
+      font-weight: $semi-bold;
+}
 }
