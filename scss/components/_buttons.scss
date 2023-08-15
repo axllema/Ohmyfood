@@ -10,8 +10,7 @@
     color: white;
     background: linear-gradient(to top,$gradient-first-color, $gradient-second-color);
     box-shadow: 0px 4px 10px $shadow-color;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin: 20px auto 40px auto;
 
         &:hover{
             filter: brightness(110%);
@@ -25,6 +24,9 @@
     font-size: 16px;
     font-weight: 500;
     width: 100%;
+    &:hover i {
+        color:$purple-color;
+    }
 
         &__link {
             @include flex($align: center, $gap: 23px);
@@ -49,9 +51,6 @@
                 
                 &__icon {
                     color: $icons-color;
-                    &:hover{
-                        color:$purple-color;
-                    }
                 }
                 
         }

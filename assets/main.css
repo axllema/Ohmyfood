@@ -139,8 +139,7 @@ footer .footer__list {
   color: white;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-  margin-top: 20px;
-  margin-bottom: 40px;
+  margin: 20px auto 40px auto;
 }
 .button-1:hover {
   filter: brightness(110%);
@@ -157,6 +156,9 @@ footer .footer__list {
   font-size: 16px;
   font-weight: 500;
   width: 100%;
+}
+.button-2:hover i {
+  color: #9356dc;
 }
 .button-2__link {
   display: flex;
@@ -188,9 +190,6 @@ footer .footer__list {
 }
 .button-2__link__icon {
   color: #7a7a7a;
-}
-.button-2__link__icon:hover {
-  color: #9356dc;
 }
 
 .card {
@@ -266,7 +265,7 @@ footer .footer__list {
 .restaurant-onlycard .form label {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: initial;
   gap: 0;
   position: relative;
@@ -335,6 +334,12 @@ footer .footer__list {
   font-weight: 500;
   font-size: 16px;
   width: 110px;
+}
+.place-container__location__localisation::-moz-placeholder {
+  color: black;
+}
+.place-container__location__localisation::placeholder {
+  color: black;
 }
 
 /****** Réservez ***********/
@@ -476,11 +481,12 @@ footer .footer__list {
   text-transform: uppercase;
   /* top | right | bottom | left */
   margin: 40px 0px 0px 15px;
+  position: relative;
 }
 .restaurant-onylcard__form--line {
   position: absolute;
   right: 348px;
-  top: 445px;
+  top: 27px;
   width: 52px;
   height: 3px;
   background-color: #99E2D0;
@@ -489,8 +495,6 @@ footer .footer__list {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 500;
-  /* top | right | bottom | left */
-  padding: 20px 0px 0px 0px;
 }
 .restaurant-onylcard__form__description {
   font-family: "Roboto", sans-serif;

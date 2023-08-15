@@ -9,7 +9,7 @@
       }
 
       label {
-        @include flex(column, space-between, initial, 0);
+        @include flex(column, center, initial, 0);
         position: relative;
         height: 70px;
         margin: 0 12px;

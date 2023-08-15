@@ -46,11 +46,12 @@
     text-transform: uppercase;
     /* top | right | bottom | left */
     margin: 40px 0px 0px 15px;
+    position: relative;
   }
     &--line{
       position: absolute;
       right: 348px;
-      top: 445px;
+      top: 27px;
       width: 52px;
       height: 3px;
       background-color: $mint-color;
@@ -60,8 +61,6 @@
       font-family: $main-font;
       font-size: 20px;
       font-weight: $semi-bold;
-      /* top | right | bottom | left */
-      padding: 20px 0px 0px 0px;
     }
 
     &__description{
