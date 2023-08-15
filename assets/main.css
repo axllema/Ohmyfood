@@ -100,10 +100,14 @@ footer .footer__list {
 .header__logo-container {
   background-color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 10px;
+}
+.header__logo-container__arrow {
+  position: absolute;
+  left: 20px;
 }
 .header__logo-container__logo {
   display: flex;
@@ -346,4 +350,48 @@ footer .footer__list {
      object-fit: cover;
   height: 275px;
   width: 100%;
+}
+.restaurant-onlycard__top {
+  display: flex;
+  flex-direction: initial;
+  justify-content: space-between;
+  align-items: initial;
+  gap: initial;
+  max-width: 1055px;
+  position: relative;
+  margin-top: -40px;
+  padding: 20px;
+  border-radius: 40px 40px 0 0;
+  z-index: 1;
+  background: #f6f6f6;
+}
+.restaurant-onlycard__title {
+  font-family: "Shrikhand", cursive;
+  font-size: 30px;
+  font-weight: 400;
+}
+.restaurant-onlycard__like-icon {
+  position: absolute;
+  right: 20px;
+  top: 30px;
+}
+
+.restaurant-onylcard__form {
+  background: #f6f6f6;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+  align-items: initial;
+  gap: 12px;
+}
+.restaurant-onylcard__form__title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: initial;
+  gap: initial;
+  height: 27px;
+  margin-top: 40px;
+  margin-left: 3.4vw;
 }/*# sourceMappingURL=main.css.map */

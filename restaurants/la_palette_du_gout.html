@@ -15,10 +15,10 @@
 <body>
     <header class="header">
         <div class="header__logo-container">
-            <a class="header__back-arrow" href="../index.html">
-                <i class=" fa-solid fa-arrow-left"></i>
+            <a class="header__logo-container__arrow" href="../index.html">
+                <i class="fa-solid fa-arrow-left"></i>
             </a>
-            <a href="../index.html"> <img class="header__logo" src="../assets/logo/ohmyfood@2x.svg" alt="Logo de Ohmyfood"></a>
+            <a href="../index.html"> <img class="header__logo-container__logo" src="../assets/logo/ohmyfood@2x.svg" alt="Logo de Ohmyfood"></a>
         </div>
     </header>
 
@@ -28,16 +28,15 @@
         <img class="restaurant-onlycard__picture"
             src="../assets/images/palette_gout.jpg"
             alt="">
-        <div class="restaurant-onlycard__headline">
+        <div class="restaurant-onlycard__top">
             <h2 class="restaurant-onlycard__title">La palette du goût</h2>
-            <div class="restaurant-onlycard__like-icon-container">
-                <i class="empty-heart fa-regular fa-heart card__like-icon"></i>
-            </div>
+                <i class="restaurant-onlycard__like-icon empty-heart fa-regular fa-heart"></i>
+
         </div>
 
-        <form class=" restaurant-onylcard__form form" method="get" action="#">
+        <form class="restaurant-onylcard__form" method="get" action="#">
         <!-- 1 -->
-            <h2 class="form__title">Entrées</h2>
+            <h2 class="restaurant-onylcard__form__title">Entrées</h2>
             <input id="starter_choice-1" type="radio" name="starter_choice" value="1">
             <label for="starter_choice-1">
                 <span class="form__subtitle">Fricassée d'escargots</span>
