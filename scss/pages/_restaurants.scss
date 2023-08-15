@@ -20,7 +20,7 @@
       &__title{
         font-family: $title-font;
         font-size: 30px;
-        font-weight: 400;
+        font-weight: $regular;
       }
 
       &__like-icon{
@@ -40,12 +40,12 @@
   &__title{
     @include flex(column, space-between,initial, initial);
     height: 27px;
-    margin-top: 40px;
-    margin-left: 15px;
     font-family: $main-font;
     font-size: 20px;
-    font-weight: 300;
+    font-weight: $thin;
     text-transform: uppercase;
+    /* top | right | bottom | left */
+    margin: 40px 0px 0px 15px;
   }
     &--line{
       position: absolute;
