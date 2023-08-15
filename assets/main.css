@@ -326,8 +326,7 @@ footer .footer__list {
   gap: initial;
   background-color: #F3F3F3;
   text-align: center;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 40px 0px 15px 0px;
 }
 .reservation__title {
   margin-bottom: 12px;
@@ -358,7 +357,8 @@ footer .footer__list {
   padding-bottom: 60px;
 }
 .fonction__title {
-  font-size: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 .fonction__buttons-container {
   display: flex;
@@ -377,14 +377,15 @@ footer .footer__list {
   align-items: center;
   gap: initial;
   background-color: #F3F3F3;
-  padding: 1em;
+  padding: 1em 1em 55px 1em;
 }
 .restaurants__title {
-  padding-left: 3px;
-  padding-bottom: 20px;
+  padding: 25px 0px 20px 3px;
+  /* top | right | bottom | left */
   width: 100%;
   max-width: 1080px;
-  font-size: 700;
+  font-size: 30px;
+  font-weight: 700;
 }
 .restaurants__cards-container {
   display: flex;
