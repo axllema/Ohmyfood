@@ -12,10 +12,17 @@ $icons-color: #7a7a7a;
 $green-color: #19846a;
 
 /****** Fonts ***********/
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.google.com/share?selection.family=Roboto:wght@300;400;500;700;900');
 $main-font: "Roboto", sans-serif;
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap');
+@import url('https://fonts.google.com/share?selection.family=Shrikhand');
 $title-font: "Shrikhand", cursive;
+
+/****** Fonts weight ***********/
+$thin: 300;
+$regular: 400; 
+$semi-bold: 500;
+$bold: 700;
+
 
 /****** Gradient ***********/
 $gradient-first-color: #9356DC;

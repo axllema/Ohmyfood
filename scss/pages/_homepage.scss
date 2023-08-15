@@ -7,9 +7,9 @@
 
     &__location__localisation{
         background-color: $third-background-color;
-        font-size: 16px;
         font-family: $main-font;
-        font-weight: 500;
+        font-weight: $semi-bold;
+        font-size: 16px;
         width: 110px;   
     }
 }
@@ -24,13 +24,14 @@
     
         &__title {
             margin-bottom: 12px;
-            font-weight: bold;
+            font-weight: $bold;
             font-size: 23px;
             
         }
 
         &__content {
             @include flex(row, center);
+            font-weight: $regular;
             font-size: 15px;
             margin-bottom: 12px;
         }
@@ -46,10 +47,14 @@
     padding-right: 20px;
     padding-bottom: 60px;
 
-        &__buttons-container {
-            @include flex(column, initial, $align:initial);
-            gap: 25px;
-            }
+    &__title {
+        font-size: $bold;
+        }
+
+    &__buttons-container {
+        @include flex(column, initial, $align:initial);
+        gap: 25px;
+        }
 }
 
 /****** Restaurants ***********/
@@ -63,6 +68,7 @@
         padding-bottom: 20px;
         width: 100%;
         max-width: 1080px;
+        font-size: $bold;
         }
   
         &__cards-container {

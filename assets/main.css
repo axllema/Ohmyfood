@@ -1,6 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
+@import url("https://fonts.google.com/share?selection.family=Roboto:wght@300;400;500;700;900");
+@import url("https://fonts.google.com/share?selection.family=Shrikhand");
 .restaurant .card__like-icon:hover,
 .restaurant-onylcard .card__like-icon:hover,
 .card .card__like-icon:hover {
@@ -10,6 +10,7 @@
 /****** Colors ***********/
 /****** Card--new ***********/
 /****** Fonts ***********/
+/****** Fonts weight ***********/
 /****** Gradient ***********/
 /****** Shadow ***********/
 /****** Loader colors ***********/
@@ -246,7 +247,7 @@ footer .footer__list {
 }
 .card__like-icon {
   position: absolute;
-  left: 340px;
+  left: 330px;
   bottom: 30px;
 }
 
@@ -310,9 +311,9 @@ footer .footer__list {
 }
 .place-container__location__localisation {
   background-color: #EAEAEA;
-  font-size: 16px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  font-size: 16px;
   width: 110px;
 }
 
@@ -330,7 +331,7 @@ footer .footer__list {
 }
 .reservation__title {
   margin-bottom: 12px;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 23px;
 }
 .reservation__content {
@@ -339,6 +340,7 @@ footer .footer__list {
   justify-content: center;
   align-items: initial;
   gap: initial;
+  font-weight: 400;
   font-size: 15px;
   margin-bottom: 12px;
 }
@@ -354,6 +356,9 @@ footer .footer__list {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 60px;
+}
+.fonction__title {
+  font-size: 700;
 }
 .fonction__buttons-container {
   display: flex;
@@ -379,6 +384,7 @@ footer .footer__list {
   padding-bottom: 20px;
   width: 100%;
   max-width: 1080px;
+  font-size: 700;
 }
 .restaurants__cards-container {
   display: flex;
