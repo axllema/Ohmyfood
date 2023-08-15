@@ -450,12 +450,12 @@ footer .footer__list {
   align-items: initial;
   gap: initial;
   height: 27px;
-  margin-top: 40px;
-  margin-left: 15px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: 300;
   text-transform: uppercase;
+  /* top | right | bottom | left */
+  margin: 40px 0px 0px 15px;
 }
 .restaurant-onylcard__form--line {
   position: absolute;
