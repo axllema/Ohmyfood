@@ -158,6 +158,17 @@ footer .footer__list {
   font-weight: 500;
   width: 100%;
 }
+@media (min-width: 1024px) {
+  .button-2 {
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+    align-items: initial;
+    gap: initial;
+    width: 100%;
+    max-width: 335px;
+  }
+}
 .button-2:hover i {
   color: #9356dc;
 }
@@ -384,14 +395,20 @@ footer .footer__list {
   .fonction {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: initial;
-    gap: 25px;
+    justify-content: initial;
+    align-items: center;
+    gap: 24px;
   }
 }
 .fonction__title {
   font-size: 30px;
   font-weight: 700;
+}
+@media (min-width: 1024px) {
+  .fonction__title {
+    width: 100%;
+    max-width: 1100px;
+  }
 }
 .fonction__buttons-container {
   display: flex;
@@ -403,14 +420,12 @@ footer .footer__list {
 }
 @media (min-width: 1024px) {
   .fonction__buttons-container {
-    /****** ($direction: initial, $justify: initial, $align: initial, $gap: initial) ***********/
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: initial;
-    gap: 20px;
+    gap: 24px;
     width: 100%;
-    max-width: 1053px;
   }
 }
 
@@ -423,6 +438,11 @@ footer .footer__list {
   gap: initial;
   background-color: #F3F3F3;
   padding: 1em 1em 55px 1em;
+}
+@media (min-width: 1024px) {
+  .restaurants {
+    padding-top: 30px;
+  }
 }
 .restaurants__title {
   padding: 25px 0px 20px 3px;
@@ -470,6 +490,11 @@ footer .footer__list {
   z-index: 1;
   background: #f6f6f6;
 }
+@media (min-width: 1024px) {
+  .restaurant-onlycard__top {
+    padding: 0px 365px 0px 365px;
+  }
+}
 .restaurant-onlycard__title {
   font-family: "Shrikhand", cursive;
   font-size: 30px;
@@ -479,6 +504,11 @@ footer .footer__list {
   position: absolute;
   right: 28px;
   top: 30px;
+}
+@media (min-width: 1024px) {
+  .restaurant-onlycard__like-icon {
+    right: 710px;
+  }
 }
 
 .restaurant-onylcard__form {
@@ -490,6 +520,12 @@ footer .footer__list {
   background: #f6f6f6;
   margin: 0 auto;
   gap: 12px;
+}
+@media (min-width: 1024px) {
+  .restaurant-onylcard__form {
+    padding: 0px 210px 0px 210px;
+    max-width: 1055px;
+  }
 }
 .restaurant-onylcard__form__title {
   display: flex;
