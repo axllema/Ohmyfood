@@ -62,6 +62,7 @@
     &__buttons-container {
         @include flex(column, initial, $align:initial);
         gap: 25px;
+        padding-left: 10px;
 
         @include for-size(desktop) {
             @include flex($direction: row, $justify: center, $gap: 24px);

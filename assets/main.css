@@ -462,6 +462,7 @@ footer .footer__list {
   align-items: initial;
   gap: initial;
   gap: 25px;
+  padding-left: 10px;
 }
 @media (min-width: 1024px) {
   .fonction__buttons-container {
