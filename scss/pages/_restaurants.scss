@@ -15,10 +15,6 @@
           border-radius: 40px 40px 0 0;
           z-index: 1;
           background: #f6f6f6;
-
-          @include for-size(desktop) {
-            padding: 0px 365px 0px 365px;
-      }
     }
 
 
@@ -32,9 +28,6 @@
         position: absolute;
         right: 28px;
         top: 30px;
-        @include for-size(desktop) {
-          right: 710px;
-    }
       }
 }
 
@@ -43,11 +36,6 @@
   background: #f6f6f6;
   margin: 0 auto;
   gap: 12px;
-  @include for-size(desktop) {
-    padding: 0px 210px 0px 210px;
-    max-width: 1055px;
-}
-
 
   &__title{
     @include flex(column, space-between,initial, initial);

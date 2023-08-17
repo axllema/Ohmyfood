@@ -33,7 +33,11 @@
         height: calc(250px - 75px);
         width: 100%;
         border-radius: 15px 15px 0 0;
+        @include for-size(tablet){
+        height: 220px;
     }
+    }
+    
     &__content {
         display: flex;
         flex-direction: column;

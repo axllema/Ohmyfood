@@ -6,7 +6,16 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
      ***********/
-    padding: 15px;
+    padding-left: 15px;
+    padding-top : 10px;
+    padding-bottom: 15px;
+    @include for-size(tablet) {
+        @include flex(row-reverse, initial, flex-end, 10px);
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+
+
 
     .footer {
         @include flex(column, flex-start, initial, 16px);
@@ -14,7 +23,6 @@ footer {
         padding: 22px 25px;
         max-width: 1440px;
         color: $footer-font-color;
-    
         
         &__logo {
             @include flex;
@@ -22,15 +30,32 @@ footer {
             height: auto;
             filter: invert(1);
             padding-top: 10px;
+            @include for-size(tablet) {
+            width: 4.5Em;
+            padding-right: 30px;
+        }
+        @include for-size(desktop) {
+            width: 4.5Em;
+            padding-right: 40px;
+            padding-left: 40px;
+        }
         }
 
         &__list {
             @include flex(column, initial, initial, 7px);
             font-family: $main-font;
             font-size: 16px;
-            gap: 7px;
             padding-top: 16px;
             list-style: none;
+            @include for-size(desktop) {
+                width: 100%;
+                gap: 30px;
+
+            }
+            @include for-size(tablet) {
+                @include flex(row, flex-end, flex-end, 16px);
+            }
         }
+
 }
 }

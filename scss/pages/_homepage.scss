@@ -67,6 +67,9 @@
             @include flex($direction: row, $justify: center, $gap: 24px);
             width: 100%;
         }
+        @include for-size(tablet) {
+            padding-left: 50px;
+        }
           }
         }
 
