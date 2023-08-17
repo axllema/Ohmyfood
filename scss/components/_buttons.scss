@@ -30,6 +30,7 @@
 
         &__link {
             @include flex($align: center, $gap: 23px);
+            position: relative;
             width: 100%;
             border-radius: 25px;
             padding-left: 24px;
@@ -41,7 +42,7 @@
                 &__number {
                     @include flex ($direction:initial, $justify:center, $align:center, $gap:initial);
                     position: absolute;
-                    left: 10px;
+                    left: -12px;
                     color: white;
                     background-color: $purple-color;
                     width: 24px;

@@ -45,6 +45,9 @@
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 60px;
+    @include for-size(desktop) {
+        @include flex(column, center, $gap: 25px);
+      }
 
     &__title {
         font-size: 30px;
@@ -54,6 +57,12 @@
     &__buttons-container {
         @include flex(column, initial, $align:initial);
         gap: 25px;
+        @include for-size(desktop) {
+           /****** ($direction: initial, $justify: initial, $align: initial, $gap: initial) ***********/
+            @include flex(row, center, $align:initial, $gap: 20px);
+            width: 100%;
+            max-width: calc(3 * 335px + 2 * 24px);
+          }
         }
 }
 

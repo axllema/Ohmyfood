@@ -7,6 +7,7 @@
   background: linear-gradient(#9356DC, #FF79DA);
 }
 
+/****** Media Queries ***********/
 /****** Colors ***********/
 /****** Card--new ***********/
 /****** Fonts ***********/
@@ -166,6 +167,7 @@ footer .footer__list {
   justify-content: initial;
   align-items: center;
   gap: 23px;
+  position: relative;
   width: 100%;
   border-radius: 25px;
   padding-left: 24px;
@@ -181,7 +183,7 @@ footer .footer__list {
   align-items: center;
   gap: initial;
   position: absolute;
-  left: 10px;
+  left: -12px;
   color: white;
   background-color: #9356dc;
   width: 24px;
@@ -378,6 +380,15 @@ footer .footer__list {
   padding-right: 20px;
   padding-bottom: 60px;
 }
+@media (min-width: 1024px) {
+  .fonction {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: initial;
+    gap: 25px;
+  }
+}
 .fonction__title {
   font-size: 30px;
   font-weight: 700;
@@ -389,6 +400,18 @@ footer .footer__list {
   align-items: initial;
   gap: initial;
   gap: 25px;
+}
+@media (min-width: 1024px) {
+  .fonction__buttons-container {
+    /****** ($direction: initial, $justify: initial, $align: initial, $gap: initial) ***********/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: initial;
+    gap: 20px;
+    width: 100%;
+    max-width: 1053px;
+  }
 }
 
 /****** Restaurants ***********/

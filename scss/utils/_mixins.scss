@@ -11,3 +11,24 @@
     align-items: $align;
     gap: $gap;
  }
+
+/****** Media Queries ***********/
+ @mixin for-size($size) {
+  @if $size == mobile {
+    @media (min-width: 375px) {
+      @content;
+    }
+  } @else if $size == tablet {
+    @media (min-width: 481px) {
+      @content;
+    }
+  } @else if $size == laptop {
+    @media (min-width: 769px) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+}
