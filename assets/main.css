@@ -281,11 +281,6 @@ footer .footer__list {
   width: 100%;
   border-radius: 15px 15px 0 0;
 }
-@media (min-width: 768px) {
-  .card__picture {
-    height: 220px;
-  }
-}
 .card__content {
   display: flex;
   flex-direction: column;
@@ -306,6 +301,11 @@ footer .footer__list {
   position: absolute;
   left: 330px;
   bottom: 30px;
+}
+@media (min-width: 1024px) {
+  .card__like-icon {
+    left: 375px;
+  }
 }
 
 .restaurant-onlycard .form {
@@ -471,11 +471,12 @@ footer .footer__list {
     align-items: initial;
     gap: 24px;
     width: 100%;
+    gap: 35px;
   }
 }
 @media (min-width: 768px) {
   .fonction__buttons-container {
-    padding-left: 50px;
+    padding-left: 22px;
   }
 }
 
@@ -512,9 +513,23 @@ footer .footer__list {
   max-width: 1080px;
   gap: 1em;
 }
+@media (min-width: 1024px) {
+  .restaurants__cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 60px;
+    padding-top: 10px;
+  }
+}
 .restaurants__card-link {
   width: 100%;
   position: inherit;
+}
+@media (min-width: 1024px) {
+  .restaurants__card-link {
+    width: 40%;
+  }
 }
 
 .restaurant-onlycard {
