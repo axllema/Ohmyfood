@@ -50,6 +50,11 @@ input {
   border: none;
 }
 
+.form {
+  background: #F7F7F7;
+  margin: 0 auto;
+}
+
 footer {
   background-color: #353535;
   color: white;
@@ -321,6 +326,12 @@ footer .footer__list {
   left: 270px;
   bottom: 30px;
 }
+@media (min-width: 420px) {
+  .card__like-icon {
+    display: block;
+    left: 314px;
+  }
+}
 @media (min-width: 768px) {
   .card__like-icon {
     display: block;
@@ -341,8 +352,6 @@ footer .footer__list {
 }
 
 .restaurant-onlycard .form {
-  background: #F7F7F7;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: initial;
@@ -351,6 +360,15 @@ footer .footer__list {
 }
 .restaurant-onlycard .form input[type=radio] {
   display: none;
+}
+@media (min-width: 768px) {
+  .restaurant-onlycard .form {
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: center;
+    gap: 12px;
+  }
 }
 .restaurant-onlycard .form label {
   display: flex;
@@ -366,6 +384,11 @@ footer .footer__list {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   background-color: white;
   transition: box-shadow 0.5s;
+}
+@media (min-width: 768px) {
+  .restaurant-onlycard .form label {
+    width: 80%;
+  }
 }
 .restaurant-onlycard .form label button {
   margin: 28px auto 40px auto;
@@ -454,6 +477,7 @@ footer .footer__list {
   gap: initial;
   font-weight: 300;
   margin-bottom: 12px;
+  font-size: 20px;
 }
 
 /****** Fonctionnement ***********/
@@ -593,15 +617,25 @@ footer .footer__list {
   z-index: 1;
   background: #f6f6f6;
 }
+@media (min-width: 768px) {
+  .restaurant-onlycard__top {
+    justify-content: center;
+  }
+}
 .restaurant-onlycard__title {
   font-family: "Shrikhand", cursive;
-  font-size: 30px;
+  font-size: 26px;
   font-weight: 400;
 }
 .restaurant-onlycard__like-icon {
   position: absolute;
   right: 28px;
-  top: 30px;
+  top: 27px;
+}
+@media (min-width: 768px) {
+  .restaurant-onlycard__like-icon {
+    right: 215px;
+  }
 }
 
 .restaurant-onylcard__form {
@@ -629,6 +663,12 @@ footer .footer__list {
   margin: 40px 0px 0px 15px;
   position: relative;
 }
+@media (min-width: 768px) {
+  .restaurant-onylcard__form__title {
+    margin-top: 40px;
+    margin-left: 0px;
+  }
+}
 .restaurant-onylcard__form--line {
   position: absolute;
   right: 293px;
@@ -636,6 +676,16 @@ footer .footer__list {
   width: 52px;
   height: 3px;
   background-color: #99E2D0;
+}
+@media (min-width: 420px) {
+  .restaurant-onylcard__form--line {
+    right: 338px;
+  }
+}
+@media (min-width: 768px) {
+  .restaurant-onylcard__form--line {
+    right: 33px;
+  }
 }
 .restaurant-onylcard__form__subtitle {
   font-family: "Roboto", sans-serif;
@@ -649,9 +699,19 @@ footer .footer__list {
 }
 .restaurant-onylcard__form__price {
   position: absolute;
-  left: 349px;
+  left: 295px;
   bottom: 13px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 17px;
+}
+@media (min-width: 420px) {
+  .restaurant-onylcard__form__price {
+    left: 339px;
+  }
+}
+@media (min-width: 768px) {
+  .restaurant-onylcard__form__price {
+    left: 580px;
+  }
 }/*# sourceMappingURL=main.css.map */

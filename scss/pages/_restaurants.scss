@@ -15,19 +15,32 @@
           border-radius: 40px 40px 0 0;
           z-index: 1;
           background: #f6f6f6;
+      
+          @include for-size(tablet){
+            justify-content: center;
+          }
+      
+          @include for-size(desktop){
+          }
+      
+          @include for-size(desktop-large){
+          }
     }
-
 
       &__title{
         font-family: $title-font;
-        font-size: 30px;
+        font-size: 26px;
         font-weight: $regular;
       }
 
       &__like-icon{
         position: absolute;
         right: 28px;
-        top: 30px;
+        top: 27px;
+
+        @include for-size(tablet){
+          right: 215px;
+        }
       }
 }
 
@@ -36,6 +49,9 @@
   background: #f6f6f6;
   margin: 0 auto;
   gap: 12px;
+
+  @include for-size(desktop-large){
+  }  
 
   &__title{
     @include flex(column, space-between,initial, initial);
@@ -47,7 +63,13 @@
     /* top | right | bottom | left */
     margin: 40px 0px 0px 15px;
     position: relative;
+
+    @include for-size(tablet){
+      margin-top : 40px;
+      margin-left: 0px;
+    }
   }
+
     &--line{
       position: absolute;
       right: 293px;
@@ -55,6 +77,20 @@
       width: 52px;
       height: 3px;
       background-color: $mint-color;
+
+      @include for-size(mobile-medium){
+        right: 338px;
+      }
+  
+      @include for-size(tablet){
+        right: 33px;
+      }
+  
+      @include for-size(desktop){
+      }
+  
+      @include for-size(desktop-large){
+      }
     }
 
    &__subtitle{
@@ -71,10 +107,24 @@
 
     &__price{
       position: absolute;
-      left: 349px;
+      left: 295px;
       bottom: 13px;
       font-family: $main-font;
       font-weight: $semi-bold;
       font-size: 17px;
+
+    @include for-size(mobile-medium){
+      left: 339px;
+    }
+
+    @include for-size(tablet){
+      left: 580px;
+    }
+
+    @include for-size(desktop){
+    }
+
+    @include for-size(desktop-large){
+    }
 }
 }

@@ -60,6 +60,11 @@
             left: 270px;
             bottom: 30px;
 
+            @include for-size(mobile-medium){
+                display: block;
+                left: 314px;
+            }
+
             @include for-size(tablet){
                 display: block;
                 left: 424px;
