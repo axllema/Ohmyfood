@@ -55,11 +55,24 @@
         }
 
         &__like-icon {
+            display: block;
             position: absolute;
-            left: 330px;
+            left: 270px;
             bottom: 30px;
+
+            @include for-size(tablet){
+                display: block;
+                left: 424px;
+            }
+
             @include for-size(desktop){
-                left: 375px;
+                display: block;
+                left: 222px;
+            }
+
+            @include for-size(desktop-large){
+                display: block;
+                left: 385px;
             }
         }
 

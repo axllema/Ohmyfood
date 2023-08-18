@@ -51,7 +51,6 @@ input {
 }
 
 footer {
-  width: 100%;
   background-color: #353535;
   color: white;
 }
@@ -129,12 +128,6 @@ footer .footer__list {
   padding-top: 16px;
   list-style: none;
 }
-@media (min-width: 1024px) {
-  footer .footer__list {
-    width: 100%;
-    gap: 30px;
-  }
-}
 @media (min-width: 768px) {
   footer .footer__list {
     display: flex;
@@ -142,6 +135,12 @@ footer .footer__list {
     justify-content: flex-end;
     align-items: flex-end;
     gap: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  footer .footer__list {
+    width: 100%;
+    gap: 30px;
   }
 }
 
@@ -198,6 +197,15 @@ footer .footer__list {
   font-weight: 500;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .button-2 {
+    display: flex;
+    flex-direction: initial;
+    justify-content: center;
+    align-items: center;
+    gap: initial;
+  }
+}
 @media (min-width: 1024px) {
   .button-2 {
     display: flex;
@@ -226,6 +234,16 @@ footer .footer__list {
   height: 70px;
   border: 1px solid transparent;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
+}
+@media (min-width: 768px) {
+  .button-2__link {
+    width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  .button-2__link {
+    width: 100%;
+  }
 }
 .button-2__link__number {
   display: flex;
@@ -298,13 +316,27 @@ footer .footer__list {
   font-weight: 300;
 }
 .card__like-icon {
+  display: block;
   position: absolute;
-  left: 330px;
+  left: 270px;
   bottom: 30px;
+}
+@media (min-width: 768px) {
+  .card__like-icon {
+    display: block;
+    left: 424px;
+  }
 }
 @media (min-width: 1024px) {
   .card__like-icon {
-    left: 375px;
+    display: block;
+    left: 222px;
+  }
+}
+@media (min-width: 1440px) {
+  .card__like-icon {
+    display: block;
+    left: 385px;
   }
 }
 
@@ -464,6 +496,11 @@ footer .footer__list {
   gap: 25px;
   padding-left: 10px;
 }
+@media (min-width: 768px) {
+  .fonction__buttons-container {
+    padding-left: 22px;
+  }
+}
 @media (min-width: 1024px) {
   .fonction__buttons-container {
     display: flex;
@@ -473,11 +510,6 @@ footer .footer__list {
     gap: 24px;
     width: 100%;
     gap: 35px;
-  }
-}
-@media (min-width: 768px) {
-  .fonction__buttons-container {
-    padding-left: 22px;
   }
 }
 
@@ -513,6 +545,11 @@ footer .footer__list {
   width: 100%;
   max-width: 1080px;
   gap: 1em;
+}
+@media (min-width: 768px) {
+  .restaurants__cards-container {
+    width: 66.6666666667%;
+  }
 }
 @media (min-width: 1024px) {
   .restaurants__cards-container {
@@ -594,7 +631,7 @@ footer .footer__list {
 }
 .restaurant-onylcard__form--line {
   position: absolute;
-  right: 348px;
+  right: 293px;
   top: 27px;
   width: 52px;
   height: 3px;
