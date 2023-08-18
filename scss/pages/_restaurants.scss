@@ -21,11 +21,15 @@
           }
       
           @include for-size(desktop){
+            margin-right: 150px;
+            margin-left: 150px;
           }
       
           @include for-size(desktop-large){
+            margin-right: 195px;
+            margin-left: 274px;
+        }
           }
-    }
 
       &__title{
         font-family: $title-font;
@@ -41,7 +45,13 @@
         @include for-size(tablet){
           right: 215px;
         }
+
+        @include for-size(desktop-large){
+          right: 325px;
+        top: 26px;
+        }
       }
+
 }
 
 .restaurant-onylcard__form{
@@ -52,6 +62,7 @@
 
   @include for-size(desktop-large){
   }  
+
 
   &__title{
     @include flex(column, space-between,initial, initial);
@@ -72,17 +83,19 @@
 
     &--line{
       position: absolute;
-      right: 293px;
+      right: 308px;
       top: 27px;
       width: 52px;
       height: 3px;
       background-color: $mint-color;
 
       @include for-size(mobile-medium){
-        right: 338px;
+        display: block;
+        right: 352px;
       }
   
       @include for-size(tablet){
+        display: block;
         right: 33px;
       }
   
@@ -97,12 +110,60 @@
       font-family: $main-font;
       font-size: 20px;
       font-weight: $semi-bold;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 228px;
+
+      @include for-size(mobile-medium){
+        width: 262px;
+      }
+  
+      @include for-size(tablet){
+        text-overflow: unset;
+        overflow: visible;
+
+      }
+  
+      @include for-size(desktop){
+        text-overflow: unset;
+        overflow: visible;
+      }
+  
+      @include for-size(desktop-large){
+        text-overflow: unset;
+        overflow: visible;
+      }
     }
 
     &__description{
       font-family: $main-font;
       font-size: 17px;
       font-weight: $thin;
+
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 228px;
+
+      @include for-size(mobile-medium){
+        width: 275px;
+      }
+  
+      @include for-size(tablet){
+        text-overflow: unset;
+        overflow: visible;
+      }
+  
+      @include for-size(desktop){
+        text-overflow: unset;
+        overflow: visible;
+      }
+  
+      @include for-size(desktop-large){
+        text-overflow: unset;
+        overflow: visible;
+      }
     }
 
     &__price{
@@ -122,9 +183,11 @@
     }
 
     @include for-size(desktop){
+      left: 555px;
     }
 
     @include for-size(desktop-large){
+      left: 634px;
     }
 }
 }

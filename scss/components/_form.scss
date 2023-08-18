@@ -10,6 +10,16 @@
         @include flex($direction: column, $justify: initial, $align: center, $gap: 12px);
       }
 
+      @include for-size(desktop){
+        margin-right: 150px;
+        margin-left: 150px;
+      }
+      @include for-size(desktop-large){
+        margin-right: 194px;
+        margin-left: 274px;
+        padding: 0px 20px 0px 20px;
+  }
+
       label {
         @include flex(column, center, initial, 0);
         position: relative;
@@ -29,6 +39,7 @@
         }
     
         @include for-size(desktop-large){
+          width: 70%;
         }
 
       button {
