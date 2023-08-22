@@ -35,3 +35,9 @@ $shadow-color: rgba(0, 0, 0, 0.25);
 $purple-color: #9356dc;
 $pink-color: #FF79DA;
 $mint-color: #99E2D0;
+
+$loader-colors: (
+  1: $purple-color,
+  2: $pink-color,
+  3: $mint-color,
+);
