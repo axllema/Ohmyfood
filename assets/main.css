@@ -434,7 +434,7 @@ footer .footer__list {
 }
 
 .loader {
-  opacity: 1;
+  opacity: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -449,8 +449,6 @@ footer .footer__list {
   animation-duration: 3s;
 }
 .loader__img {
-  top: 415px;
-  left: 25px;
   width: 15rem;
 }
 .loader__circle {
@@ -459,8 +457,10 @@ footer .footer__list {
   display: inline-block;
   width: 50px;
   height: 50px;
+  margin-top: -30px;
   border-radius: 100%;
   animation-name: loaderCircles;
+  animation-duration: 3s;
 }
 .loader__circle:nth-child(1) {
   background: #9356dc;
@@ -475,8 +475,8 @@ footer .footer__list {
   0% {
     z-index: 1;
   }
-  30% {
-    transform: scale(1.2);
+  35% {
+    transform: scale(1.05);
     opacity: 1;
   }
   70% {
@@ -498,8 +498,8 @@ footer .footer__list {
   0% {
     z-index: 1;
   }
-  30% {
-    transform: scale(1.2);
+  35% {
+    transform: scale(1.05);
     opacity: 1;
   }
   70% {
