@@ -58,9 +58,14 @@ footer {
             @include for-size(desktop) {
                 width: 100%;
                 gap: 30px;
-            }
+            } }
 
-        }
+         /****** not working
+            &__link {
+                opacity: .5 1s;
+                transition: opacity .3s;
+        }     
+        ***********/
 
 }
 }
