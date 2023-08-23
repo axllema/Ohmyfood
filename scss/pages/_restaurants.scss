@@ -55,13 +55,15 @@
 }
 
 .restaurant-onylcard__form{
-  @include flex(column, initial,initial, initial);
+  @include flex(column, flex-start);
+  max-width: 1055px;
   background: #f6f6f6;
   margin: 0 auto;
   gap: 12px;
 
   &__title{
-    @include flex(column, space-between,initial, initial);
+    @include flex(column);
+    align-self: start;
     height: 27px;
     font-family: $main-font;
     font-size: 20px;
@@ -72,8 +74,7 @@
     position: relative;
 
     @include for-size(tablet){
-      margin-top : 40px;
-      margin-left: 0px;
+      margin: 40px 0px 0px 50px;
     }
   }
 

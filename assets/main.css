@@ -807,9 +807,10 @@ footer .footer__list {
 .restaurant-onylcard__form {
   display: flex;
   flex-direction: column;
-  justify-content: initial;
+  justify-content: flex-start;
   align-items: initial;
   gap: initial;
+  max-width: 1055px;
   background: #f6f6f6;
   margin: 0 auto;
   gap: 12px;
@@ -817,9 +818,10 @@ footer .footer__list {
 .restaurant-onylcard__form__title {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: initial;
   align-items: initial;
   gap: initial;
+  align-self: start;
   height: 27px;
   font-family: "Roboto", sans-serif;
   font-size: 20px;
@@ -831,8 +833,7 @@ footer .footer__list {
 }
 @media (min-width: 768px) {
   .restaurant-onylcard__form__title {
-    margin-top: 40px;
-    margin-left: 0px;
+    margin: 40px 0px 0px 50px;
   }
 }
 .restaurant-onylcard__form--line {
