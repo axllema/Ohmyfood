@@ -10,19 +10,18 @@
   animation-duration: 3s;
 
     &__img {
-        width: 15rem;
+        width: 14rem;
       }
 
       &__circle {
         opacity: 1;
         z-index: -1;
         display: inline-block;
-        width : 50px;
-        height: 50px;
-        margin-top : -30px;
+        width : 40px;
+        height: 40px;
+        margin-top : -60px;
         border-radius: 100%;
-        animation-name : loaderCircles;
-        animation-duration: 3s;
+        animation : loaderCircles 3s;
       }
 
       @for $i from 1 through 3 {
@@ -45,6 +44,9 @@
         80% {
           opacity: 0.019;
         }
+        90% {
+          opacity: 0.005;
+        }
         99% {
           opacity: 0.001;
           z-index: 5;
@@ -63,11 +65,18 @@
           transform: scale(1.05);
           opacity: 1;
         }
-        70% {
+        50% {
           transform: scale(1);
         }
-        80% {
+        70%{
           opacity: 0.019;
+        }
+        80% {
+          opacity: 0.050;
+        }
+        90% {
+          opacity: 0.020;
+          z-index: 5;
         }
         99% {
           opacity: 0.001;
