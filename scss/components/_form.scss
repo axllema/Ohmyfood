@@ -31,6 +31,18 @@
         background-color: white;
         transition: box-shadow 0.5s;
 
+        opacity: 0%;
+      transform: scaleX(0);
+      transform-origin: right;
+      animation: labelSlide 500ms ease-in-out;
+      animation-fill-mode: forwards;
+
+        @for $i from 10 through 1 {
+          &:nth-of-type(#{$i}) {
+            animation-delay: $i * 300ms;
+          }
+        }
+
         @include for-size(tablet){
           width: 80%;
         }
@@ -46,5 +58,23 @@
         margin: 28px auto 40px auto;
       }
     }
+  }
+}
+
+@keyframes labelSlide {
+  0% {
+    background-color: $mint-color;
+  }
+  50% {
+    opacity: 5%;
+  }
+  95% {
+    opacity: 5%;
+    background-color: $green-color;
+  }
+  100% {
+    color: inherit;
+    opacity: 1;
+    transform: scaleX(1);
   }
 }
