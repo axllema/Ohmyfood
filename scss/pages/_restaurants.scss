@@ -60,10 +60,6 @@
   margin: 0 auto;
   gap: 12px;
 
-  @include for-size(desktop-large){
-  }  
-
-
   &__title{
     @include flex(column, space-between,initial, initial);
     height: 27px;

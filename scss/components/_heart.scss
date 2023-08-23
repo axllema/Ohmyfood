@@ -1,13 +1,12 @@
-.restaurant,
-.restaurant-onylcard,
-.card
-{
-  &__card__like-icon {
+
+.card,
+.restaurant-onlycard {
+  &__like-icon {
     text-align: center; 
     width: 26px;
     color: black;
 
-    &:hover {
+    &:active {
         text-align: center; 
         width: 26px; 
         @extend %heart-gradient;
@@ -15,5 +14,7 @@
         opacity: 0;
         transition: opacity 0.5s;
     }
+    }
 }
-}
+
+

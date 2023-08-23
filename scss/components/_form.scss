@@ -32,10 +32,10 @@
         transition: box-shadow 0.5s;
 
         opacity: 0%;
-      transform: scaleX(0);
-      transform-origin: right;
-      animation: labelSlide 500ms ease-in-out;
-      animation-fill-mode: forwards;
+        transform: scaleX(0);
+        transform-origin: right;
+        animation: labelSlide 500ms ease-in-out;
+        animation-fill-mode: forwards;
 
         @for $i from 10 through 1 {
           &:nth-of-type(#{$i}) {
