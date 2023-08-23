@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OhMyFood - La note enchantée</title>
+    <title>OhMyFood - La palette du goût</title>
     <link href="../assets/main.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -26,107 +26,92 @@
 <main>
     <article class="restaurant-onlycard">
         <img class="restaurant-onlycard__picture"
-            src="../assets/images/note_enchantee.jpg"
+            src="../assets/images/palette_gout.jpg"
             alt="">
-        <div class="restaurant-onlycard__headline">
-            <h2 class="restaurant-onlycard__title">La note enchantée</h2>
-            <div class="restaurant-onlycard__like-icon-container">
-                <i class="empty-heart fa-regular fa-heart card__like-icon"></i>
-            </div>
+        <div class="restaurant-onlycard__top">
+            <h2 class="restaurant-onlycard__title">La palette du goût</h2>
+                <i class="restaurant-onlycard__like-icon empty-heart fa-regular fa-heart"></i>
+
         </div>
 
-        <form class=" restaurant-onylcard__form form" method="get" action="#">
+        <form class="restaurant-onylcard__form form" method="get" action="#">
         <!-- 1 -->
-            <h2 class="form__title">Entrées</h2>
+            <h2 class="restaurant-onylcard__form__title">Entrées
+                <span class="restaurant-onylcard__form--line"></span>
+            </h2>
             <input id="starter_choice-1" type="radio" name="starter_choice" value="1">
             <label for="starter_choice-1">
-                <span class="form__subtitle">Ravioles de fois gras</span>
-                <span class="form__description-container">
-                    <span class="form__description">Accompagnées de leur crème à la truffe</span>
-                    <span class="form__price">25€</span>
-                </span>
+                <span class="restaurant-onylcard__form__subtitle">Ravioles de foie gras</span>
+                <span class="restaurant-onylcard__form__description">Accompagnées de leur crème à la truffe</span>
+                <span class="restaurant-onylcard__form__price">25€</span>
             </label>
             <input id="starter_choice-2" type="radio" name="starter_choice" value="2">
             <label for="starter_choice-2">
-                <span class="form__subtitle">Caviar osciètre</span>
-                <span class="form__description-container">
-                    <span class="form__description">Sur blini à la farine de blé noir</span>
-                    <span class="form__price">35€</span>
-                </span>
+                <span class="restaurant-onylcard__form__subtitle">Caviar osciètre</span>
+                    <span class="restaurant-onylcard__form__description">Sur blini à la farine de blé noir</span>
+                    <span class="restaurant-onylcard__form__price">35€</span>
             </label>
             <input id="starter_choice-3" type="radio" name="starter_choice" value="3">
             <label for="starter_choice-3">
-                <span class="form__subtitle">Homard et espuma de potiron</span>
-                <span class="form__description-container">
-                    <span class="form__description">Marinés aux zestes d'orange</span>
-                    <span class="form__price">20€</span>
-                </span>
+                <span class="restaurant-onylcard__form__subtitle">Homard et espuma de potiron</span>
+                <span class="restaurant-onylcard__form__description">Marinés aux zestes d'orange</span>
+                <span class="restaurant-onylcard__form__price">20€</span>
             </label>
-            <input id="starter_choice-4" type="radio" name="starter_choice" value="4">
+            <input id="starter_choice-4" type="radio" name="starter_choice" value="3">
             <label for="starter_choice-4">
-                <span class="form__subtitle">Foie gras de canard cuit entier</span>
-                <span class="form__description-container">
-                    <span class="form__description">Confiture de figue et pain toasté</span>
-                    <span class="form__price">35€</span>
-                </span>
+                <span class="restaurant-onylcard__form__subtitle">Foie gras de canard cuit entier</span>
+                <span class="restaurant-onylcard__form__description">Confiture de figue et pain toasté</span>
+                <span class="restaurant-onylcard__form__price">35€</span>
             </label>
 
         <!-- 2 -->
 
-            <h2 class="form__title">Plats</h2>
+            <h2 class="restaurant-onylcard__form__title">Plats
+                <span class="restaurant-onylcard__form--line"></span>
+            </h2>
             <input id="dish_choice-1" type="radio" name="dish_choice" value="1">
             <label for="dish_choice-1">
-                <span class="form__subtitle">Noix de coquilles Saint-Jacques</span>
-                <span class="form__description-container">
-                    <span class="form__description">Sur lit de purée de céleri-rave</span>
-                    <span class="form__price">40€</span>
-                </span>
+                <span class="restaurant-onylcard__form__subtitle">Noix de coquilles Saint-Jacques</span>
+                <span class="restaurant-onylcard__form__description">Sur lit de purée de céleri-rave</span>
+                <span class="restaurant-onylcard__form__price">40€</span>
             </label>
             <input id="dish_choice-2" type="radio" name="dish_choice" value="2">
             <label for="dish_choice-2">
-                <span class="form__subtitle">Langoustine poêlée</span>
-                <span class="form__description-container">
-                    <span class="form__description">Purée de patate douce</span>
-                    <span class="form__price">35€</span>
-                </span>
+                <span class="restaurant-onylcard__form__subtitle">Langoustine poêlée</span>
+                <span class="restaurant-onylcard__form__description">Purée de patate douce</span>
+                <span class="restaurant-onylcard__form__price">35€</span>
             </label>
             <input id="dish_choice-3" type="radio" name="dish_choice" value="3">
             <label for="dish_choice-3">
-                <span class="form__subtitle">Mijoté de queue de bœuf</span>
-                <span class="form__description-container">
-                    <span class="form__description">Et riz sauvage aux zestes de citron</span>
-                    <span class="form__price">45€</span>
-                </span>
+                <span class="restaurant-onylcard__form__subtitle">Mijoté de queue de bœuf </span>
+                <span class="restaurant-onylcard__form__description">Et riz sauvage aux zestes de citron</span>
+                <span class="restaurant-onylcard__form__price">44€</span>
             </label>
 
         <!-- 3 -->
 
-        <h2 class="form__title">Desserts</h2>
+        <h2 class="restaurant-onylcard__form__title">Desserts
+            <span class="restaurant-onylcard__form--line"></span>
+        </h2>
         <input id="dessert_choice-1" type="radio" name="dessert_choice" value="1">
         <label for="dessert_choice-1">
-            <span class="form__subtitle">Macaron noisette et chocolat</span>
-            <span class="form__description-container">
-                <span class="form__description">Glace au caramel brun et sel de Guérande</span>
-                <span class="form__price">18€</span>
-            </span>
+            <span class="restaurant-onylcard__form__subtitle">Macaron noisette et chocolat</span>
+            <span class="restaurant-onylcard__form__description">Glace au caramel brun et sel de Guérande</span>
+            <span class="restaurant-onylcard__form__price">18€</span>
         </label>
         <input id="dessert_choice-2" type="radio" name="dessert-choice" value="2">
         <label for="dessert_choice-2">
-            <span class="form__subtitle">Baba au rhum revisité </span>
-            <span class="form__description-container">
-                <span class="form__description">Avec son coulis de citron</span>
-                <span class="form__price">22€</span>
-            </span>
+            <span class="restaurant-onylcard__form__subtitle">Baba au rhum revisité </span>
+            <span class="restaurant-onylcard__form__description">Avec son coulis de citron</span>
+            <span class="restaurant-onylcard__form__price">22€</span>
         </label>
-        <input id="dessert_choice-3" type="radio" name="dessert_-choice" value="3">
+        <input id="dessert_choice-3" type="radio" name="desser_choice" value="3">
         <label for="dessert_choice-3">
-            <span class="form__subtitle">Tarte au citron meringuée </span>
-            <span class="form__description-container">
-                <span class="form__description">Déstructurée</span>
-                <span class="form__price">23€</span>
-            </span>
+            <span class="restaurant-onylcard__form__subtitle">Tarte au citron meringuée</span>
+            <span class="restaurant-onylcard__form__description">Déstructurée</span>
+            <span class="restaurant-onylcard__form__price">23€</span>
         </label>
-        <button class="button-style1 button-style1--alt-size" type="submit">Commander</button>
+        <button class="button-1" type="submit">Commander</button>
         </form>
     </article>
 
