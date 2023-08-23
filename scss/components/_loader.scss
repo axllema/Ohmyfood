@@ -28,6 +28,7 @@
         &__circle:nth-child(#{$i}) {
           background: map-get($loader-colors, $i);
         }
+
     }
 
       @keyframes loader {
