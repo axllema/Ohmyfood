@@ -368,6 +368,7 @@ footer .footer__list {
 }
 @media (min-width: 768px) {
   .restaurant-onlycard .form {
+    max-width: 1055px;
     display: flex;
     flex-direction: column;
     justify-content: initial;
@@ -377,12 +378,14 @@ footer .footer__list {
 }
 @media (min-width: 1024px) {
   .restaurant-onlycard .form {
+    max-width: 1055px;
     margin-right: 150px;
     margin-left: 150px;
   }
 }
 @media (min-width: 1440px) {
   .restaurant-onlycard .form {
+    max-width: 1055px;
     margin-right: 194px;
     margin-left: 274px;
     padding: 0px 20px 0px 20px;
