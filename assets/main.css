@@ -1,8 +1,8 @@
 @charset "UTF-8";
 @import url("https://fonts.google.com/share?selection.family=Roboto:wght@300;400;500;700;900");
 @import url("https://fonts.google.com/share?selection.family=Shrikhand");
-.card__like-icon:active,
-.restaurant-onlycard__like-icon:active {
+.card .solid-heart,
+.restaurant-onlycard .solid-heart {
   background: linear-gradient(#9356DC, #FF79DA);
 }
 
@@ -472,37 +472,60 @@ footer .footer__list {
     transform: scaleX(1);
   }
 }
-.card__like-icon,
-.restaurant-onlycard__like-icon {
+.card,
+.restaurant-onlycard {
+  /******   @include desktop{
+        &:hover{
+      background-color: aqua;
+      z-index: +1;
+      opacity: 0;
+      transition: opacity 0.5s;
+        }
+    }
+
+    @include desktop-large{
+      &:hover {
+      background-color: aqua;
+      z-index: +1;
+      opacity: 0;
+      transition: opacity 0.5s;
+      }
+    } 
+  } ***********/
+}
+.card .empty-heart,
+.restaurant-onlycard .empty-heart {
   text-align: center;
   width: 26px;
   color: black;
+  /****** 
+      &:active {
+        text-align: center; 
+        width: 26px; 
+        @extend %heart-gradient;
+        z-index: +1;
+        opacity: 0;
+        transition: opacity 0.5s;
+    } ***********/
 }
-.card__like-icon:active,
-.restaurant-onlycard__like-icon:active {
+.card .empty-heart:active,
+.restaurant-onlycard .empty-heart:active {
+  opacity: 0;
+  cursor: pointer;
+}
+.card .solid-heart,
+.restaurant-onlycard .solid-heart {
   text-align: center;
   width: 26px;
   z-index: 1;
   opacity: 0;
-  transition: opacity 0.5s;
+  /******  &:hover,
+   &:focus, ***********/
 }
-@media (min-width: 1024px) {
-  .card__like-icon:hover,
-  .restaurant-onlycard__like-icon:hover {
-    background-color: aqua;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-}
-@media (min-width: 1440px) {
-  .card__like-icon:hover,
-  .restaurant-onlycard__like-icon:hover {
-    background-color: aqua;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
+.card .solid-heart:active,
+.restaurant-onlycard .solid-heart:active {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .loader {
