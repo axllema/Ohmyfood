@@ -27,11 +27,11 @@
     font-weight: 500;
     width: 100%;
     
-    @include for-size(tablet) {
+    @include tablet {
         @include flex($justify: center, $align: center);
         }
 
-    @include for-size(desktop) {
+    @include desktop {
         @include flex($justify: center);
         width: 100%;
         max-width: 335px;
@@ -51,11 +51,11 @@
             border: 1px solid transparent;
             box-shadow: 0px 4px 15px $shadow-color;
 
-            @include for-size(tablet) {
+            @include tablet {
                 width: calc(100%/2);
                 }
 
-            @include for-size(desktop) {
+            @include desktop {
                 width: 100%;
                 }
 

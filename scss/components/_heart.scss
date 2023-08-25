@@ -15,7 +15,7 @@
         transition: opacity 0.5s;
     }
 
-      @include for-size(desktop){
+      @include desktop{
           &:hover{
         background-color: aqua;
         z-index: +1;
@@ -24,7 +24,7 @@
           }
       }
 
-      @include for-size(desktop-large){
+      @include desktop-large{
         &:hover {
         background-color: aqua;
         z-index: +1;

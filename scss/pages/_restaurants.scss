@@ -16,16 +16,16 @@
           z-index: 1;
           background: #f6f6f6;
       
-          @include for-size(tablet){
+          @include tablet{
             justify-content: center;
           }
       
-          @include for-size(desktop){
+          @include desktop {
             margin-right: 150px;
             margin-left: 150px;
           }
       
-          @include for-size(desktop-large){
+          @include desktop-large {
             margin-right: 195px;
             margin-left: 274px;
         }
@@ -42,11 +42,11 @@
         right: 28px;
         top: 27px;
 
-        @include for-size(tablet){
+        @include tablet{
           right: 215px;
         }
 
-        @include for-size(desktop-large){
+        @include desktop-large{
           right: 325px;
         top: 26px;
         }
@@ -73,7 +73,7 @@
     margin: 40px 0px 0px 15px;
     position: relative;
 
-    @include for-size(tablet){
+    @include tablet{
       margin: 40px 0px 0px 50px;
     }
   }
@@ -86,20 +86,20 @@
       height: 3px;
       background-color: $mint-color;
 
-      @include for-size(mobile-medium){
+      @include mobile-medium {
         display: block;
         right: 352px;
       }
   
-      @include for-size(tablet){
+      @include tablet {
         display: block;
         right: 33px;
       }
   
-      @include for-size(desktop){
+      @include desktop{
       }
   
-      @include for-size(desktop-large){
+      @include desktop-large{
       }
     }
 
@@ -112,22 +112,22 @@
       white-space: nowrap;
       width: 228px;
 
-      @include for-size(mobile-medium){
+      @include mobile-medium{
         width: 262px;
       }
   
-      @include for-size(tablet){
+      @include tablet{
         text-overflow: unset;
         overflow: visible;
 
       }
   
-      @include for-size(desktop){
+      @include desktop{
         text-overflow: unset;
         overflow: visible;
       }
   
-      @include for-size(desktop-large){
+      @include desktop-large{
         text-overflow: unset;
         overflow: visible;
       }
@@ -143,21 +143,21 @@
       white-space: nowrap;
       width: 228px;
 
-      @include for-size(mobile-medium){
+      @include mobile-medium{
         width: 275px;
       }
   
-      @include for-size(tablet){
+      @include tablet{
         text-overflow: unset;
         overflow: visible;
       }
   
-      @include for-size(desktop){
+      @include desktop{
         text-overflow: unset;
         overflow: visible;
       }
   
-      @include for-size(desktop-large){
+      @include desktop-large{
         text-overflow: unset;
         overflow: visible;
       }
@@ -171,19 +171,19 @@
       font-weight: $semi-bold;
       font-size: 17px;
 
-    @include for-size(mobile-medium){
+    @include mobile-medium{
       left: 339px;
     }
 
-    @include for-size(tablet){
+    @include tablet{
       left: 580px;
     }
 
-    @include for-size(desktop){
+    @include desktop{
       left: 555px;
     }
 
-    @include for-size(desktop-large){
+    @include desktop-large{
       left: 634px;
     }
 }

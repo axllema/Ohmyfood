@@ -6,17 +6,17 @@
         display: none;
       }
 
-      @include for-size(tablet){
+      @include tablet{
         max-width: 1055px;
         @include flex($direction: column, $justify: initial, $align: center, $gap: 12px);
       }
 
-      @include for-size(desktop){
+      @include desktop{
         max-width: 1055px;
         margin-right: 150px;
         margin-left: 150px;
       }
-      @include for-size(desktop-large){
+      @include desktop-large{
         max-width: 1055px;
         margin-right: 194px;
         margin-left: 274px;
@@ -46,14 +46,14 @@
           }
         }
 
-        @include for-size(tablet){
+        @include tablet{
           width: 80%;
         }
     
-        @include for-size(desktop){
+        @include desktop{
         }
     
-        @include for-size(desktop-large){
+        @include desktop-large{
           width: 70%;
         }
 

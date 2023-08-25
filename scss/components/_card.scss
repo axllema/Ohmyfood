@@ -60,22 +60,22 @@
             left: 270px;
             bottom: 30px;
 
-            @include for-size(mobile-medium){
+            @include mobile-medium{
                 display: block;
                 left: 314px;
             }
 
-            @include for-size(tablet){
+            @include tablet{
                 display: block;
                 left: 424px;
             }
 
-            @include for-size(desktop){
+            @include desktop{
                 display: block;
                 left: 222px;
             }
 
-            @include for-size(desktop-large){
+            @include desktop-large{
                 display: block;
                 left: 385px;
             }

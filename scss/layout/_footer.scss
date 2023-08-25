@@ -10,7 +10,7 @@ footer {
     padding-top : 10px;
     padding-bottom: 15px;
     
-    @include for-size(tablet) {
+    @include tablet {
         @include flex(row-reverse, initial, flex-end, 10px);
         padding-top: 40px;
         padding-bottom: 30px;
@@ -32,12 +32,12 @@ footer {
             filter: invert(1);
             padding-top: 10px;
 
-            @include for-size(tablet) {
+            @include tablet {
             width: 4.5Em;
             padding-right: 30px;
         }
 
-        @include for-size(desktop) {
+        @include desktop {
             width: 4.5Em;
             padding-right: 40px;
             padding-left: 40px;
@@ -51,11 +51,11 @@ footer {
             padding-top: 16px;
             list-style: none;
 
-            @include for-size(tablet) {
+            @include tablet {
                 @include flex(row, flex-end, flex-end, 16px);
             }
 
-            @include for-size(desktop) {
+            @include desktop {
                 width: 100%;
                 gap: 30px;
             } }
