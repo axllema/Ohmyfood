@@ -362,9 +362,24 @@ footer .footer__list {
   justify-content: initial;
   align-items: initial;
   gap: 12px;
+  /*  oc copy*/
 }
 .restaurant-onlycard .form input[type=radio] {
   display: none;
+  /*  oc copy*/
+}
+.restaurant-onlycard .form input[type=radio]:checked + label::before {
+  transform: rotate(0deg);
+  margin-right: 0;
+}
+.restaurant-onlycard .form input[type=radio]:checked + label::after {
+  margin-right: 0;
+}
+.restaurant-onlycard .form input[type=radio]:checked + label .restaurant-onlycard__form__subtitle {
+  padding-right: 99px;
+}
+.restaurant-onlycard .form input[type=radio]:checked + label .restaurant-onlycard__form__price {
+  padding-right: 59px;
 }
 .restaurant-onlycard .form label {
   display: flex;
@@ -385,6 +400,8 @@ footer .footer__list {
   transform-origin: right;
   animation: labelSlide 500ms ease-in-out;
   animation-fill-mode: forwards;
+  /*  oc copy*/
+  /*  oc copy*/
 }
 .restaurant-onlycard .form label:nth-of-type(10) {
   animation-delay: 3000ms;
@@ -415,6 +432,38 @@ footer .footer__list {
 }
 .restaurant-onlycard .form label:nth-of-type(1) {
   animation-delay: 300ms;
+}
+.restaurant-onlycard .form label:hover, .restaurant-onlycard .form label:focus {
+  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.15);
+}
+.restaurant-onlycard .form label::before {
+  content: "\f058";
+  font-family: fontAwesome;
+  font-size: 20px;
+  color: white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: inherit;
+  width: 59px;
+  line-height: 69px;
+  text-align: center;
+  margin-right: -59px;
+  transform: rotate(180deg);
+  z-index: 1;
+  transition: all 0.5s ease-in-out;
+}
+.restaurant-onlycard .form label::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: inherit;
+  width: 59px;
+  margin-right: -59px;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  transition: all 0.5s ease-in-out;
 }
 .restaurant-onlycard .form label button {
   margin: 28px auto 40px auto;

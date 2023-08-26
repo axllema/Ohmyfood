@@ -4,7 +4,25 @@
       @include flex($direction: column, $gap: 12px);
       input[type="radio"] {
         display: none;
+
+/*  oc copy*/
+
+        &:checked + label::before {
+          transform: rotate(0deg); //flip icon in original  default:180°
+          margin-right: 0;
+        }
+        &:checked + label::after {
+          margin-right: 0; //translate "container" default:59px
+        }
+        &:checked + label .restaurant-onlycard__form__subtitle{
+          padding-right:calc(59px + 40px)
+        }
+        &:checked + label .restaurant-onlycard__form__price {
+          padding-right: 59px; // reduce description and title size.
+        }
       }
+
+      /*  oc copy*/
 
 
       label {
@@ -29,6 +47,47 @@
             animation-delay: $i * 300ms;
           }
         }
+
+    /*  oc copy*/
+
+        &:hover,
+        &:focus {
+          box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.15);
+        }
+        // custom radio button icon
+        &::before {
+          content: "\f058";
+          font-family: fontAwesome;
+          font-size: 20px;
+          color: white;
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: inherit;
+          width: 59px;
+          line-height: 69px; //align vertically
+          text-align: center; //align horizontally
+          margin-right: -59px; //initial position
+          transform: rotate(180deg); // initial upside down position
+          z-index: 1;
+          transition: all 0.5s ease-in-out; //natural bezier transition
+        }
+        // custom radio button icon container
+        &::after {
+          content: "";
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: inherit;
+          width: 59px;
+          margin-right: -59px;//initial position
+          border-radius: 0 15px 15px 0;
+          background-color: $mint-color;
+          transition: all 0.5s ease-in-out;
+        }
+
+        /*  oc copy*/
+
 
       button {
         margin: 28px auto 40px auto;
