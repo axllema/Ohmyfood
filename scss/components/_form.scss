@@ -6,22 +6,6 @@
         display: none;
       }
 
-      @include tablet{
-        max-width: 1055px;
-        @include flex($direction: column, $justify: initial, $align: center, $gap: 12px);
-      }
-
-      @include desktop{
-        max-width: 1055px;
-        margin-right: 150px;
-        margin-left: 150px;
-      }
-      @include desktop-large{
-        max-width: 1055px;
-        margin-right: 194px;
-        margin-left: 274px;
-        padding: 0px 20px 0px 20px;
-  }
 
       label {
         @include flex(column, center, initial, 0);
@@ -44,17 +28,6 @@
           &:nth-of-type(#{$i}) {
             animation-delay: $i * 300ms;
           }
-        }
-
-        @include tablet{
-          width: 80%;
-        }
-    
-        @include desktop{
-        }
-    
-        @include desktop-large{
-          width: 70%;
         }
 
       button {

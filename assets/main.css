@@ -366,31 +366,6 @@ footer .footer__list {
 .restaurant-onlycard .form input[type=radio] {
   display: none;
 }
-@media (min-width: 768px) {
-  .restaurant-onlycard .form {
-    max-width: 1055px;
-    display: flex;
-    flex-direction: column;
-    justify-content: initial;
-    align-items: center;
-    gap: 12px;
-  }
-}
-@media (min-width: 1024px) {
-  .restaurant-onlycard .form {
-    max-width: 1055px;
-    margin-right: 150px;
-    margin-left: 150px;
-  }
-}
-@media (min-width: 1440px) {
-  .restaurant-onlycard .form {
-    max-width: 1055px;
-    margin-right: 194px;
-    margin-left: 274px;
-    padding: 0px 20px 0px 20px;
-  }
-}
 .restaurant-onlycard .form label {
   display: flex;
   flex-direction: column;
@@ -441,16 +416,6 @@ footer .footer__list {
 .restaurant-onlycard .form label:nth-of-type(1) {
   animation-delay: 300ms;
 }
-@media (min-width: 768px) {
-  .restaurant-onlycard .form label {
-    width: 80%;
-  }
-}
-@media (min-width: 1440px) {
-  .restaurant-onlycard .form label {
-    width: 70%;
-  }
-}
 .restaurant-onlycard .form label button {
   margin: 28px auto 40px auto;
 }
@@ -477,15 +442,6 @@ footer .footer__list {
   text-align: center;
   width: 26px;
   color: black;
-  /****** 
-      &:active {
-        text-align: center; 
-        width: 26px; 
-        @extend %heart-gradient;
-        z-index: +1;
-        opacity: 0;
-        transition: opacity 0.5s;
-    } ***********/
 }
 .card .empty-heart:active,
 .restaurant-onlycard .empty-heart:active {
@@ -504,8 +460,6 @@ footer .footer__list {
   width: 26px;
   z-index: 1;
   opacity: 0;
-  /******  &:hover,
-   &:focus, ***********/
 }
 .card .solid-heart:active,
 .restaurant-onlycard .solid-heart:active {
