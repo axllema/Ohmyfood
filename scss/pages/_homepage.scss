@@ -14,8 +14,12 @@
         &::placeholder{
             color: black;
         }
+            &:focus {
+                background: lighten($purple-color, $amount: 20%)
+              }
+        }
     }
-}
+
 
 /****** Réservez ***********/
 .reservation {

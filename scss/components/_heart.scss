@@ -8,8 +8,14 @@
 
     &:active {
       opacity: 0;
+    }
+
+    @include desktop{
+      &:hover{
+      opacity: 0;
       cursor: pointer;
     }
+  }
 
 /****** 
     &:active {
@@ -29,32 +35,22 @@
     @extend %heart-gradient;
     z-index: +1;
     opacity: 0;
+
    /******  &:hover,
     &:focus, ***********/
+
     &:active {
+      opacity: 1;
+    }
+
+    @include desktop{
+      &:hover{
       opacity: 1;
       cursor: pointer;
     }
+    }
 
 }
-       /******   @include desktop{
-          &:hover{
-        background-color: aqua;
-        z-index: +1;
-        opacity: 0;
-        transition: opacity 0.5s;
-          }
-      }
-
-      @include desktop-large{
-        &:hover {
-        background-color: aqua;
-        z-index: +1;
-        opacity: 0;
-        transition: opacity 0.5s;
-        }
-      } 
-    } ***********/
 } 
 
 

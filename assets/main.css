@@ -472,27 +472,6 @@ footer .footer__list {
     transform: scaleX(1);
   }
 }
-.card,
-.restaurant-onlycard {
-  /******   @include desktop{
-        &:hover{
-      background-color: aqua;
-      z-index: +1;
-      opacity: 0;
-      transition: opacity 0.5s;
-        }
-    }
-
-    @include desktop-large{
-      &:hover {
-      background-color: aqua;
-      z-index: +1;
-      opacity: 0;
-      transition: opacity 0.5s;
-      }
-    } 
-  } ***********/
-}
 .card .empty-heart,
 .restaurant-onlycard .empty-heart {
   text-align: center;
@@ -511,7 +490,13 @@ footer .footer__list {
 .card .empty-heart:active,
 .restaurant-onlycard .empty-heart:active {
   opacity: 0;
-  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .card .empty-heart:hover,
+  .restaurant-onlycard .empty-heart:hover {
+    opacity: 0;
+    cursor: pointer;
+  }
 }
 .card .solid-heart,
 .restaurant-onlycard .solid-heart {
@@ -525,7 +510,13 @@ footer .footer__list {
 .card .solid-heart:active,
 .restaurant-onlycard .solid-heart:active {
   opacity: 1;
-  cursor: pointer;
+}
+@media (min-width: 1024px) {
+  .card .solid-heart:hover,
+  .restaurant-onlycard .solid-heart:hover {
+    opacity: 1;
+    cursor: pointer;
+  }
 }
 
 .loader {
@@ -540,8 +531,7 @@ footer .footer__list {
   z-index: -1;
   width: 100%;
   height: 100%;
-  animation-name: loader;
-  animation-duration: 3s;
+  animation: loader 3s;
 }
 .loader__img {
   width: 14rem;
@@ -645,6 +635,9 @@ footer .footer__list {
 }
 .place-container__location__localisation::placeholder {
   color: black;
+}
+.place-container__location__localisation:focus {
+  background: #c9abee;
 }
 
 /****** Réservez ***********/
@@ -882,7 +875,7 @@ footer .footer__list {
 }
 .restaurant-onylcard__form--line {
   position: absolute;
-  right: 308px;
+  left: -2px;
   top: 27px;
   width: 52px;
   height: 3px;
@@ -898,6 +891,16 @@ footer .footer__list {
   .restaurant-onylcard__form--line {
     display: block;
     right: 33px;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant-onylcard__form--line {
+    left: -1px;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurant-onylcard__form--line {
+    left: -1px;
   }
 }
 .restaurant-onylcard__form__subtitle {

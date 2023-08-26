@@ -80,7 +80,7 @@
 
     &--line{
       position: absolute;
-      right: 308px;
+      left: -2px;
       top: 27px;
       width: 52px;
       height: 3px;
@@ -97,9 +97,11 @@
       }
   
       @include desktop{
+        left: -1px;
       }
   
       @include desktop-large{
+        left: -1px;
       }
     }
 
