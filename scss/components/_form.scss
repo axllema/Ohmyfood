@@ -164,7 +164,7 @@
     transform-origin: right;
     animation: labelSlide 500ms ease-in-out;
     animation-fill-mode: forwards;
-/* the animation doesn't reset and the elements stay as it is at the end of anim*/
+/* the animation doesn't reset and the elements stay as it is at the end of anim */
 
     @include tablet{
       width: 80%;

@@ -581,7 +581,7 @@ label {
   transform-origin: right;
   animation: labelSlide 500ms ease-in-out;
   animation-fill-mode: forwards;
-  /* the animation doesn't reset and the elements stay as it is at the end of anim*/
+  /* the animation doesn't reset and the elements stay as it is at the end of anim */
   /* it's called "sass @for loops", it compiles :
   ".label:nth-child(1): ...s",
   ".label:nth-child(2): ...s"

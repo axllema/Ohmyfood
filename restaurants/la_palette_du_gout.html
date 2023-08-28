@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- HEADER -->
     <header class="header">
         <div class="header__logo-container">
             <a class="header__logo-container__arrow" href="../index.html">
@@ -25,6 +26,7 @@
 
 
 <main>
+    <!-- restaurant title & description (and so on) -->
     <article class="restaurant-onlycard">
         <img class="restaurant-onlycard__picture"
             src="../assets/images/palette_gout.jpg"
@@ -36,7 +38,7 @@
         </div>
 
         <form class="restaurant-onylcard__form form" method="get" action="#">
-        <!-- 1 -->
+            <!-- 1 - starters -->
             <h2 class="restaurant-onylcard__form__title">Entrées
                 <span class="restaurant-onylcard__form--line"></span>
             </h2>
@@ -59,8 +61,7 @@
                 <span class="restaurant-onylcard__form__price">20€</span>
             </label>
 
-        <!-- 2 -->
-
+            <!-- 2 - main courses -->
             <h2 class="restaurant-onylcard__form__title">Plats
                 <span class="restaurant-onylcard__form--line"></span>
             </h2>
@@ -83,33 +84,33 @@
                 <span class="restaurant-onylcard__form__price">44€</span>
             </label>
 
-        <!-- 3 -->
+            <!-- 3 - desserts -->
+            <h2 class="restaurant-onylcard__form__title">Desserts
+                <span class="restaurant-onylcard__form--line"></span>
+            </h2>
+            <input id="dessert_choice-1" type="radio" name="dessert_choice" value="1">
+            <label for="dessert_choice-1">
+                <span class="restaurant-onylcard__form__subtitle">Paris-Brest</span>
+                <span class="restaurant-onylcard__form__description">Revisité</span>
+                <span class="restaurant-onylcard__form__price">18€</span>
+            </label>
+            <input id="dessert_choice-2" type="radio" name="dessert-choice" value="2">
+            <label for="dessert_choice-2">
+                <span class="restaurant-onylcard__form__subtitle">Macaron au chocolat d'exception</span>
+                <span class="restaurant-onylcard__form__description">Et glace à la vanille de Madagascar</span>
+                <span class="restaurant-onylcard__form__price">22€</span>
+            </label>
+            <input id="dessert_choice-3" type="radio" name="desser_choice" value="3">
+            <label for="dessert_choice-3">
+                <span class="restaurant-onylcard__form__subtitle">Mousse au chocolat</span>
+                <span class="restaurant-onylcard__form__description">Et sa délicate touche de fraîcheur</span>
+                <span class="restaurant-onylcard__form__price">23€</span>
+            </label>
+            <button class="button-1" type="submit">Commander</button>
+            </form>
+        </article>
 
-        <h2 class="restaurant-onylcard__form__title">Desserts
-            <span class="restaurant-onylcard__form--line"></span>
-        </h2>
-        <input id="dessert_choice-1" type="radio" name="dessert_choice" value="1">
-        <label for="dessert_choice-1">
-            <span class="restaurant-onylcard__form__subtitle">Paris-Brest</span>
-            <span class="restaurant-onylcard__form__description">Revisité</span>
-            <span class="restaurant-onylcard__form__price">18€</span>
-        </label>
-        <input id="dessert_choice-2" type="radio" name="dessert-choice" value="2">
-        <label for="dessert_choice-2">
-            <span class="restaurant-onylcard__form__subtitle">Macaron au chocolat d'exception</span>
-            <span class="restaurant-onylcard__form__description">Et glace à la vanille de Madagascar</span>
-            <span class="restaurant-onylcard__form__price">22€</span>
-        </label>
-        <input id="dessert_choice-3" type="radio" name="desser_choice" value="3">
-        <label for="dessert_choice-3">
-            <span class="restaurant-onylcard__form__subtitle">Mousse au chocolat</span>
-            <span class="restaurant-onylcard__form__description">Et sa délicate touche de fraîcheur</span>
-            <span class="restaurant-onylcard__form__price">23€</span>
-        </label>
-        <button class="button-1" type="submit">Commander</button>
-        </form>
-    </article>
-
+    <!-- FOOTER -->
     <footer class="footer">
         <a href="index.html"> <img class="footer__logo" src="../assets/logo/ohmyfood@2x.svg" alt="Logo de Ohmyfood, en blanc"></a>
         <ul class="footer__list">
