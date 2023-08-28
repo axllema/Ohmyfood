@@ -17,15 +17,18 @@
           background: #f6f6f6;
       
           @include tablet{
+            max-width: 1055px;
             justify-content: center;
           }
       
           @include desktop {
+            max-width: 1055px;
             margin-right: 150px;
             margin-left: 150px;
           }
       
           @include desktop-large {
+            max-width: 1055px;
             margin-right: 195px;
             margin-left: 274px;
         }

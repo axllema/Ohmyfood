@@ -1,190 +1,192 @@
 .restaurant-onylcard__form {
-@include flex(column, flex-start, $gap:12px);
-max-width: 1055px;
-background: #f6f6f6;
-margin: 0 auto;
-gap: 12px;
-    input[type="radio"] {
-      display: none;
-
-/*  oc copy*/
-
-      &:checked + label::before {
-        transform: rotate(0deg); //flip icon in original  default:180°
-        margin-right: 0;
+  @include flex(column, flex-start, $gap:12px);
+  max-width: 1055px;
+  background: #f6f6f6;
+  margin: 0 auto;
+  gap: 12px;
+      input[type="radio"] {
+        display: none;
       }
-      &:checked + label::after {
-        margin-right: 0; //translate "container" default:59px
-      }
-      &:checked + label .restaurant-onlycard__form__subtitle{
-        padding-right:calc(59px + 40px)
-      }
-      &:checked + label .restaurant-onlycard__form__price {
-        padding-right: 59px; // reduce description and title size.
-      }
-    }
 
-    /*  oc copy*/
-
-&__title{
-  @include flex(column);
-  align-self: start;
-  height: 27px;
-  font-family: $main-font;
-  font-size: 20px;
-  font-weight: $thin;
-  text-transform: uppercase;
-  /* top | right | bottom | left */
-  margin: 40px 0px 0px 15px;
-  position: relative;
-  
-  @include tablet{
-    margin: 40px 0px 0px 50px;
-  }
-}
-
-  &--line{
-    position: absolute;
-    left: -2px;
-    top: 27px;
-    width: 52px;
-    height: 3px;
-    background-color: $mint-color;
-
-      @include mobile-medium {
-      display: block;
-      right: 352px;
-    }
-
-    @include tablet {
-      display: block;
-      right: 33px;
+    @include tablet{
+      max-width: 1055px;
+      @include flex($direction: column, $justify: initial, $align: center, $gap: 12px);
     }
 
     @include desktop{
-      left: -1px;
+      max-width: 1055px;
+      margin-right: 150px;
+      margin-left: 150px;
     }
-
     @include desktop-large{
-      left: -1px;
-    }
-  }
+      max-width: 1055px;
+      margin-right: 194px;
+      margin-left: 274px;
+      padding: 0px 20px 0px 20px;
+}
 
 
- &__subtitle{
+  &__title{
+    @include flex(column);
+    align-self: start;
+    height: 27px;
     font-family: $main-font;
     font-size: 20px;
-    font-weight: $semi-bold;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 228px;
-
-    @include mobile-medium{
-      width: 262px;
-    }
-
-    @include tablet{
-      text-overflow: unset;
-      overflow: visible;
-
-    }
-
-    @include desktop{
-      text-overflow: unset;
-      overflow: visible;
-    }
-
-    @include desktop-large{
-      text-overflow: unset;
-      overflow: visible;
-    }
-  }
-
-  &__description{
-    font-family: $main-font;
-    font-size: 17px;
     font-weight: $thin;
-
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 228px;
-
-    @include mobile-medium{
-      width: 275px;
+    text-transform: uppercase;
+    /* top | right | bottom | left */
+    margin: 40px 0px 0px 15px;
+    position: relative;
+    
+    @include tablet{
+      margin: 40px 0px 0px 50px;
     }
+  }
+
+      &--line{
+        position: absolute;
+        left: -2px;
+        top: 27px;
+        width: 52px;
+        height: 3px;
+        background-color: $mint-color;
+
+          @include mobile-medium {
+          display: block;
+          right: 352px;
+        }
+        @include tablet {
+          display: block;
+          right: 33px;
+        }
+        @include desktop{
+          left: -1px;
+        }
+        @include desktop-large{
+          left: -1px;
+        }
+      }
+
+        &__subtitle{
+            font-family: $main-font;
+            font-size: 20px;
+            font-weight: $semi-bold;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 228px;
+
+            @include mobile-medium{
+              width: 262px;
+            }
+
+            @include tablet{
+              text-overflow: unset;
+              overflow: visible;
+
+            }
+
+            @include desktop{
+              text-overflow: unset;
+              overflow: visible;
+            }
+
+            @include desktop-large{
+              text-overflow: unset;
+              overflow: visible;
+            }
+          }
+
+          &__description{
+            font-family: $main-font;
+            font-size: 17px;
+            font-weight: $thin;
+
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 228px;
+
+            @include mobile-medium{
+              width: 275px;
+            }
+            @include tablet{
+              text-overflow: unset;
+              overflow: visible;
+            }
+            @include desktop{
+              text-overflow: unset;
+              overflow: visible;
+            }
+            @include desktop-large{
+              text-overflow: unset;
+              overflow: visible;
+            }
+          }
+
+            &__price{
+              position: absolute;
+              left: 295px;
+              bottom: 13px;
+              font-family: $main-font;
+              font-weight: $semi-bold;
+              font-size: 17px;
+
+            @include mobile-medium{
+              left: 339px;
+            }
+            @include tablet{
+              left: 580px;
+            }
+            @include desktop{
+              left: 555px;
+            }
+            @include desktop-large{
+              left: 634px;
+            }
+          }
+          }
+
+
+  label {
+    @include flex(column, center, initial, 0);
+    position: relative;
+    height: 70px;
+    margin: 0 12px;
+    padding: 0 15px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: box-shadow 0.5s;
+
+    opacity: 0%;
+    transform: scaleX(0);
+    transform-origin: right;
+    animation: labelSlide 500ms ease-in-out;
+    animation-fill-mode: forwards;
 
     @include tablet{
-      text-overflow: unset;
-      overflow: visible;
+      width: 80%;
     }
 
     @include desktop{
-      text-overflow: unset;
-      overflow: visible;
+      width: 70%;
     }
 
     @include desktop-large{
-      text-overflow: unset;
-      overflow: visible;
+      width: 70%;
     }
-  }
 
-  &__price{
-    position: absolute;
-    left: 295px;
-    bottom: 13px;
-    font-family: $main-font;
-    font-weight: $semi-bold;
-    font-size: 17px;
-
-  @include mobile-medium{
-    left: 339px;
-  }
-
-  @include tablet{
-    left: 580px;
-  }
-
-  @include desktop{
-    left: 555px;
-  }
-
-  @include desktop-large{
-    left: 634px;
-  }
-}
-}
-
-
-label {
-  @include flex(column, center, initial, 0);
-  position: relative;
-  height: 70px;
-  margin: 0 12px;
-  padding: 0 15px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  background-color: white;
-  transition: box-shadow 0.5s;
-
-  opacity: 0%;
-  transform: scaleX(0);
-  transform-origin: right;
-  animation: labelSlide 500ms ease-in-out;
-  animation-fill-mode: forwards;
-
-  @for $i from 10 through 1 {
-    &:nth-of-type(#{$i}) {
-      animation-delay: $i * 300ms;
+    @for $i from 10 through 1 {
+      &:nth-of-type(#{$i}) {
+        animation-delay: $i * 300ms;
+      }
     }
-  }
 
-    button {
-      margin: 28px auto 40px auto;
+      button {
+        margin: 28px auto 40px auto;
+      }
     }
-  }
 
 
 @keyframes labelSlide {

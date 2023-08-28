@@ -366,24 +366,34 @@ footer .footer__list {
   background: #f6f6f6;
   margin: 0 auto;
   gap: 12px;
-  /*  oc copy*/
 }
 .restaurant-onylcard__form input[type=radio] {
   display: none;
-  /*  oc copy*/
 }
-.restaurant-onylcard__form input[type=radio]:checked + label::before {
-  transform: rotate(0deg);
-  margin-right: 0;
+@media (min-width: 768px) {
+  .restaurant-onylcard__form {
+    max-width: 1055px;
+    display: flex;
+    flex-direction: column;
+    justify-content: initial;
+    align-items: center;
+    gap: 12px;
+  }
 }
-.restaurant-onylcard__form input[type=radio]:checked + label::after {
-  margin-right: 0;
+@media (min-width: 1024px) {
+  .restaurant-onylcard__form {
+    max-width: 1055px;
+    margin-right: 150px;
+    margin-left: 150px;
+  }
 }
-.restaurant-onylcard__form input[type=radio]:checked + label .restaurant-onlycard__form__subtitle {
-  padding-right: 99px;
-}
-.restaurant-onylcard__form input[type=radio]:checked + label .restaurant-onlycard__form__price {
-  padding-right: 59px;
+@media (min-width: 1440px) {
+  .restaurant-onylcard__form {
+    max-width: 1055px;
+    margin-right: 194px;
+    margin-left: 274px;
+    padding: 0px 20px 0px 20px;
+  }
 }
 .restaurant-onylcard__form__title {
   display: flex;
@@ -548,6 +558,21 @@ label {
   transform-origin: right;
   animation: labelSlide 500ms ease-in-out;
   animation-fill-mode: forwards;
+}
+@media (min-width: 768px) {
+  label {
+    width: 80%;
+  }
+}
+@media (min-width: 1024px) {
+  label {
+    width: 70%;
+  }
+}
+@media (min-width: 1440px) {
+  label {
+    width: 70%;
+  }
 }
 label:nth-of-type(10) {
   animation-delay: 3000ms;
@@ -921,17 +946,20 @@ label button {
 }
 @media (min-width: 768px) {
   .restaurant-onlycard__top {
+    max-width: 1055px;
     justify-content: center;
   }
 }
 @media (min-width: 1024px) {
   .restaurant-onlycard__top {
+    max-width: 1055px;
     margin-right: 150px;
     margin-left: 150px;
   }
 }
 @media (min-width: 1440px) {
   .restaurant-onlycard__top {
+    max-width: 1055px;
     margin-right: 195px;
     margin-left: 274px;
   }
