@@ -1,5 +1,5 @@
 .loader {
-  opacity: 0;
+  opacity: 1;
   @include flex(column, center, center, 2rem);
   background: white;
   position: fixed;

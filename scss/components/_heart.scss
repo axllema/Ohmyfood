@@ -5,31 +5,22 @@
     text-align: center; 
     width: 26px;
     color: black;
-
-    &:active {
-      opacity: 0;
-    }
-
-    @include desktop{
-      &:hover{
-        cursor: pointer;
-        opacity: 0£;
-    }
-    }
   }
 
   .solid-heart{
     text-align: center; 
     width: 26px; 
     opacity: 0;
-    color: red;
+    transition: opacity 0.6s;
 
     &:active {
+      color: red;
       opacity: 1;
     }
 
     @include desktop{
       &:hover{
+        color: red;
         cursor: pointer;
         opacity: 1;
     }

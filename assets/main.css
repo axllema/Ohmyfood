@@ -348,7 +348,7 @@ footer .footer__list {
 @media (min-width: 1440px) {
   .card__like-icon {
     display: block;
-    left: 385px;
+    left: 350px;
   }
 }
 
@@ -627,38 +627,29 @@ label button {
   width: 26px;
   color: black;
 }
-.card .empty-heart:active,
-.restaurant-onlycard .empty-heart:active {
-  opacity: 0;
-}
-@media (min-width: 1024px) {
-  .card .empty-heart:hover,
-  .restaurant-onlycard .empty-heart:hover {
-    cursor: pointer;
-    opacity: 0£;
-  }
-}
 .card .solid-heart,
 .restaurant-onlycard .solid-heart {
   text-align: center;
   width: 26px;
   opacity: 0;
-  color: red;
+  transition: opacity 0.6s;
 }
 .card .solid-heart:active,
 .restaurant-onlycard .solid-heart:active {
+  color: red;
   opacity: 1;
 }
 @media (min-width: 1024px) {
   .card .solid-heart:hover,
   .restaurant-onlycard .solid-heart:hover {
+    color: red;
     cursor: pointer;
     opacity: 1;
   }
 }
 
 .loader {
-  opacity: 0;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
