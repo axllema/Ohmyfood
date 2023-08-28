@@ -57,7 +57,7 @@ footer {
                 &:active{
                     color: $gradient-first-color;
                 }
-            /* changing the color of the text, in the footer, just for UX purpose/aesthetic*/
+            /* changing the color of the text, in the footer, just for UX purpose */
 
                 @include desktop{
                     &:hover{

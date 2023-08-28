@@ -145,7 +145,7 @@ footer .footer__list {
   }
 }
 footer .footer__link {
-  /* changing the color of the text, in the footer, just for UX purpose/aesthetic*/
+  /* changing the color of the text, in the footer, just for UX purpose */
 }
 footer .footer__link:active {
   color: #9356DC;
