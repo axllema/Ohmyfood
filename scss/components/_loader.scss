@@ -28,6 +28,10 @@
           background: map-get($loader-colors, $i);
         }
     }
+    /* it's called "sass @for loops", it compiles :
+    ".loader__circle:nth-child(1): ...s",
+    ".loader__circle:nth-child(1): ...s",
+    and so on */
 
       @keyframes loader {
         0% {
