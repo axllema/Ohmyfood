@@ -633,7 +633,7 @@ label button {
 .restaurant-onlycard .empty-heart {
   text-align: center;
   width: 26px;
-  color: #9356DC;
+  color: black;
   opacity: 1;
 }
 .card .solid-heart,
