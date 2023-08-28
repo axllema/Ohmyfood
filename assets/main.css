@@ -695,6 +695,7 @@ label button {
 @keyframes loader {
   0% {
     z-index: 1;
+    opacity: 0.5;
   }
   35% {
     transform: scale(1.05);
@@ -704,10 +705,10 @@ label button {
     transform: scale(1);
   }
   80% {
-    opacity: 0.019;
+    opacity: 0.05;
   }
   90% {
-    opacity: 0.005;
+    opacity: 0.15;
   }
   99% {
     opacity: 0.001;
@@ -721,23 +722,20 @@ label button {
 @keyframes loaderCircles {
   0% {
     z-index: 1;
+    opacity: 0.5;
   }
   35% {
     transform: scale(1.05);
     opacity: 1;
   }
-  50% {
-    transform: scale(1);
-  }
   70% {
-    opacity: 0.019;
+    transform: scale(1);
   }
   80% {
     opacity: 0.05;
   }
   90% {
-    opacity: 0.02;
-    z-index: 5;
+    opacity: 0.15;
   }
   99% {
     opacity: 0.001;
