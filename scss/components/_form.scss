@@ -179,7 +179,7 @@
 
     @for $i from 10 through 1 {
       &:nth-of-type(#{$i}) {
-        animation-delay: $i * 300ms;
+        animation-delay: $i * 200ms;
       }
     }
 

@@ -593,34 +593,34 @@ label {
   }
 }
 label:nth-of-type(10) {
-  animation-delay: 3000ms;
+  animation-delay: 2000ms;
 }
 label:nth-of-type(9) {
-  animation-delay: 2700ms;
-}
-label:nth-of-type(8) {
-  animation-delay: 2400ms;
-}
-label:nth-of-type(7) {
-  animation-delay: 2100ms;
-}
-label:nth-of-type(6) {
   animation-delay: 1800ms;
 }
-label:nth-of-type(5) {
-  animation-delay: 1500ms;
+label:nth-of-type(8) {
+  animation-delay: 1600ms;
 }
-label:nth-of-type(4) {
+label:nth-of-type(7) {
+  animation-delay: 1400ms;
+}
+label:nth-of-type(6) {
   animation-delay: 1200ms;
 }
-label:nth-of-type(3) {
-  animation-delay: 900ms;
+label:nth-of-type(5) {
+  animation-delay: 1000ms;
 }
-label:nth-of-type(2) {
+label:nth-of-type(4) {
+  animation-delay: 800ms;
+}
+label:nth-of-type(3) {
   animation-delay: 600ms;
 }
+label:nth-of-type(2) {
+  animation-delay: 400ms;
+}
 label:nth-of-type(1) {
-  animation-delay: 300ms;
+  animation-delay: 200ms;
 }
 label button {
   margin: 28px auto 40px auto;
