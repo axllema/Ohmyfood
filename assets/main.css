@@ -356,32 +356,180 @@ footer .footer__list {
   }
 }
 
-.restaurant-onlycard .form {
+.restaurant-onylcard__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: initial;
+  gap: 12px;
+  max-width: 1055px;
+  background: #f6f6f6;
+  margin: 0 auto;
+  gap: 12px;
+  /*  oc copy*/
+}
+.restaurant-onylcard__form input[type=radio] {
+  display: none;
+  /*  oc copy*/
+}
+.restaurant-onylcard__form input[type=radio]:checked + label::before {
+  transform: rotate(0deg);
+  margin-right: 0;
+}
+.restaurant-onylcard__form input[type=radio]:checked + label::after {
+  margin-right: 0;
+}
+.restaurant-onylcard__form input[type=radio]:checked + label .restaurant-onlycard__form__subtitle {
+  padding-right: 99px;
+}
+.restaurant-onylcard__form input[type=radio]:checked + label .restaurant-onlycard__form__price {
+  padding-right: 59px;
+}
+.restaurant-onylcard__form__title {
   display: flex;
   flex-direction: column;
   justify-content: initial;
   align-items: initial;
-  gap: 12px;
-  /*  oc copy*/
+  gap: initial;
+  align-self: start;
+  height: 27px;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+  /* top | right | bottom | left */
+  margin: 40px 0px 0px 15px;
+  position: relative;
 }
-.restaurant-onlycard .form input[type=radio] {
-  display: none;
-  /*  oc copy*/
+@media (min-width: 768px) {
+  .restaurant-onylcard__form__title {
+    margin: 40px 0px 0px 50px;
+  }
 }
-.restaurant-onlycard .form input[type=radio]:checked + label::before {
-  transform: rotate(0deg);
-  margin-right: 0;
+.restaurant-onylcard__form--line {
+  position: absolute;
+  left: -2px;
+  top: 27px;
+  width: 52px;
+  height: 3px;
+  background-color: #99E2D0;
 }
-.restaurant-onlycard .form input[type=radio]:checked + label::after {
-  margin-right: 0;
+@media (min-width: 420px) {
+  .restaurant-onylcard__form--line {
+    display: block;
+    right: 352px;
+  }
 }
-.restaurant-onlycard .form input[type=radio]:checked + label .restaurant-onlycard__form__subtitle {
-  padding-right: 99px;
+@media (min-width: 768px) {
+  .restaurant-onylcard__form--line {
+    display: block;
+    right: 33px;
+  }
 }
-.restaurant-onlycard .form input[type=radio]:checked + label .restaurant-onlycard__form__price {
-  padding-right: 59px;
+@media (min-width: 1024px) {
+  .restaurant-onylcard__form--line {
+    left: -1px;
+  }
 }
-.restaurant-onlycard .form label {
+@media (min-width: 1440px) {
+  .restaurant-onylcard__form--line {
+    left: -1px;
+  }
+}
+.restaurant-onylcard__form__subtitle {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 228px;
+}
+@media (min-width: 420px) {
+  .restaurant-onylcard__form__subtitle {
+    width: 262px;
+  }
+}
+@media (min-width: 768px) {
+  .restaurant-onylcard__form__subtitle {
+    text-overflow: unset;
+    overflow: visible;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant-onylcard__form__subtitle {
+    text-overflow: unset;
+    overflow: visible;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurant-onylcard__form__subtitle {
+    text-overflow: unset;
+    overflow: visible;
+  }
+}
+.restaurant-onylcard__form__description {
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  font-weight: 300;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 228px;
+}
+@media (min-width: 420px) {
+  .restaurant-onylcard__form__description {
+    width: 275px;
+  }
+}
+@media (min-width: 768px) {
+  .restaurant-onylcard__form__description {
+    text-overflow: unset;
+    overflow: visible;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant-onylcard__form__description {
+    text-overflow: unset;
+    overflow: visible;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurant-onylcard__form__description {
+    text-overflow: unset;
+    overflow: visible;
+  }
+}
+.restaurant-onylcard__form__price {
+  position: absolute;
+  left: 295px;
+  bottom: 13px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+}
+@media (min-width: 420px) {
+  .restaurant-onylcard__form__price {
+    left: 339px;
+  }
+}
+@media (min-width: 768px) {
+  .restaurant-onylcard__form__price {
+    left: 580px;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant-onylcard__form__price {
+    left: 555px;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurant-onylcard__form__price {
+    left: 634px;
+  }
+}
+
+label {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -400,72 +548,38 @@ footer .footer__list {
   transform-origin: right;
   animation: labelSlide 500ms ease-in-out;
   animation-fill-mode: forwards;
-  /*  oc copy*/
-  /*  oc copy*/
 }
-.restaurant-onlycard .form label:nth-of-type(10) {
+label:nth-of-type(10) {
   animation-delay: 3000ms;
 }
-.restaurant-onlycard .form label:nth-of-type(9) {
+label:nth-of-type(9) {
   animation-delay: 2700ms;
 }
-.restaurant-onlycard .form label:nth-of-type(8) {
+label:nth-of-type(8) {
   animation-delay: 2400ms;
 }
-.restaurant-onlycard .form label:nth-of-type(7) {
+label:nth-of-type(7) {
   animation-delay: 2100ms;
 }
-.restaurant-onlycard .form label:nth-of-type(6) {
+label:nth-of-type(6) {
   animation-delay: 1800ms;
 }
-.restaurant-onlycard .form label:nth-of-type(5) {
+label:nth-of-type(5) {
   animation-delay: 1500ms;
 }
-.restaurant-onlycard .form label:nth-of-type(4) {
+label:nth-of-type(4) {
   animation-delay: 1200ms;
 }
-.restaurant-onlycard .form label:nth-of-type(3) {
+label:nth-of-type(3) {
   animation-delay: 900ms;
 }
-.restaurant-onlycard .form label:nth-of-type(2) {
+label:nth-of-type(2) {
   animation-delay: 600ms;
 }
-.restaurant-onlycard .form label:nth-of-type(1) {
+label:nth-of-type(1) {
   animation-delay: 300ms;
 }
-.restaurant-onlycard .form label:hover, .restaurant-onlycard .form label:focus {
-  box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.15);
-}
-.restaurant-onlycard .form label::before {
-  content: "\f058";
-  font-family: fontAwesome;
-  font-size: 20px;
-  color: white;
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: inherit;
-  width: 59px;
-  line-height: 69px;
-  text-align: center;
-  margin-right: -59px;
-  transform: rotate(180deg);
-  z-index: 1;
-  transition: all 0.5s ease-in-out;
-}
-.restaurant-onlycard .form label::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 0;
-  height: inherit;
-  width: 59px;
-  margin-right: -59px;
-  border-radius: 0 15px 15px 0;
-  background-color: #99E2D0;
-  transition: all 0.5s ease-in-out;
-}
-.restaurant-onlycard .form label button {
+label button {
   margin: 28px auto 40px auto;
 }
 
@@ -841,160 +955,5 @@ footer .footer__list {
   .restaurant-onlycard__like-icon {
     right: 325px;
     top: 26px;
-  }
-}
-
-.restaurant-onylcard__form {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: initial;
-  gap: initial;
-  max-width: 1055px;
-  background: #f6f6f6;
-  margin: 0 auto;
-  gap: 12px;
-}
-.restaurant-onylcard__form__title {
-  display: flex;
-  flex-direction: column;
-  justify-content: initial;
-  align-items: initial;
-  gap: initial;
-  align-self: start;
-  height: 27px;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  text-transform: uppercase;
-  /* top | right | bottom | left */
-  margin: 40px 0px 0px 15px;
-  position: relative;
-}
-@media (min-width: 768px) {
-  .restaurant-onylcard__form__title {
-    margin: 40px 0px 0px 50px;
-  }
-}
-.restaurant-onylcard__form--line {
-  position: absolute;
-  left: -2px;
-  top: 27px;
-  width: 52px;
-  height: 3px;
-  background-color: #99E2D0;
-}
-@media (min-width: 420px) {
-  .restaurant-onylcard__form--line {
-    display: block;
-    right: 352px;
-  }
-}
-@media (min-width: 768px) {
-  .restaurant-onylcard__form--line {
-    display: block;
-    right: 33px;
-  }
-}
-@media (min-width: 1024px) {
-  .restaurant-onylcard__form--line {
-    left: -1px;
-  }
-}
-@media (min-width: 1440px) {
-  .restaurant-onylcard__form--line {
-    left: -1px;
-  }
-}
-.restaurant-onylcard__form__subtitle {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 228px;
-}
-@media (min-width: 420px) {
-  .restaurant-onylcard__form__subtitle {
-    width: 262px;
-  }
-}
-@media (min-width: 768px) {
-  .restaurant-onylcard__form__subtitle {
-    text-overflow: unset;
-    overflow: visible;
-  }
-}
-@media (min-width: 1024px) {
-  .restaurant-onylcard__form__subtitle {
-    text-overflow: unset;
-    overflow: visible;
-  }
-}
-@media (min-width: 1440px) {
-  .restaurant-onylcard__form__subtitle {
-    text-overflow: unset;
-    overflow: visible;
-  }
-}
-.restaurant-onylcard__form__description {
-  font-family: "Roboto", sans-serif;
-  font-size: 17px;
-  font-weight: 300;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-  width: 228px;
-}
-@media (min-width: 420px) {
-  .restaurant-onylcard__form__description {
-    width: 275px;
-  }
-}
-@media (min-width: 768px) {
-  .restaurant-onylcard__form__description {
-    text-overflow: unset;
-    overflow: visible;
-  }
-}
-@media (min-width: 1024px) {
-  .restaurant-onylcard__form__description {
-    text-overflow: unset;
-    overflow: visible;
-  }
-}
-@media (min-width: 1440px) {
-  .restaurant-onylcard__form__description {
-    text-overflow: unset;
-    overflow: visible;
-  }
-}
-.restaurant-onylcard__form__price {
-  position: absolute;
-  left: 295px;
-  bottom: 13px;
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 17px;
-}
-@media (min-width: 420px) {
-  .restaurant-onylcard__form__price {
-    left: 339px;
-  }
-}
-@media (min-width: 768px) {
-  .restaurant-onylcard__form__price {
-    left: 580px;
-  }
-}
-@media (min-width: 1024px) {
-  .restaurant-onylcard__form__price {
-    left: 555px;
-  }
-}
-@media (min-width: 1440px) {
-  .restaurant-onylcard__form__price {
-    left: 634px;
   }
 }/*# sourceMappingURL=main.css.map */
