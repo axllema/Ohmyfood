@@ -144,6 +144,9 @@ footer .footer__list {
     gap: 30px;
   }
 }
+footer .footer__link {
+  /* changing the color of the text, in the footer, just for UX purpose/aesthetic*/
+}
 footer .footer__link:active {
   color: #9356DC;
 }
@@ -190,6 +193,7 @@ footer .footer__link:active {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   margin: 20px auto 40px auto;
+  /* lighter button + darker shadow when clicked */
 }
 .button-1:active {
   filter: brightness(110%);
@@ -212,6 +216,7 @@ footer .footer__link:active {
   font-size: 16px;
   font-weight: 500;
   width: 100%;
+  /* only changes the color of the icon (i) when clicked */
 }
 @media (min-width: 768px) {
   .button-2 {
@@ -425,7 +430,6 @@ footer .footer__link:active {
   font-size: 20px;
   font-weight: 300;
   text-transform: uppercase;
-  /* top | right | bottom | left */
   margin: 40px 0px 0px 15px;
   position: relative;
 }
@@ -503,6 +507,7 @@ footer .footer__link:active {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  /* adds 3dots at the end of sentence, if it does'nt have enough space to be fully written */
   width: 228px;
 }
 @media (min-width: 420px) {
@@ -576,6 +581,11 @@ label {
   transform-origin: right;
   animation: labelSlide 500ms ease-in-out;
   animation-fill-mode: forwards;
+  /* the animation doesn't reset and the elements stay as it is at the end of anim*/
+  /* it's called "sass @for loops", it compiles :
+  ".label:nth-child(1): ...s",
+  ".label:nth-child(2): ...s"
+  and so on */
 }
 @media (min-width: 768px) {
   label {
@@ -655,11 +665,18 @@ label button {
   text-align: center;
   width: 26px;
   opacity: 0;
+  /* in extends.scss :
+    background: linear-gradient(#9356DC,#FF79DA);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; 
+    so that the heart is full and no square around takes the color */
 }
 .card .solid-heart:active,
 .restaurant-onlycard .solid-heart:active {
   opacity: 1;
   transition: opacity 0.6s ease-in-out;
+  animation-fill-mode: forwards;
 }
 @media (min-width: 1024px) {
   .card .solid-heart:hover,

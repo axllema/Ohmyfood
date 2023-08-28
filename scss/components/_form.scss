@@ -34,7 +34,6 @@
     font-size: 20px;
     font-weight: $thin;
     text-transform: uppercase;
-    /* top | right | bottom | left */
     margin: 40px 0px 0px 15px;
     position: relative;
     
@@ -105,6 +104,7 @@
             text-overflow: ellipsis;
             overflow: hidden;
             white-space: nowrap;
+/* adds 3dots at the end of sentence, if it does'nt have enough space to be fully written */
             width: 228px;
 
             @include mobile-medium{
@@ -164,6 +164,7 @@
     transform-origin: right;
     animation: labelSlide 500ms ease-in-out;
     animation-fill-mode: forwards;
+/* the animation doesn't reset and the elements stay as it is at the end of anim*/
 
     @include tablet{
       width: 80%;
@@ -182,11 +183,15 @@
         animation-delay: $i * 200ms;
       }
     }
+    /* it's called "sass @for loops", it compiles :
+    ".label:nth-child(1): ...s",
+    ".label:nth-child(2): ...s"
+    and so on */
 
       button {
         margin: 28px auto 40px auto;
       }
-    }
+}
 
 
 @keyframes labelSlide {

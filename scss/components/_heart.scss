@@ -13,10 +13,18 @@
     width: 26px; 
     opacity: 0;
     @extend %heart-gradient;
+  /* in extends.scss :
+    background: linear-gradient(#9356DC,#FF79DA);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; 
+    so that the heart is full and no square around takes the color */
+    
 
     &:active {
       opacity: 1;
       transition: opacity 0.6s ease-in-out;
+      animation-fill-mode: forwards;
     }
 
     @include desktop{
@@ -24,9 +32,9 @@
         cursor: pointer;
         opacity: 1;
         transition: opacity 0.6s ease-in-out;
+        }
+      }
     }
-    }
-}
 }
 
 

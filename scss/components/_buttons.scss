@@ -17,6 +17,7 @@
         filter: brightness(110%);
         box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);
     }
+    /* lighter button + darker shadow when clicked */
 
     @include desktop {
         &:hover{
@@ -46,6 +47,7 @@
         &:active i {
             color:$purple-color;
         }
+        /* only changes the color of the icon (i) when clicked */
     
         @include desktop {
             &:hover i{
@@ -67,6 +69,7 @@
             &:active{
                 box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.50);
             }
+            
 
             @include tablet {
                 width: calc(100%/2);
