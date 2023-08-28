@@ -1,37 +1,40 @@
-
 .card,
 .restaurant-onlycard {
+
   .empty-heart {
     text-align: center; 
     width: 26px;
     color: black;
 
     &:active {
-      cursor: auto;
+      opacity: 0;
     }
 
     @include desktop{
       &:hover{
-      cursor: pointer;
+        cursor: pointer;
+        opacity: 0£;
     }
-  }
+    }
   }
 
   .solid-heart{
     text-align: center; 
     width: 26px; 
-
+    opacity: 0;
+    color: red;
 
     &:active {
-      cursor: auto;
+      opacity: 1;
     }
 
     @include desktop{
       &:hover{
-      cursor: pointer;
+        cursor: pointer;
+        opacity: 1;
     }
     }
 }
-} 
+}
 
 

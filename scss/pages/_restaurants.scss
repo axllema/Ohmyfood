@@ -42,16 +42,18 @@
 
       &__like-icon{
         position: absolute;
-        right: 28px;
-        top: 27px;
+        left: 305px;
+        bottom: 30px;
 
         @include tablet{
+          position: absolute;
           right: 215px;
         }
 
         @include desktop-large{
+          position: absolute;
           right: 325px;
-        top: 26px;
+          top: 26px;
         }
       }
 

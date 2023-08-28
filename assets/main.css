@@ -628,27 +628,31 @@ label button {
 }
 .card .empty-heart:active,
 .restaurant-onlycard .empty-heart:active {
-  cursor: auto;
+  opacity: 0;
 }
 @media (min-width: 1024px) {
   .card .empty-heart:hover,
   .restaurant-onlycard .empty-heart:hover {
     cursor: pointer;
+    opacity: 0£;
   }
 }
 .card .solid-heart,
 .restaurant-onlycard .solid-heart {
   text-align: center;
   width: 26px;
+  opacity: 0;
+  color: red;
 }
 .card .solid-heart:active,
 .restaurant-onlycard .solid-heart:active {
-  cursor: auto;
+  opacity: 1;
 }
 @media (min-width: 1024px) {
   .card .solid-heart:hover,
   .restaurant-onlycard .solid-heart:hover {
     cursor: pointer;
+    opacity: 1;
   }
 }
 
@@ -962,16 +966,18 @@ label button {
 }
 .restaurant-onlycard__like-icon {
   position: absolute;
-  right: 28px;
-  top: 27px;
+  left: 305px;
+  bottom: 30px;
 }
 @media (min-width: 768px) {
   .restaurant-onlycard__like-icon {
+    position: absolute;
     right: 215px;
   }
 }
 @media (min-width: 1440px) {
   .restaurant-onlycard__like-icon {
+    position: absolute;
     right: 325px;
     top: 26px;
   }
