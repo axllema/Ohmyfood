@@ -539,7 +539,7 @@ footer .footer__list {
 }
 @media (min-width: 1440px) {
   .restaurant-onylcard__form__price {
-    left: 634px;
+    left: 790px;
   }
 }
 
@@ -570,12 +570,12 @@ label {
 }
 @media (min-width: 1024px) {
   label {
-    width: 70%;
+    width: 80%;
   }
 }
 @media (min-width: 1440px) {
   label {
-    width: 70%;
+    width: 80%;
   }
 }
 label:nth-of-type(10) {
@@ -641,17 +641,18 @@ label button {
   text-align: center;
   width: 26px;
   opacity: 0;
-  transition: opacity 0.6s;
 }
 .card .solid-heart:active,
 .restaurant-onlycard .solid-heart:active {
   opacity: 1;
+  transition: opacity 0.6s;
 }
 @media (min-width: 1024px) {
   .card .solid-heart:hover,
   .restaurant-onlycard .solid-heart:hover {
     cursor: pointer;
     opacity: 1;
+    transition: opacity 0.6s;
   }
 }
 
@@ -967,18 +968,21 @@ label button {
 .restaurant-onlycard__like-icon {
   position: absolute;
   left: 305px;
-  bottom: 30px;
+  bottom: 28px;
 }
 @media (min-width: 768px) {
   .restaurant-onlycard__like-icon {
-    position: absolute;
-    right: 215px;
+    left: 518px;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant-onlycard__like-icon {
+    left: 518px;
   }
 }
 @media (min-width: 1440px) {
   .restaurant-onlycard__like-icon {
-    position: absolute;
-    right: 325px;
+    left: 670px;
     top: 26px;
   }
 }/*# sourceMappingURL=main.css.map */

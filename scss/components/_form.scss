@@ -142,7 +142,7 @@
               left: 555px;
             }
             @include desktop-large{
-              left: 634px;
+              left: 790px;
             }
           }
           }
@@ -170,11 +170,11 @@
     }
 
     @include desktop{
-      width: 70%;
+      width: 80%;
     }
 
     @include desktop-large{
-      width: 70%;
+      width: 80%;
     }
 
     @for $i from 10 through 1 {

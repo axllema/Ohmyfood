@@ -13,16 +13,17 @@
     width: 26px; 
     opacity: 0;
     @extend %heart-gradient;
-    transition: opacity 0.6s;
 
     &:active {
       opacity: 1;
+      transition: opacity 0.6s;
     }
 
     @include desktop{
       &:hover{
         cursor: pointer;
         opacity: 1;
+        transition: opacity 0.6s;
     }
     }
 }
