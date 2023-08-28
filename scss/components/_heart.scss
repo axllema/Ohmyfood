@@ -16,14 +16,14 @@
 
     &:active {
       opacity: 1;
-      transition: opacity 0.6s;
+      transition: opacity 0.6s ease-in-out;
     }
 
     @include desktop{
       &:hover{
         cursor: pointer;
         opacity: 1;
-        transition: opacity 0.6s;
+        transition: opacity 0.6s ease-in-out;
     }
     }
 }

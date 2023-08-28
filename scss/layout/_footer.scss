@@ -1,11 +1,5 @@
 footer {
     @include flex(column, center, flex-start);
-   /****** Colors
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-     ***********/
     padding-left: 15px;
     padding-top : 10px;
     padding-bottom: 15px;
@@ -15,8 +9,6 @@ footer {
         padding-top: 40px;
         padding-bottom: 30px;
     }
-
-
 
     .footer {
         @include flex(column, flex-start, initial, 16px);
@@ -58,14 +50,22 @@ footer {
             @include desktop {
                 width: 100%;
                 gap: 30px;
-            } }
+            }
+        }
 
-         /****** not working
-            &__link {
-                opacity: .5 1s;
-                transition: opacity .3s;
+            &__link{
+                &:active{
+                    color: $gradient-first-color;
+                }
+
+                @include desktop{
+                    &:hover{
+                      cursor: pointer;
+                      color: $gradient-first-color;
+                  }
         }     
-        ***********/
 
+
+}
 }
 }

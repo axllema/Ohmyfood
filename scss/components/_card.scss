@@ -4,7 +4,7 @@
     border-radius: 15px;
     position: relative;
     &:hover {
-        transition: box-shadow, transform, 0.5s;
+        transition: box-shadow, transform, 0.3s ease-in-out;
         box-shadow: 0px 4px 15px $shadow-color;
     }
 
@@ -22,7 +22,7 @@
         border-radius: 2px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
             &:hover {
-            transition: box-shadow, transform, 0.5s;
+            transition: box-shadow, transform, 0.3s ease-in-out;
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
             background-color: $mint-color;
       }  

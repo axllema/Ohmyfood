@@ -68,12 +68,6 @@ footer {
   justify-content: center;
   align-items: flex-start;
   gap: initial;
-  /****** Colors
-   display: flex;
-   flex-direction: column;
-   justify-content: flex-start;
-   align-items: flex-start;
-    ***********/
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 15px;
@@ -99,12 +93,6 @@ footer .footer {
   padding: 22px 25px;
   max-width: 1440px;
   color: white;
-  /****** not working
-      &__link {
-          opacity: .5 1s;
-          transition: opacity .3s;
-  }     
-  ***********/
 }
 footer .footer__logo {
   display: flex;
@@ -156,6 +144,15 @@ footer .footer__list {
     gap: 30px;
   }
 }
+footer .footer__link:active {
+  color: #9356DC;
+}
+@media (min-width: 1024px) {
+  footer .footer__link:hover {
+    cursor: pointer;
+    color: #9356DC;
+  }
+}
 
 .header__logo-container {
   background-color: white;
@@ -194,9 +191,15 @@ footer .footer__list {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   margin: 20px auto 40px auto;
 }
-.button-1:hover {
+.button-1:active {
   filter: brightness(110%);
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+@media (min-width: 1024px) {
+  .button-1:hover {
+    filter: brightness(110%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+  }
 }
 
 .button-2 {
@@ -230,8 +233,13 @@ footer .footer__list {
     max-width: 335px;
   }
 }
-.button-2:hover i {
+.button-2:active i {
   color: #9356dc;
+}
+@media (min-width: 1024px) {
+  .button-2:hover i {
+    color: #9356dc;
+  }
 }
 .button-2__link {
   display: flex;
@@ -248,6 +256,9 @@ footer .footer__list {
   border: 1px solid transparent;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
+.button-2__link:active {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
 @media (min-width: 768px) {
   .button-2__link {
     width: 50%;
@@ -256,6 +267,9 @@ footer .footer__list {
 @media (min-width: 1024px) {
   .button-2__link {
     width: 100%;
+  }
+  .button-2__link:hover {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
   }
 }
 .button-2__link__number {
@@ -283,7 +297,7 @@ footer .footer__list {
   position: relative;
 }
 .card:hover {
-  transition: box-shadow, transform, 0.5s;
+  transition: box-shadow, transform, 0.3s ease-in-out;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.25);
 }
 .card--new {
@@ -301,7 +315,7 @@ footer .footer__list {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
 }
 .card--new:hover {
-  transition: box-shadow, transform, 0.5s;
+  transition: box-shadow, transform, 0.3s ease-in-out;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   background-color: #99E2D0;
 }
@@ -645,14 +659,14 @@ label button {
 .card .solid-heart:active,
 .restaurant-onlycard .solid-heart:active {
   opacity: 1;
-  transition: opacity 0.6s;
+  transition: opacity 0.6s ease-in-out;
 }
 @media (min-width: 1024px) {
   .card .solid-heart:hover,
   .restaurant-onlycard .solid-heart:hover {
     cursor: pointer;
     opacity: 1;
-    transition: opacity 0.6s;
+    transition: opacity 0.6s ease-in-out;
   }
 }
 
@@ -695,7 +709,6 @@ label button {
 @keyframes loader {
   0% {
     z-index: 1;
-    opacity: 0.5;
   }
   35% {
     transform: scale(1.05);
@@ -705,10 +718,10 @@ label button {
     transform: scale(1);
   }
   80% {
-    opacity: 0.05;
+    opacity: 0.019;
   }
   90% {
-    opacity: 0.15;
+    opacity: 0.005;
   }
   99% {
     opacity: 0.001;
@@ -722,20 +735,23 @@ label button {
 @keyframes loaderCircles {
   0% {
     z-index: 1;
-    opacity: 0.5;
   }
   35% {
     transform: scale(1.05);
     opacity: 1;
   }
-  70% {
+  50% {
     transform: scale(1);
+  }
+  70% {
+    opacity: 0.019;
   }
   80% {
     opacity: 0.05;
   }
   90% {
-    opacity: 0.15;
+    opacity: 0.02;
+    z-index: 5;
   }
   99% {
     opacity: 0.001;
