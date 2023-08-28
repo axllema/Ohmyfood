@@ -4,23 +4,23 @@
   .empty-heart {
     text-align: center; 
     width: 26px;
-    color: black;
+    color: $gradient-first-color;
+    opacity: 1;
   }
 
   .solid-heart{
     text-align: center; 
     width: 26px; 
     opacity: 0;
+    @extend %heart-gradient;
     transition: opacity 0.6s;
 
     &:active {
-      color: red;
       opacity: 1;
     }
 
     @include desktop{
       &:hover{
-        color: red;
         cursor: pointer;
         opacity: 1;
     }
