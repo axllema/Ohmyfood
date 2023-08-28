@@ -748,7 +748,7 @@ label button {
   }
 }
 
-/****** Place ***********/
+/* Place */
 .place-container {
   display: flex;
   flex-direction: row;
@@ -776,7 +776,7 @@ label button {
   background: #c9abee;
 }
 
-/****** Réservez ***********/
+/* Réservez */
 .reservation {
   display: flex;
   flex-direction: column;
@@ -801,13 +801,14 @@ label button {
   font-size: 20px;
 }
 
-/****** Fonctionnement ***********/
+/* Fonctionnement */
 .fonction {
   display: flex;
   flex-direction: column;
   justify-content: initial;
   align-items: initial;
   gap: 20px;
+  background-color: white;
   padding-top: 50px;
   padding-left: 20px;
   padding-right: 20px;
@@ -858,7 +859,7 @@ label button {
   }
 }
 
-/****** Restaurants ***********/
+/* Restaurants */
 .restaurants {
   display: flex;
   flex-direction: column;
