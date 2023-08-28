@@ -305,6 +305,7 @@ footer .footer__list {
   border-radius: 15px 15px 0 0;
 }
 .card__content {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 5px;
