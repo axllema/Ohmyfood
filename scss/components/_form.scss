@@ -16,14 +16,14 @@
 
         @include desktop{
           &:hover+label{
-            background-color: lighten($color: $mint-color, $amount: 15%);
+            background-color: lighten($color: $mint-color, $amount: 23%);
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
           }
         }
 
         @include desktop-large{
           &:hover+label{
-            background-color: lighten($color: $mint-color, $amount: 15%);
+            background-color: lighten($color: $mint-color, $amount: 23%);
             box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
           }
     }
@@ -68,11 +68,11 @@ label {
   }
 
   @include desktop{
-    width: 80%;
+    width: 70%;
   }
 
   @include desktop-large{
-    width: 80%;
+    width: 70%;
   }
 
   @for $i from 10 through 1 {
@@ -85,7 +85,59 @@ label {
   ".label:nth-child(2): ...s"
   and so on */
 
+  &:active .restaurant-onlycard__form__checkbox {
+    transform: translateX(-10px);
+  }
+
+  @include mobile-medium{
+    &:active .restaurant-onlycard__form__checkbox {
+      transform: translateX(-10px);
+  }
+  @include tablet{
+    &:active .restaurant-onlycard__form__checkbox {
+      transform: translateX(-10px);
+  } }
+  @include desktop {
     &:hover .restaurant-onlycard__form__checkbox {
+      transform: translateX(-10px);
+    }
+  }
+  @include desktop-large {
+  &:hover .restaurant-onlycard__form__checkbox {
+    transform: translateX(-10px);
+  }
+}
+  }
+
+
+
+  &:active .restaurant-onlycard__form__price {
+    left: 248px;
+  }
+
+  @include mobile-medium{
+    &:active .restaurant-onlycard__form__price {
+      left: 288px;
+    }
+  @include tablet{
+    &:active .restaurant-onlycard__form__price {
+      left: 535px;
+      }
+    }
+  @include desktop {
+    &:hover .restaurant-onlycard__form__price {
+      left: 560px;
+    }
+  }
+  @include desktop-large {
+  &:hover .restaurant-onlycard__form__price {
+    left: 565px;
+  }
+}
+  }
+
+
+   /* &:hover .restaurant-onlycard__form__checkbox {
       transform: translateX(-10px);
     }
 
@@ -105,7 +157,8 @@ label {
     @include desktop-large{
       left: 650px;
     }
-    } 
+    } */
+
 }
 
   &__title{
@@ -121,6 +174,13 @@ label {
     
     @include tablet{
       margin: 40px 0px 0px 50px;
+    }
+        
+    @include desktop{
+      margin: 40px 0px 0px 120px;
+    }
+    @include desktop-large{
+      margin: 40px 0px 0px 122px;
     }
   }
 
@@ -221,11 +281,10 @@ label {
               left: 580px;
             }
             @include desktop{
-              left: 555px;
+              left: 570px;
             }
             @include desktop-large{
-             left: 676px;
-
+             left: 600px;
             }
           }
 

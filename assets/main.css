@@ -242,6 +242,7 @@ footer .footer__link:active {
 }
 .button-2:active i {
   color: #9356dc;
+  transition: box-shadow, transform, 0.3s ease-in-out;
 }
 @media (min-width: 1024px) {
   .button-2:hover i {
@@ -302,6 +303,7 @@ footer .footer__link:active {
   background-color: white;
   border-radius: 15px;
   position: relative;
+  transition: box-shadow, transform, 0.3s ease-in-out;
 }
 .card:hover {
   transition: box-shadow, transform, 0.3s ease-in-out;
@@ -329,7 +331,8 @@ footer .footer__link:active {
 .card__picture {
   -o-object-fit: cover;
      object-fit: cover;
-  height: 175px;
+  height: auto;
+  aspect-ratio: 4.5/2;
   width: 100%;
   border-radius: 15px 15px 0 0;
 }
@@ -351,33 +354,28 @@ footer .footer__link:active {
   font-weight: 300;
 }
 .card__like-icon {
-  display: block;
   position: absolute;
   left: 270px;
   bottom: 30px;
 }
 @media (min-width: 420px) {
   .card__like-icon {
-    display: block;
     left: 314px;
   }
 }
 @media (min-width: 768px) {
   .card__like-icon {
-    display: block;
-    left: 424px;
+    left: 418px;
   }
 }
 @media (min-width: 1024px) {
   .card__like-icon {
-    display: block;
-    left: 222px;
+    left: 262px;
   }
 }
 @media (min-width: 1440px) {
   .card__like-icon {
-    display: block;
-    left: 350px;
+    left: 442px;
   }
 }
 
@@ -403,13 +401,13 @@ footer .footer__link:active {
 }
 @media (min-width: 1024px) {
   .restaurant-onlycard__form input[type=radio]:hover + label {
-    background-color: #d5f3eb;
+    background-color: #f4fcfa;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   }
 }
 @media (min-width: 1440px) {
   .restaurant-onlycard__form input[type=radio]:hover + label {
-    background-color: #d5f3eb;
+    background-color: #f4fcfa;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   }
 }
@@ -462,6 +460,27 @@ footer .footer__link:active {
   ".label:nth-child(1): ...s",
   ".label:nth-child(2): ...s"
   and so on */
+  /* &:hover .restaurant-onlycard__form__checkbox {
+      transform: translateX(-10px);
+    }
+
+  &:hover .restaurant-onlycard__form__price {
+    left: 242px;
+
+      @include mobile-medium{
+        left: 288px;
+      }
+      @include tablet{
+      left: 535px;
+    }
+    @include desktop{
+      left: 655px;
+    }
+
+    @include desktop-large{
+      left: 650px;
+    }
+    } */
 }
 @media (min-width: 768px) {
   .restaurant-onlycard__form label {
@@ -470,12 +489,12 @@ footer .footer__link:active {
 }
 @media (min-width: 1024px) {
   .restaurant-onlycard__form label {
-    width: 80%;
+    width: 70%;
   }
 }
 @media (min-width: 1440px) {
   .restaurant-onlycard__form label {
-    width: 80%;
+    width: 70%;
   }
 }
 .restaurant-onlycard__form label:nth-of-type(10) {
@@ -508,30 +527,50 @@ footer .footer__link:active {
 .restaurant-onlycard__form label:nth-of-type(1) {
   animation-delay: 200ms;
 }
-.restaurant-onlycard__form label:hover .restaurant-onlycard__form__checkbox {
+.restaurant-onlycard__form label:active .restaurant-onlycard__form__checkbox {
   transform: translateX(-10px);
 }
-.restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
-  left: 242px;
+@media (min-width: 420px) {
+  .restaurant-onlycard__form label:active .restaurant-onlycard__form__checkbox {
+    transform: translateX(-10px);
+  }
+}
+@media (min-width: 420px) and (min-width: 768px) {
+  .restaurant-onlycard__form label:active .restaurant-onlycard__form__checkbox {
+    transform: translateX(-10px);
+  }
+}
+@media (min-width: 420px) and (min-width: 1024px) {
+  .restaurant-onlycard__form label:hover .restaurant-onlycard__form__checkbox {
+    transform: translateX(-10px);
+  }
+}
+@media (min-width: 420px) and (min-width: 1440px) {
+  .restaurant-onlycard__form label:hover .restaurant-onlycard__form__checkbox {
+    transform: translateX(-10px);
+  }
+}
+.restaurant-onlycard__form label:active .restaurant-onlycard__form__price {
+  left: 248px;
 }
 @media (min-width: 420px) {
-  .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
+  .restaurant-onlycard__form label:active .restaurant-onlycard__form__price {
     left: 288px;
   }
 }
-@media (min-width: 768px) {
-  .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
+@media (min-width: 420px) and (min-width: 768px) {
+  .restaurant-onlycard__form label:active .restaurant-onlycard__form__price {
     left: 535px;
   }
 }
-@media (min-width: 1024px) {
+@media (min-width: 420px) and (min-width: 1024px) {
   .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
-    left: 655px;
+    left: 560px;
   }
 }
-@media (min-width: 1440px) {
+@media (min-width: 420px) and (min-width: 1440px) {
   .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
-    left: 650px;
+    left: 565px;
   }
 }
 .restaurant-onlycard__form__title {
@@ -552,6 +591,16 @@ footer .footer__link:active {
 @media (min-width: 768px) {
   .restaurant-onlycard__form__title {
     margin: 40px 0px 0px 50px;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant-onlycard__form__title {
+    margin: 40px 0px 0px 120px;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurant-onlycard__form__title {
+    margin: 40px 0px 0px 122px;
   }
 }
 .restaurant-onlycard__form--line {
@@ -669,12 +718,12 @@ footer .footer__link:active {
 }
 @media (min-width: 1024px) {
   .restaurant-onlycard__form__price {
-    left: 555px;
+    left: 570px;
   }
 }
 @media (min-width: 1440px) {
   .restaurant-onlycard__form__price {
-    left: 676px;
+    left: 600px;
   }
 }
 .restaurant-onlycard__form__checkbox {
@@ -727,6 +776,8 @@ footer .footer__link:active {
   text-align: center;
   width: 26px;
   opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  animation-fill-mode: forwards;
   /* in extends.scss :
     background: linear-gradient(#9356DC,#FF79DA);
     color: transparent;
@@ -1018,8 +1069,8 @@ footer .footer__link:active {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    gap: 60px;
     padding-top: 10px;
+    gap: 32px 42px;
   }
 }
 .restaurants__card-link {
@@ -1028,7 +1079,7 @@ footer .footer__link:active {
 }
 @media (min-width: 1024px) {
   .restaurants__card-link {
-    width: 40%;
+    width: 45%;
   }
 }
 
@@ -1099,6 +1150,17 @@ footer .footer__link:active {
   font-family: "Shrikhand", cursive;
   font-size: 26px;
   font-weight: 400;
+  margin-right: 0px;
+}
+@media (min-width: 420px) {
+  .restaurant-onlycard__title {
+    margin-right: 120px;
+  }
+}
+@media (min-width: 768px) {
+  .restaurant-onlycard__title {
+    margin-right: 0px;
+  }
 }
 .restaurant-onlycard__like-icon {
   position: absolute;
@@ -1112,12 +1174,11 @@ footer .footer__link:active {
 }
 @media (min-width: 1024px) {
   .restaurant-onlycard__like-icon {
-    left: 518px;
+    left: 595px;
   }
 }
 @media (min-width: 1440px) {
   .restaurant-onlycard__like-icon {
-    left: 670px;
-    top: 26px;
+    left: 618px;
   }
 }/*# sourceMappingURL=main.css.map */

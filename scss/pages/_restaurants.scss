@@ -56,6 +56,15 @@
         font-family: $title-font;
         font-size: 26px;
         font-weight: $regular;
+        margin-right: 0px;
+
+        @include mobile-medium{
+          margin-right: 120px;
+        }
+    
+        @include tablet{
+          margin-right: 0px;
+        }
       }
 
       &__like-icon{
@@ -68,12 +77,11 @@
         }
 
         @include desktop{
-          left: 518px;
+          left: 595px;
         }
 
         @include desktop-large{
-          left : 670px;
-          top: 26px;
+          left: 618px;
         }
       }
 

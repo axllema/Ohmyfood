@@ -12,6 +12,8 @@
     text-align: center; 
     width: 26px; 
     opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    animation-fill-mode: forwards;
     @extend %heart-gradient;
   /* in extends.scss :
     background: linear-gradient(#9356DC,#FF79DA);
@@ -35,6 +37,7 @@
         animation-fill-mode: forwards;
         }
       }
+
     }
 }
 

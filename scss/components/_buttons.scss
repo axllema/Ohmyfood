@@ -46,6 +46,7 @@
 
         &:active i {
             color:$purple-color;
+            transition: box-shadow, transform, 0.3s ease-in-out;
         }
         /* only changes the color of the icon (i) when clicked */
     
