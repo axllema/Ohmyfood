@@ -10,6 +10,12 @@
 
     &__img {
         width: 14rem;
+        filter: drop-shadow(3px 3px 2px rgb(0 0 0 / 0.3));
+
+
+        @include desktop{
+          width: 16rem;
+      }
       }
 
       &__circle {
@@ -21,11 +27,18 @@
         margin-top : -60px;
         border-radius: 100%;
         animation : loaderCircles 3s;
+
+        @include desktop{
+            width : 45px;
+            height: 45px;
+        }
+
       }
 
       @for $i from 1 through 3 {
         &__circle:nth-child(#{$i}) {
           background: map-get($loader-colors, $i);
+          filter: drop-shadow(3px 3px 2px rgb(0 0 0 / 0.3));
         }
     }
     /* it's called "sass @for loops", it compiles :
