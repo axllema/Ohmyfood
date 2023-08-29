@@ -827,7 +827,7 @@ footer .footer__link:active {
     z-index: 5;
   }
   100% {
-    opacity: 0.005;
+    opacity: 0;
     opacity: 0;
     z-index: -1;
   }
@@ -858,7 +858,7 @@ footer .footer__link:active {
     z-index: 5;
   }
   100% {
-    opacity: 0.005;
+    opacity: 0;
     opacity: 0;
     z-index: -1;
   }
