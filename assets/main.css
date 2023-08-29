@@ -746,7 +746,7 @@ footer .footer__link:active {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background: white;
+  background: #fff3fc;
   position: fixed;
   z-index: -1;
   width: 100%;
