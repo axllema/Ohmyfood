@@ -8,7 +8,7 @@
         display: none;
 
         &:checked+label{
-          margin-right: 0;
+          margin-right: 4px;
           /* makes the selected label stands out of others */
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
           cursor: pointer;
