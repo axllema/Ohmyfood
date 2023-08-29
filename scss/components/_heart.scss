@@ -23,15 +23,16 @@
 
     &:active {
       opacity: 1;
-      transition: opacity 0.6s ease-in-out;
-      animation-fill-mode: forwards;
+      transition: opacity 0.3s ease-in-out;
+      animation-fill-mode:forwards;
     }
 
     @include desktop{
       &:hover{
         cursor: pointer;
         opacity: 1;
-        transition: opacity 0.6s ease-in-out;
+        transition: opacity 0.3s ease-in-out;
+        animation-fill-mode: forwards;
         }
       }
     }
