@@ -387,6 +387,7 @@ footer .footer__link:active {
   justify-content: flex-start;
   align-items: initial;
   gap: 12px;
+  min-width: 900px;
   max-width: 1055px;
   background: #f6f6f6;
   margin: 0 auto;
@@ -419,6 +420,7 @@ footer .footer__link:active {
 }
 @media (min-width: 768px) {
   .restaurant-onylcard__form {
+    min-width: 900px;
     max-width: 1055px;
     display: flex;
     flex-direction: column;
@@ -429,16 +431,14 @@ footer .footer__link:active {
 }
 @media (min-width: 1024px) {
   .restaurant-onylcard__form {
+    min-width: 900px;
     max-width: 1055px;
-    margin-right: 150px;
-    margin-left: 150px;
   }
 }
 @media (min-width: 1440px) {
   .restaurant-onylcard__form {
+    min-width: 900px;
     max-width: 1055px;
-    margin-right: 194px;
-    margin-left: 274px;
     padding: 0px 20px 0px 20px;
   }
 }
@@ -601,7 +601,6 @@ footer .footer__link:active {
   font-size: 20px;
   color: white;
   margin-top: 30px;
-  transform: rotate(180deg);
 }
 .restaurant-onylcard__form label {
   display: flex;
@@ -1024,6 +1023,9 @@ footer .footer__link:active {
 
 .restaurant-onlycard {
   background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .restaurant-onlycard__picture {
   -o-object-fit: cover;
@@ -1037,6 +1039,7 @@ footer .footer__link:active {
   justify-content: space-between;
   align-items: initial;
   gap: initial;
+  min-width: 900px;
   max-width: 1055px;
   position: relative;
   margin-top: -40px;
@@ -1047,22 +1050,21 @@ footer .footer__link:active {
 }
 @media (min-width: 768px) {
   .restaurant-onlycard__top {
+    min-width: 900px;
     max-width: 1055px;
     justify-content: center;
   }
 }
 @media (min-width: 1024px) {
   .restaurant-onlycard__top {
+    min-width: 900px;
     max-width: 1055px;
-    margin-right: 150px;
-    margin-left: 150px;
   }
 }
 @media (min-width: 1440px) {
   .restaurant-onlycard__top {
+    min-width: 900px;
     max-width: 1055px;
-    margin-right: 195px;
-    margin-left: 274px;
   }
 }
 .restaurant-onlycard__title {

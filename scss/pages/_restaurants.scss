@@ -1,5 +1,8 @@
 .restaurant-onlycard {
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
       &__picture {
         object-fit: cover;
         height: 275px;
@@ -8,6 +11,7 @@
 
       &__top{
           @include flex(initial, space-between,initial, initial);
+          min-width: 900px;
           max-width: 1055px;
           position: relative;
           margin-top: -40px;
@@ -17,20 +21,19 @@
           background: #f6f6f6;
       
           @include tablet{
+            min-width: 900px;
             max-width: 1055px;
             justify-content: center;
           }
       
           @include desktop {
+            min-width: 900px;
             max-width: 1055px;
-            margin-right: 150px;
-            margin-left: 150px;
           }
       
           @include desktop-large {
+            min-width: 900px;
             max-width: 1055px;
-            margin-right: 195px;
-            margin-left: 274px;
         }
           }
 

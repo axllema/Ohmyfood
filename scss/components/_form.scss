@@ -1,5 +1,6 @@
 .restaurant-onylcard__form {
   @include flex(column, flex-start, $gap:12px);
+  min-width: 900px;
   max-width: 1055px;
   background: #f6f6f6;
   margin: 0 auto;
@@ -35,18 +36,17 @@
       }
 
     @include tablet{
+      min-width: 900px;
       max-width: 1055px;
       @include flex($direction: column, $justify: initial, $align: center, $gap: 12px);
     }
     @include desktop{
+      min-width: 900px;
       max-width: 1055px;
-      margin-right: 150px;
-      margin-left: 150px;
     }
     @include desktop-large{
+      min-width: 900px;
       max-width: 1055px;
-      margin-right: 194px;
-      margin-left: 274px;
       padding: 0px 20px 0px 20px;
 }
 
