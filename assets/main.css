@@ -400,10 +400,6 @@ footer .footer__link:active {
   /* makes the selected label stands out of others */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
   cursor: pointer;
-  /*
-           &:checked+label .restaurant-onlycard__form__price {
-             left: 252px;
-           } */
 }
 @media (min-width: 1024px) {
   .restaurant-onlycard__form input[type=radio]:hover + label {
@@ -419,7 +415,6 @@ footer .footer__link:active {
 }
 @media (min-width: 768px) {
   .restaurant-onlycard__form {
-    min-width: 900px;
     max-width: 1055px;
     display: flex;
     flex-direction: column;
@@ -517,7 +512,27 @@ footer .footer__link:active {
   transform: translateX(-10px);
 }
 .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
-  left: 658px;
+  left: 242px;
+}
+@media (min-width: 420px) {
+  .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
+    left: 288px;
+  }
+}
+@media (min-width: 768px) {
+  .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
+    left: 535px;
+  }
+}
+@media (min-width: 1024px) {
+  .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
+    left: 655px;
+  }
+}
+@media (min-width: 1440px) {
+  .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
+    left: 650px;
+  }
 }
 .restaurant-onlycard__form__title {
   display: flex;
@@ -613,7 +628,7 @@ footer .footer__link:active {
 }
 @media (min-width: 420px) {
   .restaurant-onlycard__form__description {
-    width: 275px;
+    width: 260px;
   }
 }
 @media (min-width: 768px) {
