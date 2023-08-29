@@ -49,6 +49,57 @@
       padding: 0px 20px 0px 20px;
 }
 
+label {
+  @include flex(column, center, initial, 0);
+  position: relative;
+  background-color: white;
+  height: 70px;
+  margin: 0 12px;
+  padding: 0 15px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  overflow: hidden;
+
+  opacity: 0%;
+  transform: scaleX(0);
+  transform-origin: right;
+  animation: labelSlide 500ms ease-in-out;
+  animation-fill-mode: forwards;
+/* the animation doesn't reset and the elements stay as it is at the end of anim */
+
+  @include tablet{
+    width: 80%;
+  }
+
+  @include desktop{
+    width: 80%;
+  }
+
+  @include desktop-large{
+    width: 80%;
+  }
+
+  @for $i from 10 through 1 {
+    &:nth-of-type(#{$i}) {
+      animation-delay: $i * 200ms;
+    }
+  }
+  /* it's called "sass @for loops", it compiles :
+  ".label:nth-child(1): ...s",
+  ".label:nth-child(2): ...s"
+  and so on */
+
+  &:hover .restaurant-onlycard__form__checkbox {
+    transform: translateX(-10px);
+}
+
+&:hover .restaurant-onlycard__form__price {
+  left: 658px;
+}
+
+}
 
   &__title{
     @include flex(column);
@@ -172,15 +223,15 @@
           }
 
           &__checkbox{
-           /* display: none;  /*makes the checkbox invisible, for the moment */
             position: absolute;
             z-index: 1;
-            opacity: 0;
             background: $mint-color;
             border-radius: 0px 15px 15px 0px;
-            right: 0px;
-            padding: 0px 13px;
+            right: -10px;
+            padding: 0px 18px 0px 18px;
             height: 100%;
+            transform: translateX(50px);
+            transition: all 0.5s ease-in-out;
 
           @include mobile-medium{
           }
@@ -198,63 +249,6 @@
             margin-top: 30px;
   }
    }
-
-
-
-  label {
-    @include flex(column, center, initial, 0);
-    position: relative;
-    background-color: white;
-    height: 70px;
-    margin: 0 12px;
-    padding: 0 15px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.5s;
-    transition: box-shadow 0.5s;
-    overflow: hidden;
-
-    opacity: 0%;
-    transform: scaleX(0);
-    transform-origin: right;
-    animation: labelSlide 500ms ease-in-out;
-    animation-fill-mode: forwards;
-/* the animation doesn't reset and the elements stay as it is at the end of anim */
-
-    @include tablet{
-      width: 80%;
-    }
-
-    @include desktop{
-      width: 80%;
-    }
-
-    @include desktop-large{
-      width: 80%;
-    }
-
-    @for $i from 10 through 1 {
-      &:nth-of-type(#{$i}) {
-        animation-delay: $i * 200ms;
-      }
-    }
-    /* it's called "sass @for loops", it compiles :
-    ".label:nth-child(1): ...s",
-    ".label:nth-child(2): ...s"
-    and so on */
-
-    &:active .restaurant-onlycard__form__checkbox {
-      opacity: 1;
-  }
-
-    &:active i {
-      -webkit-transform: rotate(180deg);
-      transform: rotate(0deg);
-      transition: all 0.5s ease-in-out; 
-      animation-fill-mode:forwards;
-      display:contents;
-  }
-  }
 
       button {
         margin: 28px auto 40px auto;
