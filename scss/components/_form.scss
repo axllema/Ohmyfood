@@ -12,11 +12,6 @@
           /* makes the selected label stands out of others */
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
           cursor: pointer;
-
- /*
-          &:checked+label .restaurant-onlycard__form__price {
-            left: 252px;
-          } */
         }
 
         @include desktop{
@@ -35,7 +30,6 @@
       }
 
     @include tablet{
-      min-width: 900px;
       max-width: 1055px;
       @include flex($direction: column, $justify: initial, $align: center, $gap: 12px);
     }
@@ -91,14 +85,27 @@ label {
   ".label:nth-child(2): ...s"
   and so on */
 
-  &:hover .restaurant-onlycard__form__checkbox {
-    transform: translateX(-10px);
-}
+    &:hover .restaurant-onlycard__form__checkbox {
+      transform: translateX(-10px);
+    }
 
-&:hover .restaurant-onlycard__form__price {
-  left: 658px;
-}
+  &:hover .restaurant-onlycard__form__price {
+    left: 242px;
 
+      @include mobile-medium{
+        left: 288px;
+      }
+      @include tablet{
+      left: 535px;
+    }
+    @include desktop{
+      left: 655px;
+    }
+
+    @include desktop-large{
+      left: 650px;
+    }
+    } 
 }
 
   &__title{
@@ -183,7 +190,7 @@ label {
             width: 228px;
 
             @include mobile-medium{
-              width: 275px;
+              width: 260px;
             }
             @include tablet{
               text-overflow: unset;
@@ -232,16 +239,7 @@ label {
             height: 100%;
             transform: translateX(50px);
             transition: all 0.5s ease-in-out;
-
-          @include mobile-medium{
-          }
-          @include tablet{
-          }
-          @include desktop{
-          }
-          @include desktop-large{
-          }
-
+            
           & i {
             text-align: center; 
             font-size: 20px;
