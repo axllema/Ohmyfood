@@ -762,7 +762,7 @@ footer .footer__link:active {
   z-index: -1;
   width: 100%;
   height: 100%;
-  animation: loader 3s;
+  animation: loader 5s;
   /* it's called "sass @for loops", it compiles :
   ".loader__circle:nth-child(1): ...s",
   ".loader__circle:nth-child(1): ...s",
@@ -785,7 +785,7 @@ footer .footer__link:active {
   height: 40px;
   margin-top: -60px;
   border-radius: 100%;
-  animation: loaderCircles 3s;
+  animation: loaderCircles 5s;
 }
 @media (min-width: 1024px) {
   .loader__circle {
