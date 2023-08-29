@@ -51,10 +51,11 @@
           opacity: 0.005;
         }
         99% {
-          opacity: 0.001;
+          opacity: 0.010;
           z-index: 5;
         }
         100% {
+          opacity: 0.005;
           opacity: 0;
           z-index: -1;
         }
@@ -82,10 +83,11 @@
           z-index: 5;
         }
         99% {
-          opacity: 0.001;
+          opacity: 0.010;
           z-index: 5;
         }
         100% {
+          opacity: 0.005;
           opacity: 0;
           z-index: -1;
         }

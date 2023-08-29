@@ -14,11 +14,17 @@
           /* makes the selected label stands out of others */
           border: solid red 2px;
           box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
+          cursor: pointer;
 
-          /* POUR QUE LE PRIX AILLE + A GAUCHE, APRES
-          &:checked+label .price {
-            padding-right: 59px;
-          } */
+ /*
+          &:checked+label .restaurant-onylcard__form__price {
+            left: 252px;
+          }
+
+          &:checked+label .restaurant-onylcard__form__checkbox{
+            display: flex;
+            @include flex(column, center);
+          }  */
         }
 
         @include desktop{
@@ -172,6 +178,38 @@
               left: 790px;
             }
           }
+
+          &__checkbox{
+           /* display: none; makes the checkbox invisible, for the moment */
+            position: absolute;
+            z-index: 1;
+            background: $mint-color;
+            border-radius: 0px 15px 15px 0px;
+            right: 0px;
+            padding: 0px 13px;
+            height: 100%;
+
+
+          @include mobile-medium{
+          }
+          @include tablet{
+          }
+          @include desktop{
+          }
+          @include desktop-large{
+          }
+
+          & i {
+            text-align: center; 
+            font-size: 20px;
+            color: white;
+            margin-top: 25px;
+            -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+            transition: all 0.5s ease-in-out; 
+  }
+   }
+
 
 
   label {
