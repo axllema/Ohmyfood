@@ -842,7 +842,7 @@ footer .footer__link:active {
   margin-top: -20px;
   border-radius: 100%;
   animation: loaderCircles 5s;
-  animation: bounce 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+  animation: bounce 1.6s cubic-bezier(0.165, 0.84, 0.44, 1);
   animation-direction: alternate;
   animation-iteration-count: infinite;
 }
