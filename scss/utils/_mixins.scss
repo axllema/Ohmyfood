@@ -12,7 +12,7 @@
     gap: $gap;
  }
 
-/****** Media Queries ***********/
+/* Media Queries */
  @mixin mobile {
     @media (min-width: 375px) {
       @content;
@@ -39,6 +39,12 @@
 
   @mixin desktop-large {
     @media (min-width: 1440px) {
+      @content;
+    }
+  }
+
+      @mixin desktop-superlarge {
+    @media (min-width: 1600px) {
       @content;
     }
   }
