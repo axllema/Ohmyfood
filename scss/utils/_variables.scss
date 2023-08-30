@@ -1,4 +1,4 @@
-/****** Colors ***********/
+/* Colors */
 $first-background-color: #F3F3F3;
 $second-background-color: #F7F7F7;
 $third-background-color: #EAEAEA;
@@ -8,29 +8,31 @@ $footer-font-color: white;
 
 $icons-color: #7a7a7a;
 
-/****** Card--new ***********/
+/* Card--new **/
 $green-color: #19846a;
 
-/****** Fonts ***********/
-@import url('https://fonts.google.com/share?selection.family=Roboto:wght@300;400;500;700;900');
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 $main-font: "Roboto", sans-serif;
-@import url('https://fonts.google.com/share?selection.family=Shrikhand');
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 $title-font: "Shrikhand", cursive;
 
-/****** Fonts weight ***********/
+
+/*Fonts weight */
 $thin: 300;
 $regular: 400; 
 $semi-bold: 500;
 $bold: 700;
 
-/****** Gradient ***********/
+/* Gradient colors */
 $gradient-first-color: #9356DC;
 $gradient-second-color: #FF79DA;
 
-/****** Shadow ***********/
+/* Shadow */
 $shadow-color: rgba(0, 0, 0, 0.25);
 
-/****** Loader colors ***********/
+/* Loader colors */
 
 $purple-color: #9356dc;
 $pink-color: #FF79DA;
