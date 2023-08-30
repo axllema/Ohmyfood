@@ -4,207 +4,182 @@
   background: #f6f6f6;
   margin: 0 auto;
   gap: 12px;
-      input[type="radio"] {
-        display: none;
+    input[type="radio"] {
+      display: none;
 
-        &:checked+label{
-          margin-right: 4px;
-          /* makes the selected label stands out of others */
-          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
-          cursor: pointer;
-        }
-
-        @include desktop{
-          &:hover+label{
-            background-color: lighten($color: $mint-color, $amount: 23%);
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
-          }
-        }
-
-        @include desktop-large{
-          &:hover+label{
-            background-color: lighten($color: $mint-color, $amount: 23%);
-            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
-          }
-    }
+      &:checked+label {
+        margin-right: 4px;
+        /* makes the selected label stands out of others */
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
+        cursor: pointer;
       }
 
-    @include tablet{
+      @include desktop {
+        &:hover+label{
+          background-color: lighten($color: $mint-color, $amount: 23%);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
+        }
+      }
+
+      @include desktop-large {
+        &:hover+label{
+          background-color: lighten($color: $mint-color, $amount: 23%);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.30);
+        }
+      }
+    }
+
+    @include tablet {
       max-width: 1055px;
       @include flex($direction: column, $justify: initial, $align: center, $gap: 12px);
     }
-    @include desktop{
+    @include desktop {
       min-width: 900px;
       max-width: 1055px;
     }
-    @include desktop-large{
+    @include desktop-large {
       min-width: 900px;
       max-width: 1055px;
       padding: 0px 20px 0px 20px;
-}
-
-label {
-  @include flex(column, center, initial, 0);
-  position: relative;
-  background-color: white;
-  height: 70px;
-  margin: 0 12px;
-  padding: 0 15px;
-  border-radius: 15px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.5s;
-  transition: box-shadow 0.5s;
-  overflow: hidden;
-
-  opacity: 0%;
-  transform: scaleX(0);
-  transform-origin: right;
-  animation: labelSlide 500ms ease-in-out;
-  animation-fill-mode: forwards;
-/* the animation doesn't reset and the elements stay as it is at the end of anim */
-
-  @include tablet{
-    width: 80%;
-  }
-
-  @include desktop{
-    width: 70%;
-  }
-
-  @include desktop-large{
-    width: 70%;
-  }
-
-  @for $i from 10 through 1 {
-    &:nth-of-type(#{$i}) {
-      animation-delay: $i * 200ms;
     }
-  }
-  /* it's called "sass @for loops", it compiles :
-  ".label:nth-child(1): ...s",
-  ".label:nth-child(2): ...s"
-  and so on */
 
-  &:active .restaurant-onlycard__form__checkbox {
-    transform: translateX(-10px);
-  }
+    label {
+      @include flex(column, center, initial, 0);
+      position: relative;
+      background-color: white;
+      height: 70px;
+      margin: 0 12px;
+      padding: 0 15px;
+      border-radius: 15px;
+      box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+      transition: box-shadow 0.5s;
+      transition: box-shadow 0.5s;
+      overflow: hidden;
 
-  @include mobile-medium{
-    &:active .restaurant-onlycard__form__checkbox {
-      transform: translateX(-10px);
-  }
-  @include tablet{
-    &:active .restaurant-onlycard__form__checkbox {
-      transform: translateX(-10px);
-  } }
-  @include desktop {
-    &:hover .restaurant-onlycard__form__checkbox {
-      transform: translateX(-10px);
-    }
-  }
-  @include desktop-large {
-  &:hover .restaurant-onlycard__form__checkbox {
-    transform: translateX(-10px);
-  }
-}
-  }
-  
-  &:active .restaurant-onlycard__form__price {
-    left: 248px;
-  }
+      opacity: 0%;
+      transform: scaleX(0);
+      transform-origin: right;
+      animation: labelSlide 500ms ease-in-out;
+      animation-fill-mode: forwards;
+      /* the animation doesn't reset and the elements stay as it is at the end of anim */
 
-  @include mobile-medium{
-    &:active .restaurant-onlycard__form__price {
-      left: 288px;
-    }
-  @include tablet{
-    &:active .restaurant-onlycard__form__price {
-      left: 535px;
+      @include tablet {
+        width: 80%;
       }
-    }
-  @include desktop {
-    &:hover .restaurant-onlycard__form__price {
-      left: 560px;
-    }
-  }
-  @include desktop-large {
-  &:hover .restaurant-onlycard__form__price {
-    left: 565px;
-  }
-}
-  }
-
-
-   /* &:hover .restaurant-onlycard__form__checkbox {
-      transform: translateX(-10px);
-    }
-
-  &:hover .restaurant-onlycard__form__price {
-    left: 242px;
-
-      @include mobile-medium{
-        left: 288px;
+      @include desktop {
+        width: 70%;
       }
-      @include tablet{
-      left: 535px;
-    }
-    @include desktop{
-      left: 655px;
-    }
+      @include desktop-large {
+        width: 70%;
+      }
 
-    @include desktop-large{
-      left: 650px;
-    }
-    } */
+      @for $i from 10 through 1 {
+        &:nth-of-type(#{$i}) {
+          animation-delay: $i * 200ms;
+        }
+      }
+      /* it's called "sass @for loops", it compiles :
+      ".label:nth-child(1): ...s",
+      ".label:nth-child(2): ...s"
+      and so on */
 
-}
+        &:active .restaurant-onlycard__form__checkbox {
+          transform: translateX(-10px);
+        }
 
-  &__title{
-    @include flex(column);
-    align-self: start;
-    height: 27px;
-    font-family: $main-font;
-    font-size: 20px;
-    font-weight: $thin;
-    text-transform: uppercase;
-    margin: 40px 0px 0px 15px;
-    position: relative;
-    
-    @include tablet{
-      margin: 40px 0px 0px 50px;
-    }
-        
-    @include desktop{
-      margin: 40px 0px 0px 120px;
-    }
-    @include desktop-large{
-      margin: 40px 0px 0px 122px;
-    }
-  }
-
-      &--line{
-        position: absolute;
-        left: -2px;
-        top: 27px;
-        width: 52px;
-        height: 3px;
-        background-color: $mint-color;
-
-          @include mobile-medium {
-          display: block;
-          right: 352px;
+        @include mobile-medium {
+          &:active .restaurant-onlycard__form__checkbox {
+            transform: translateX(-10px);
+          }
         }
         @include tablet {
-          display: block;
-          right: 33px;
+          &:active .restaurant-onlycard__form__checkbox {
+            transform: translateX(-10px);
+          }
         }
-        @include desktop{
-          left: -1px;
+        @include desktop {
+          &:hover .restaurant-onlycard__form__checkbox {
+            transform: translateX(-10px);
+          }
         }
-        @include desktop-large{
-          left: -1px;
+        @include desktop-large {
+        &:hover .restaurant-onlycard__form__checkbox {
+          transform: translateX(-10px);
         }
       }
+
+      
+        &:active .restaurant-onlycard__form__price {
+          left: 248px;
+        }
+      
+        @include mobile-medium {
+          &:active .restaurant-onlycard__form__price {
+            left: 288px;
+          }
+        }
+        @include tablet {
+          &:active .restaurant-onlycard__form__price {
+            left: 535px;
+          }
+        }
+        @include desktop {
+          &:hover .restaurant-onlycard__form__price {
+            left: 560px;
+          }
+        }
+        @include desktop-large {
+          &:hover .restaurant-onlycard__form__price {
+            left: 565px;
+          }
+        }
+    }
+
+      &__title {
+        @include flex(column);
+        align-self: start;
+        height: 27px;
+        font-family: $main-font;
+        font-size: 20px;
+        font-weight: $thin;
+        text-transform: uppercase;
+        margin: 40px 0px 0px 15px;
+        position: relative;
+        
+        @include tablet {
+          margin: 40px 0px 0px 50px;
+        } 
+        @include desktop {
+          margin: 40px 0px 0px 120px;
+        }
+        @include desktop-large {
+          margin: 40px 0px 0px 122px;
+        }
+      }
+
+        &--line{
+          position: absolute;
+          left: -2px;
+          top: 27px;
+          width: 52px;
+          height: 3px;
+          background-color: $mint-color;
+
+          @include mobile-medium {
+            display: block;
+            right: 352px;
+          }
+          @include tablet {
+            display: block;
+            right: 33px;
+          }
+          @include desktop {
+            left: -1px;
+          }
+          @include desktop-large {
+            left: -1px;
+          }
+        }
 
         &__subtitle{
             font-family: $main-font;
@@ -215,28 +190,27 @@ label {
             white-space: nowrap;
             width: 228px;
 
-            @include mobile-medium{
+            @include mobile-medium {
               width: 262px;
             }
 
-            @include tablet{
-              text-overflow: unset;
-              overflow: visible;
-
-            }
-
-            @include desktop{
+            @include tablet {
               text-overflow: unset;
               overflow: visible;
             }
 
-            @include desktop-large{
+            @include desktop {
               text-overflow: unset;
               overflow: visible;
             }
-          }
 
-          &__description{
+            @include desktop-large {
+              text-overflow: unset;
+              overflow: visible;
+            }
+        }
+
+          &__description {
             font-family: $main-font;
             font-size: 17px;
             font-weight: $thin;
@@ -247,46 +221,46 @@ label {
             /* adds 3dots at the end of sentence, if it does'nt have enough space to be fully written */
             width: 228px;
 
-            @include mobile-medium{
+            @include mobile-medium {
               width: 260px;
             }
-            @include tablet{
+            @include tablet {
               text-overflow: unset;
               overflow: visible;
             }
-            @include desktop{
+            @include desktop {
               text-overflow: unset;
               overflow: visible;
             }
-            @include desktop-large{
+            @include desktop-large {
               text-overflow: unset;
               overflow: visible;
             }
           }
 
-            &__price{
-              position: absolute;
-              left: 295px;
-              bottom: 13px;
-              font-family: $main-font;
-              font-weight: $semi-bold;
-              font-size: 17px;
+          &__price {
+            position: absolute;
+            left: 295px;
+            bottom: 13px;
+            font-family: $main-font;
+            font-weight: $semi-bold;
+            font-size: 17px;
 
-            @include mobile-medium{
+            @include mobile-medium {
               left: 339px;
             }
-            @include tablet{
+            @include tablet {
               left: 580px;
             }
-            @include desktop{
+            @include desktop {
               left: 570px;
             }
-            @include desktop-large{
+            @include desktop-large {
              left: 600px;
             }
           }
 
-          &__checkbox{
+          &__checkbox {
             position: absolute;
             z-index: 1;
             background: $mint-color;
@@ -297,35 +271,35 @@ label {
             transform: translateX(50px);
             transition: all 0.5s ease-in-out;
             
-          & i {
-            text-align: center; 
-            font-size: 20px;
-            color: white;
-            margin-top: 30px;
-  }
-   }
+            & i {
+              text-align: center; 
+              font-size: 20px;
+              color: white;
+              margin-top: 30px;
+            }
+          }
 
-      button {
-        margin: 28px auto 40px auto;
-      }
-    }
+  button {
+    margin: 28px auto 40px auto;
+  }
+}
 
 
 @keyframes labelSlide {
-0% {
-  background-color: $mint-color;
-}
-50% {
-  opacity: 5%;
-}
-95% {
-  opacity: 5%;
-  background-color: $green-color;
-}
-100% {
-  color: inherit;
-  opacity: 1;
-  transform: scaleX(1);
-}
+  0% {
+    background-color: $mint-color;
+  }
+  50% {
+    opacity: 5%;
+  }
+  95% {
+    opacity: 5%;
+    background-color: $green-color;
+  }
+  100% {
+    color: inherit;
+    opacity: 1;
+    transform: scaleX(1);
+  }
 }
 

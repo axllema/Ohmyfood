@@ -8,36 +8,34 @@
     opacity: 1;
   }
 
-  .solid-heart{
+  .solid-heart {
     text-align: center; 
     width: 26px; 
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     animation-fill-mode: forwards;
     @extend %heart-gradient;
-  /* in extends.scss :
+    /* in extends.scss :
     background: linear-gradient(#9356DC,#FF79DA);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text; 
     so that the heart is full and no square around takes the color */
     
-
     &:active {
       opacity: 1;
       transition: opacity 0.3s ease-in-out;
       animation-fill-mode: forwards;
     }
 
-    @include desktop{
-      &:hover{
+    @include desktop {
+      &:hover {
         cursor: pointer;
         opacity: 1;
         transition: opacity 0.3s ease-in-out;
         animation-fill-mode: forwards;
         }
       }
-
     }
 }
 

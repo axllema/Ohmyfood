@@ -14,35 +14,35 @@
 
         @include desktop{
           width: 16rem;
-      }
-      }
-
-      &__circle {
-        opacity: 1;
-        z-index: -1;
-        display: inline-block;
-        width : 40px;
-        height: 40px;
-        margin-top : -20px;
-        border-radius: 100%;
-        animation : loaderCircles 5s;
-        animation: bounce 1.6s cubic-bezier(0.165, 0.84, 0.44, 1);
-        animation-direction: alternate;
-        animation-iteration-count: infinite;
-
-        @include desktop{
-            width : 45px;
-            height: 45px;
         }
+    }
 
+    &__circle {
+      opacity: 1;
+      z-index: -1;
+      display: inline-block;
+      width : 40px;
+      height: 40px;
+      margin-top : -20px;
+      border-radius: 100%;
+      animation : loaderCircles 5s;
+      animation: bounce 1.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+
+      @include desktop{
+          width : 45px;
+          height: 45px;
       }
+
+    }
 
       @for $i from 1 through 3 {
         &__circle:nth-child(#{$i}) {
           background: map-get($loader-colors, $i);
           filter: drop-shadow(3px 3px 2px rgb(0 0 0 / 0.3));
         }
-    }
+      }
     /* it's called "sass @for loops", it compiles :
     ".loader__circle:nth-child(1): ...s",
     ".loader__circle:nth-child(1): ...s",
@@ -76,58 +76,58 @@
         }
       }      
 
-      @keyframes loaderCircles {
-        0% {
-          z-index: 1;
-        }
-        35% {
-          transform: scale(1.05);
-          opacity: 1;
-        }
-        50% {
-          transform: scale(1);
-        }
-        70%{
-          opacity: 0.019;
-        }
-        80% {
-          opacity: 0.050;
-        }
-        90% {
-          opacity: 0.020;
-          z-index: 5;
-        }
-        99% {
-          opacity: 0.010;
-          z-index: 5;
-        }
-        100% {
-          opacity: 0.000;
-          opacity: 0;
-          z-index: -1;
-        }
-      }
-      
-      @keyframes bounce {
-        0% {
-          transform: translateX(0px);
-        }
-        20% {
-          transform: translateX(-10px)
-        }
-        40%{
-          transform: translateX(0px)
-        }
-        60% {
-          transform: translateX(10px)
-        }
-        80% {
-          transform: translateX(0px)
-        }
-        100% {
-          transform: translateX(-10px)
-        }
+  @keyframes loaderCircles {
+    0% {
+      z-index: 1;
+    }
+    35% {
+      transform: scale(1.05);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1);
+    }
+    70%{
+      opacity: 0.019;
+    }
+    80% {
+      opacity: 0.050;
+    }
+    90% {
+      opacity: 0.020;
+      z-index: 5;
+    }
+    99% {
+      opacity: 0.010;
+      z-index: 5;
+    }
+    100% {
+      opacity: 0.000;
+      opacity: 0;
+      z-index: -1;
     }
   }
+
+  @keyframes bounce {
+    0% {
+      transform: translateX(0px);
+    }
+    20% {
+      transform: translateX(-10px)
+    }
+    40%{
+      transform: translateX(0px)
+    }
+    60% {
+      transform: translateX(10px)
+    }
+    80% {
+      transform: translateX(0px)
+    }
+    100% {
+      transform: translateX(-10px)
+    }
+  }
+}
 
 

@@ -1,6 +1,9 @@
+/* Heart gradient colors for the heart filled animation */
+
 %heart-gradient{
     background: linear-gradient(#9356DC,#FF79DA);
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
-  }
+    /* Makes the heart filled without having a square around who is also filled, makes this "square" transparent */
+}

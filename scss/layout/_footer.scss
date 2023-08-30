@@ -1,7 +1,7 @@
 footer {
     @include flex(column, center, flex-start);
     padding-left: 15px;
-    padding-top : 10px;
+    padding-top: 10px;
     padding-bottom: 15px;
     
     @include tablet {
@@ -25,15 +25,14 @@ footer {
             padding-top: 10px;
 
             @include tablet {
-            width: 4.5Em;
-            padding-right: 30px;
-        }
-
-        @include desktop {
-            width: 4.5Em;
-            padding-right: 40px;
-            padding-left: 40px;
-        }
+                width: 4.5Em;
+                padding-right: 30px;
+            }
+            @include desktop {
+                width: 4.5Em;
+                padding-right: 40px;
+                padding-left: 40px;
+            }
         }
 
         &__list {
@@ -46,27 +45,24 @@ footer {
             @include tablet {
                 @include flex(row, flex-end, flex-end, 16px);
             }
-
             @include desktop {
                 width: 100%;
                 gap: 30px;
             }
         }
 
-            &__link{
-                &:active{
+        &__link{
+            &:active{
+                color: $gradient-first-color;
+            }
+        /* changing the color of the text, in the footer, just for UX purpose */
+
+            @include desktop{
+                &:hover{
+                    cursor: pointer;
                     color: $gradient-first-color;
                 }
-            /* changing the color of the text, in the footer, just for UX purpose */
-
-                @include desktop{
-                    &:hover{
-                      cursor: pointer;
-                      color: $gradient-first-color;
-                  }
-        }     
-
-
-}
-}
+            }     
+        }
+    }
 }

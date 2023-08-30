@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Heart gradient colors for the heart filled animation */
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 .card .solid-heart,
@@ -7,13 +8,16 @@
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
+  /* Makes the heart filled without having a square around who is also filled, makes this "square" transparent */
 }
 
+/*  Fonts : family, size & weight */
+/*  For "display : flex", so that there is less repetition */
 /* Media Queries */
 /* Colors */
-/* Card--new **/
+/* Card--new on the restaurant cards **/
 /* Fonts */
-/*Fonts weight */
+/* Fonts weight */
 /* Gradient colors */
 /* Shadow */
 /* Loader colors */
@@ -465,27 +469,6 @@ footer .footer__link:active {
   ".label:nth-child(1): ...s",
   ".label:nth-child(2): ...s"
   and so on */
-  /* &:hover .restaurant-onlycard__form__checkbox {
-      transform: translateX(-10px);
-    }
-
-  &:hover .restaurant-onlycard__form__price {
-    left: 242px;
-
-      @include mobile-medium{
-        left: 288px;
-      }
-      @include tablet{
-      left: 535px;
-    }
-    @include desktop{
-      left: 655px;
-    }
-
-    @include desktop-large{
-      left: 650px;
-    }
-    } */
 }
 @media (min-width: 768px) {
   .restaurant-onlycard__form label {
@@ -540,17 +523,17 @@ footer .footer__link:active {
     transform: translateX(-10px);
   }
 }
-@media (min-width: 420px) and (min-width: 768px) {
+@media (min-width: 768px) {
   .restaurant-onlycard__form label:active .restaurant-onlycard__form__checkbox {
     transform: translateX(-10px);
   }
 }
-@media (min-width: 420px) and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .restaurant-onlycard__form label:hover .restaurant-onlycard__form__checkbox {
     transform: translateX(-10px);
   }
 }
-@media (min-width: 420px) and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .restaurant-onlycard__form label:hover .restaurant-onlycard__form__checkbox {
     transform: translateX(-10px);
   }
@@ -563,17 +546,17 @@ footer .footer__link:active {
     left: 288px;
   }
 }
-@media (min-width: 420px) and (min-width: 768px) {
+@media (min-width: 768px) {
   .restaurant-onlycard__form label:active .restaurant-onlycard__form__price {
     left: 535px;
   }
 }
-@media (min-width: 420px) and (min-width: 1024px) {
+@media (min-width: 1024px) {
   .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
     left: 560px;
   }
 }
-@media (min-width: 420px) and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
     left: 565px;
   }
@@ -784,11 +767,11 @@ footer .footer__link:active {
   transition: opacity 0.3s ease-in-out;
   animation-fill-mode: forwards;
   /* in extends.scss :
-    background: linear-gradient(#9356DC,#FF79DA);
-    color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text; 
-    so that the heart is full and no square around takes the color */
+  background: linear-gradient(#9356DC,#FF79DA);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text; 
+  so that the heart is full and no square around takes the color */
 }
 .card .solid-heart:active,
 .restaurant-onlycard .solid-heart:active {
