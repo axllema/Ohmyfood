@@ -9,7 +9,7 @@
   -webkit-background-clip: text;
 }
 
-/****** Media Queries ***********/
+/* Media Queries */
 /****** Colors ***********/
 /****** Card--new ***********/
 /****** Fonts ***********/
@@ -375,7 +375,12 @@ footer .footer__link:active {
 }
 @media (min-width: 1440px) {
   .card__like-icon {
-    left: 442px;
+    left: 375px;
+  }
+}
+@media (min-width: 1600px) {
+  .card__like-icon {
+    left: 440px;
   }
 }
 

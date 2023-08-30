@@ -75,7 +75,11 @@
             }
 
             @include desktop-large{
-                left: 442px;
+                left: 375px;
+            }
+
+            @include desktop-superlarge{
+                left: 440px;
             }
         }
 
