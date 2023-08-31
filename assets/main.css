@@ -359,22 +359,22 @@ footer .footer__link:active {
 }
 .card__like-icon {
   position: absolute;
-  left: 270px;
+  left: 285px;
   bottom: 30px;
 }
 @media (min-width: 420px) {
   .card__like-icon {
-    left: 314px;
+    left: 330px;
   }
 }
 @media (min-width: 768px) {
   .card__like-icon {
-    left: 418px;
+    left: 435px;
   }
 }
 @media (min-width: 1024px) {
   .card__like-icon {
-    left: 262px;
+    left: 255px;
   }
 }
 @media (min-width: 1440px) {

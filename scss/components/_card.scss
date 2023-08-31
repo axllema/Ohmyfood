@@ -59,17 +59,17 @@
 
             &__like-icon {
                 position: absolute;
-                left: 270px;
+                left: 285px;
                 bottom: 30px;
 
                 @include mobile-medium {
-                    left: 314px;
+                    left: 330px;
                 }
                 @include tablet {
-                    left: 418px;
+                    left: 435px;
                 }
                 @include desktop {
-                    left: 262px;
+                    left: 255px;
                 }
                 @include desktop-large {
                     left: 375px;
