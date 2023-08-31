@@ -469,6 +469,8 @@ footer .footer__link:active {
   ".label:nth-child(1): ...s",
   ".label:nth-child(2): ...s"
   and so on */
+  /* checkbox anim, right to left - left to right, smoothly */
+  /* price anim, right to left - left to right, smoothly */
 }
 @media (min-width: 768px) {
   .restaurant-onlycard__form label {
@@ -539,7 +541,7 @@ footer .footer__link:active {
   }
 }
 .restaurant-onlycard__form label:active .restaurant-onlycard__form__price {
-  transform: translateX(18px);
+  transform: translateX(0px);
 }
 @media (min-width: 420px) {
   .restaurant-onlycard__form label:active .restaurant-onlycard__form__price {

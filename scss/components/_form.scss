@@ -83,6 +83,7 @@
       ".label:nth-child(2): ...s"
       and so on */
 
+        /* checkbox anim, right to left - left to right, smoothly */
         &:active .restaurant-onlycard__form__checkbox {
           transform: translateX(-10px);
         }
@@ -108,8 +109,9 @@
         }
       }
 
+        /* price anim, right to left - left to right, smoothly */
         &:active .restaurant-onlycard__form__price {
-          transform: translateX(18px);
+          transform: translateX(0px);
         }
       
         @include mobile-medium {
