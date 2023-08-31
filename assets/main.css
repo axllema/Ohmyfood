@@ -540,30 +540,25 @@ footer .footer__link:active {
 }
 .restaurant-onlycard__form label:active .restaurant-onlycard__form__price {
   transform: translateX(18px);
-  left: 248px;
 }
 @media (min-width: 420px) {
   .restaurant-onlycard__form label:active .restaurant-onlycard__form__price {
     transform: translateX(21px);
-    left: 288px;
   }
 }
 @media (min-width: 768px) {
   .restaurant-onlycard__form label:active .restaurant-onlycard__form__price {
     transform: translateX(6px);
-    left: 535px;
   }
 }
 @media (min-width: 1024px) {
   .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
     transform: translateX(2px);
-    left: 560px;
   }
 }
 @media (min-width: 1440px) {
   .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
     transform: translateX(2px);
-    left: 565px;
   }
 }
 .restaurant-onlycard__form__title {

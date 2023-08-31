@@ -110,31 +110,26 @@
 
         &:active .restaurant-onlycard__form__price {
           transform: translateX(18px);
-          left: 248px;
         }
       
         @include mobile-medium {
           &:active .restaurant-onlycard__form__price {
             transform: translateX(21px);
-            left: 288px;
           }
         }
         @include tablet {
           &:active .restaurant-onlycard__form__price {
             transform: translateX(6px);
-            left: 535px;
           }
         }
         @include desktop {
           &:hover .restaurant-onlycard__form__price {
             transform: translateX(2px);
-            left: 560px;
           }
         }
         @include desktop-large {
           &:hover .restaurant-onlycard__form__price {
             transform: translateX(2px);
-            left: 565px;
           }
         }
     }
@@ -252,7 +247,7 @@
             transform: translateX(0px);
             transition: all 0.6s ease-in-out;
 
-            @include mobile-medium {
+          @include mobile-medium {
               left: 339px;
             }
             @include tablet {
