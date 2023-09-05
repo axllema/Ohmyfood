@@ -59,25 +59,8 @@
 
             &__like-icon {
                 position: absolute;
-                left: 285px;
+                right: 15px;
                 bottom: 30px;
-
-                @include mobile-medium {
-                    left: 330px;
-                }
-                @include tablet {
-                    left: 435px;
-                }
-                @include desktop {
-                    left: 255px;
-                }
-                @include desktop-large {
-                    left: 375px;
-                }
-                @include desktop-superlarge {
-                    left: 440px;
-                }
             }
-
 }
 
