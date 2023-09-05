@@ -111,27 +111,27 @@
 
         /* price anim, right to left - left to right, smoothly */
         &:active .restaurant-onlycard__form__price {
-          transform: translateX(0px);
+          transform: translateX(-36px);
         }
       
         @include mobile-medium {
           &:active .restaurant-onlycard__form__price {
-            transform: translateX(21px);
+            transform: translateX(-40px);
           }
         }
         @include tablet {
           &:active .restaurant-onlycard__form__price {
-            transform: translateX(6px);
+            transform: translateX(-33px);
           }
         }
         @include desktop {
           &:hover .restaurant-onlycard__form__price {
-            transform: translateX(2px);
+            transform: translateX(-8px);
           }
         }
         @include desktop-large {
           &:hover .restaurant-onlycard__form__price {
-            transform: translateX(2px);
+            transform: translateX(-20px);
           }
         }
     }

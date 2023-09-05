@@ -359,33 +359,8 @@ footer .footer__link:active {
 }
 .card__like-icon {
   position: absolute;
-  left: 285px;
+  right: 15px;
   bottom: 30px;
-}
-@media (min-width: 420px) {
-  .card__like-icon {
-    left: 330px;
-  }
-}
-@media (min-width: 768px) {
-  .card__like-icon {
-    left: 435px;
-  }
-}
-@media (min-width: 1024px) {
-  .card__like-icon {
-    left: 255px;
-  }
-}
-@media (min-width: 1440px) {
-  .card__like-icon {
-    left: 375px;
-  }
-}
-@media (min-width: 1600px) {
-  .card__like-icon {
-    left: 440px;
-  }
 }
 
 .restaurant-onlycard__form {
@@ -541,26 +516,26 @@ footer .footer__link:active {
   }
 }
 .restaurant-onlycard__form label:active .restaurant-onlycard__form__price {
-  transform: translateX(0px);
+  transform: translateX(-36px);
 }
 @media (min-width: 420px) {
   .restaurant-onlycard__form label:active .restaurant-onlycard__form__price {
-    transform: translateX(21px);
+    transform: translateX(-40px);
   }
 }
 @media (min-width: 768px) {
   .restaurant-onlycard__form label:active .restaurant-onlycard__form__price {
-    transform: translateX(6px);
+    transform: translateX(-33px);
   }
 }
 @media (min-width: 1024px) {
   .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
-    transform: translateX(2px);
+    transform: translateX(-8px);
   }
 }
 @media (min-width: 1440px) {
   .restaurant-onlycard__form label:hover .restaurant-onlycard__form__price {
-    transform: translateX(2px);
+    transform: translateX(-20px);
   }
 }
 .restaurant-onlycard__form__title {
