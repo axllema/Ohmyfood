@@ -193,21 +193,17 @@
             @include mobile-medium {
               width: 295px;
             }
-
             @include mobile-bigger {
               width: 360px;
             }
-
             @include tablet {
               text-overflow: unset;
               overflow: visible;
             }
-
             @include desktop {
               text-overflow: unset;
               overflow: visible;
             }
-
             @include desktop-large {
               text-overflow: unset;
               overflow: visible;

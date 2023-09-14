@@ -70,12 +70,11 @@
         @include mobile-medium {
           right: 100px;
         }
-
         @include tablet {
           right: 225px;
         }
         @include desktop {
-          right:280px;
+          right: 280px;
         }
         @include desktop-large {
           right: 300px;
