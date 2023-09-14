@@ -28,7 +28,7 @@
 }
 
 @mixin mobile-bigger {
-  @media (min-width: 470px) {
+  @media (min-width: 460px) {
     @content;
   }
 }
