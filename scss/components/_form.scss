@@ -194,6 +194,10 @@
               width: 262px;
             }
 
+            @include mobile-bigger {
+              width: 360px;
+            }
+
             @include tablet {
               text-overflow: unset;
               overflow: visible;
@@ -223,6 +227,9 @@
 
             @include mobile-medium {
               width: 260px;
+            }
+            @include mobile-bigger {
+              width: 360px;
             }
             @include tablet {
               text-overflow: unset;
