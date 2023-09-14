@@ -608,10 +608,10 @@ footer .footer__link:active {
 }
 @media (min-width: 420px) {
   .restaurant-onlycard__form__subtitle {
-    width: 262px;
+    width: 295px;
   }
 }
-@media (min-width: 475px) {
+@media (min-width: 460px) {
   .restaurant-onlycard__form__subtitle {
     width: 360px;
   }
@@ -646,10 +646,10 @@ footer .footer__link:active {
 }
 @media (min-width: 420px) {
   .restaurant-onlycard__form__description {
-    width: 260px;
+    width: 290px;
   }
 }
-@media (min-width: 475px) {
+@media (min-width: 460px) {
   .restaurant-onlycard__form__description {
     width: 360px;
   }
@@ -1142,21 +1142,26 @@ footer .footer__link:active {
 }
 .restaurant-onlycard__like-icon {
   position: absolute;
-  left: 305px;
+  right: 47px;
   bottom: 28px;
+}
+@media (min-width: 420px) {
+  .restaurant-onlycard__like-icon {
+    right: 100px;
+  }
 }
 @media (min-width: 768px) {
   .restaurant-onlycard__like-icon {
-    left: 518px;
+    right: 225px;
   }
 }
 @media (min-width: 1024px) {
   .restaurant-onlycard__like-icon {
-    left: 595px;
+    right: 280px;
   }
 }
 @media (min-width: 1440px) {
   .restaurant-onlycard__like-icon {
-    left: 618px;
+    right: 300px;
   }
 }/*# sourceMappingURL=main.css.map */
