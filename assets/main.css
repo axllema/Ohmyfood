@@ -611,6 +611,11 @@ footer .footer__link:active {
     width: 262px;
   }
 }
+@media (min-width: 475px) {
+  .restaurant-onlycard__form__subtitle {
+    width: 360px;
+  }
+}
 @media (min-width: 768px) {
   .restaurant-onlycard__form__subtitle {
     text-overflow: unset;
@@ -642,6 +647,11 @@ footer .footer__link:active {
 @media (min-width: 420px) {
   .restaurant-onlycard__form__description {
     width: 260px;
+  }
+}
+@media (min-width: 475px) {
+  .restaurant-onlycard__form__description {
+    width: 360px;
   }
 }
 @media (min-width: 768px) {
